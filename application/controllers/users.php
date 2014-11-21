@@ -8,13 +8,14 @@ class Users extends CI_Controller {
 	}
 	
 	public function register(){
-		echo "i amhere";
-		$data['title'] = 'Register';
-		
-		$this->load->view('templates/header', $data);
-		$this->load->view('pages/register');
-		$this->load->view('templates/footer');
-
+		if($_POST){
+			// perform validation on the data provided
+			// send them to the the model, checking for true and then sending to the database.
+		}else{
+			$this->load->view('templates/header', $data);
+			$this->load->view('pages/register');
+			$this->load->view('templates/footer');
+		}
 	}
 	
 	
