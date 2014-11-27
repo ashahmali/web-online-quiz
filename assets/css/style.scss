@@ -311,6 +311,13 @@ form.subject_new{
 		p,a{
 			color: #fff;
 		}
+		.subject{
+			a{
+				display: block;
+				width: 100%;
+				height: inherit;
+			}
+		}
 		&.pagination{
 			background:#a1c09e;
 			border-radius:0;

@@ -250,6 +250,10 @@ form.subject_new button {
   padding-top: 13px; }
   .subjects_list .row p, .subjects_list .row a {
     color: #fff; }
+  .subjects_list .row .subject a {
+    display: block;
+    width: 100%;
+    height: inherit; }
   .subjects_list .row.pagination {
     background: #a1c09e;
     border-radius: 0;
