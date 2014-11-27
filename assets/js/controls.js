@@ -30,3 +30,21 @@ DropDown.prototype = {
 		return this.index;
 	}
 }
+
+$(document).ready(function(){
+	$('form.subject_new button').click(function(e){
+		e.preventDefault();
+		var newSubject = $('input[name="subject_name"]');
+		var value = $(newSubject).val();
+		if( value !== ''){
+			var element =  $('.subjects_list_content .subject').first().clone();
+			$(element).find('.name').text(value);
+			$(element).find('a.edit_subject').data('value',0);
+			$(element).css('display','none');
+			$('.subjects_list_content').append(element);
+			$(element).slideDown('slow');
+		}else{
+			alert("Name is required");
+		}
+	});
+});
