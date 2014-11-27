@@ -1,0 +1,1 @@
+<div>you are succesfully registered, thanks</div>

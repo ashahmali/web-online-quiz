@@ -6,19 +6,28 @@
  * @package 	Web Development/Cousework
  * @version     1.0.0
  */
+ 
 ?>
 <article class="row page register">
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		<header class="header">
 			<h1>Registration Form</h1>
+			<?php echo validation_errors(); ?>
+			<ul>
+			<?php
+				foreach ($reg_errors as $error) {
+					echo "<li>$error</li>";
+				}
+			?>
+			</ul>
 		</header>
-		<form >
+		<?php echo form_open('users/register') ?>
 			<div class="row" style="margin-bottom:10px;">
 				<div class="col-1 col-lg-6 col-md-6 col-sm-6 col-xs-12">
 					<label for="first_name">First Name</label>
 				</div>
 				<div class="col-2 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<input type="text" name="first_name" placeholder="Name"/>
+					<input type="text" name="first_name" <?php echo set_value('first_name'); ?> placeholder="Name"/>
 				</div>
 			</div>
 			<div class="row" style="margin-bottom:10px;">
@@ -26,7 +35,7 @@
 					<label for="family_name">Family Name</label>
 				</div>
 				<div class="col-2 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<input type="text" name="family_name" placeholder="Family Name"/>
+					<input type="text" name="family_name" <?php echo set_value('family_name'); ?> placeholder="Family Name"/>
 				</div>
 			</div>
 			<div class="row" >
@@ -34,7 +43,7 @@
 					<label for="email">Email</label>
 				</div>
 				<div class="col-2 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<input type="text" name="email" placeholder="Email"/>
+					<input type="text" name="email" <?php echo set_value('email'); ?> placeholder="Email"/>
 				</div>
 			</div>
 			<div class="row" style="margin-bottom:10px;">
@@ -58,14 +67,20 @@
 					<label for="subject">Subject</label>
 				</div>
 				<div class="col-2 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					
+					<select name="dd_register">
+						<option value="">Select a subject</option>
 					<?php 
-						if(isset($dd_subject))
-							echo $dd_subject; 
+						//if(isset($dd_subject))
+							//echo $dd_subject;
+							foreach ($drop_option as $option){
+								echo '<option value="'.$option['idSUBJECT'].'">'.$option['sName'].'</option>';
+							} 
 					?>
+					</select>
 
 				</div>
 			</div>
+			<button>Send my data</button>
 		</form>
 		<!-- <div class="row" style="">
 		<label for="text1">This is a label</label><textarea name="text1" placeholder="Type some text"></textarea>
@@ -85,7 +100,7 @@
 				<li><a href="#"><i class="icon-plane icon-large"></i>Private jet</a></li>
 			</ul>
 		</div> -->
-		<button>Send my data</button>
+		
 	</div>
 </article>
 
