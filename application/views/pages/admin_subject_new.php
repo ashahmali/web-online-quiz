@@ -15,7 +15,7 @@
 			<label for="first_name">Subject</label>
 		</div>
 		<div class="col-2 col-lg-3 col-md-4 col-sm-5 col-xs-12">
-			<input type="text" name="first_name" placeholder="Subject Name"/>
+			<input type="text" name="subject_name" placeholder="Subject Name"/>
 		</div>
 		<div class="col-2 col-lg-3 col-md-3 col-sm-4 col-xs-12">
 			<button>Create Subject</button>
