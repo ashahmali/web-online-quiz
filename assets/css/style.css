@@ -230,6 +230,9 @@ article.register .row {
 article.register .dropdown_ui {
   float: left !important;
   min-width: 300px !important; }
+  @media (max-width: 767px) {
+    article.register .dropdown_ui {
+      float: none !important; } }
 article.register input {
   min-width: 300px !important; }
 

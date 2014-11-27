@@ -274,6 +274,9 @@ article.register{
 	.dropdown_ui{
 		float: left !important;
 		min-width: 300px !important;
+		@media (max-width: 767px){
+			float: none !important;
+		}
 	}
 
 	input{
