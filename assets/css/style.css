@@ -236,6 +236,33 @@ article.register .dropdown_ui {
 article.register input {
   min-width: 300px !important; }
 
+form.subject_new button {
+  position: relative;
+  top: -8px; }
+  @media (max-width: 767px) {
+    form.subject_new button {
+      top: 0; } }
+
+.subjects_list .row {
+  background: #006B70;
+  border-bottom: 1px solid #bababa;
+  margin-bottom: 0 !important;
+  padding-top: 13px; }
+  .subjects_list .row p, .subjects_list .row a {
+    color: #fff; }
+  .subjects_list .row.pagination {
+    background: #a1c09e;
+    border-radius: 0;
+    border: 0;
+    max-width: 100px; }
+    .subjects_list .row.pagination a {
+      cursor: pointer; }
+    .subjects_list .row.pagination .splitter {
+      position: relative;
+      top: -3px;
+      left: 2px;
+      margin-bottom: 0 !important; }
+
 article.login .row {
   margin-bottom: 10px; }
   article.login .row label {

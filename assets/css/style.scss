@@ -283,6 +283,54 @@ article.register{
 		min-width: 300px !important;
 	}
 }
+
+//=================================================
+//        NEW SUBJECT
+//=================================================
+
+form.subject_new{
+	button{
+		position:relative;
+		top:-8px;
+		@media (max-width: 767px){
+			top:0;
+		}
+	}
+}
+
+//=================================================
+//        SUBJECT LIST
+//=================================================
+
+.subjects_list{
+	.row{
+		background:#006B70;
+		border-bottom:1px solid #bababa;
+		margin-bottom: 0 !important;
+		padding-top:13px;
+		p,a{
+			color: #fff;
+		}
+		&.pagination{
+			background:#a1c09e;
+			border-radius:0;
+			border:0 ;
+			max-width: 100px;
+			// div:nth-child(1){
+			// 	border-right:1px solid #fff;
+			// }
+			a{
+				cursor: pointer;
+			}
+			.splitter{
+				position: relative;
+				top: -3px;
+				left: 2px;
+				margin-bottom: 0 !important;
+			}
+		}
+	}
+}
 //=================================================
 //        LOGIN
 //=================================================
