@@ -20,7 +20,7 @@
 }
 
 
-input[type='text'],textarea{
+input[type='text'],input[type='password'],textarea{
 	font-family: inherit;
 	font-size: 18px;
 	border: 2px solid #a8d5d7;
@@ -246,4 +246,99 @@ input[type=radio]:checked + label.radio_label:before {
 	transition: all 0.3s ease-out;
 	max-height: 0;
 	overflow: hidden;
+}
+
+//=================================================
+//        REGISTER
+//=================================================
+
+article.register{
+	.row{
+		margin-bottom: 10px;
+		label{
+			margin-top: 8px;
+		}
+		.col-1{
+			text-align: right;
+			@media (max-width: 767px){
+				text-align: center;
+			}
+		}
+		.col-2{
+			text-align: left;
+			@media (max-width: 767px){
+				text-align: center;
+			}
+		}
+	}
+	.dropdown_ui{
+		float: left !important;
+		min-width: 300px !important;
+	}
+
+	input{
+		min-width: 300px !important;
+	}
+}
+//=================================================
+//        LOGIN
+//=================================================
+article.login{
+	.row{
+		margin-bottom: 10px;
+		label{
+			margin-top: 8px;
+		}
+		.col-1{
+			text-align: right;
+			@media (max-width: 767px){
+				text-align: center;
+			}
+		}
+		.col-2{
+			text-align: left;
+			@media (max-width: 767px){
+				text-align: center;
+			}
+		}
+	}
+	a{
+		text-decoration: underline;
+		font-weight: bold;
+	}
+
+	input{
+		min-width: 300px !important;
+	}
+}
+
+//=================================================
+//        FOOTER
+//=================================================
+
+footer{
+	color:#fff;
+	.light_green{
+		background:#a1c09e;
+		height: 10px;
+		div{
+			@media (max-width: 767px){
+				text-align: center !important;
+			}
+		}
+	}
+	.green{
+		background:#006b70;
+		p{
+			padding:20px 10px 10px;
+			@media (max-width: 767px){
+				padding: 10px 10px 0px;
+			}
+		}
+		div{
+			@media (max-width: 767px){
+				text-align: center !important;
+			}
+		}
+	}
 }
