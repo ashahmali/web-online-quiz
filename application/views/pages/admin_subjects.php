@@ -11,30 +11,32 @@
 <div class="subjects_list row">
 	<div class="col-lg-4 col-md-4 col-sm-3 col-xs-2">
 	</div>
-	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-8">
+	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-8 ">
 		<!-- list starts -->
-		<div class="row subject">
-			<div class=" col-sm-8 col-xs-9">
-				<p>Web Development</p>
+		<div class="subjects_list_content">
+			<div class="row subject">
+				<div class=" col-sm-8 col-xs-9">
+					<p class="name">Web Development</p>
+				</div>
+				<div class="col-sm-4 col-xs-3">
+					<a href="#" data-value="1" class="edit_subject" alt="edit subject" title="edit subject"><i class="fa fa-pencil-square-o"></i></a>
+				</div>
 			</div>
-			<div class="col-sm-4 col-xs-3">
-				<a href="#" alt="edit subject" title="edit subject"><i class="fa fa-pencil-square-o"></i></a>
+			<div class="row subject">
+				<div class=" col-sm-8 col-xs-9">
+					<p>Web Development</p>
+				</div>
+				<div class="col-sm-4 col-xs-3">
+					<a href="#" alt="edit subject" title="edit subject"><i class="fa fa-pencil-square-o"></i></a>
+				</div>
 			</div>
-		</div>
-		<div class="row subject">
-			<div class=" col-sm-8 col-xs-9">
-				<p>Web Development</p>
-			</div>
-			<div class="col-sm-4 col-xs-3">
-				<a><i class="fa fa-pencil-square-o"></i></a>
-			</div>
-		</div>
-		<div class="row subject">
-			<div class=" col-sm-8 col-xs-9">
-				<p>Web Development</p>
-			</div>
-			<div class="col-sm-4 col-xs-3">
-				<a><i class="fa fa-pencil-square-o"></i></a>
+			<div class="row subject">
+				<div class=" col-sm-8 col-xs-9">
+					<p>Web Development</p>
+				</div>
+				<div class="col-sm-4 col-xs-3">
+					<a href="#" alt="edit subject" title="edit subject"><i class="fa fa-pencil-square-o"></i></a>
+				</div>
 			</div>
 		</div>
 		<!-- list finishes-->
