@@ -13,7 +13,7 @@
 <div id="<?php echo $id; ?>" class="dropdown_ui wrapper-dropdown-5" tabindex="1">
 	<span><?php echo $default; ?></span>
 	<ul class="dropdown">
-		<?php foreach ($options as $text => $value) {
+		<?php foreach ($options as $value => $text) {
 			echo '<li><a href="#" data-value="'.$value.'">'.$text.'</a></li>';
 		} ?>
 	</ul>
