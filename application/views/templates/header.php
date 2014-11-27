@@ -1,4 +1,13 @@
-
+<?php
+/**
+ * Quiz System Header
+ *
+ * @param       $showMenu If the menu will be displayed
+ * @author 		Ashiru Ali & Eduardo Hernandez
+ * @package 	Web Development/Cousework
+ * @version     1.0.0
+ */
+?>
 <html class="no-js" lang="en">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -20,6 +29,7 @@
 		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/style_dropdown.css">
 		<script src="<?php echo base_url();?>assets/js/jquery-2.1.1.min.js" type="text/javascript"></script>
 		<script src="<?php echo base_url();?>assets/js/jquery.fs.shifter.js"></script>
+		<script src="<?php echo base_url();?>assets/js/controls.js"></script>
 
 		<style>
 			/*.shifter .shifter-handle { float: right; margin: -5px 0 0; }*/
@@ -44,15 +54,19 @@
 		
 	</head>
 	<body class="gridlock demo shifter">
-			<header id="header">
+		<header id="header">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-sm-12">
-					<a href="" class="page-name">Testing System</a>
-					<span class="shifter-handle"><i class="fa fa-bars"></i></span>
+					<a href="" class="page-name">Quiz System</a>
+					<?php if(!isset($showMenu)){
+							$showMenu = true;
+					}?>
+					<?php if($showMenu){ ?>
+						<span class="shifter-handle"><i class="fa fa-bars"></i></span>
+					<?php } ?>	
 				</div>
 			</div>
 		</header>
-		  <div class="shifter-page">
-			<div class="conatiner">
-
+		<div class="shifter-page">
+			<div class="container">
 	
