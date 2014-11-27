@@ -17,9 +17,10 @@ DropDown.prototype = {
 
 		obj.opts.on('click',function(){
 			var opt = $(this);
-			obj.val = opt.text();
+			obj.val = opt.children('a').attr('data-value');
 			obj.index = opt.index();
-			obj.placeholder.text(obj.val);
+			obj.placeholder.text(opt.text());
+			obj.dd.find('input[type="hidden"]').val(obj.val);
 		});
 	},
 	getValue : function() {
