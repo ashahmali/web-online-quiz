@@ -11,5 +11,5 @@
 <article class="row page admin">
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		<header class="header">
-			<h1>Subjects Management</h1>
+			<h1><?php echo $heading;?></h1>
 		</header>

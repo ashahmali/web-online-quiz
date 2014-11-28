@@ -12,6 +12,7 @@ class Subject extends CI_Controller {
 		if ($this->form_validation->run() == FALSE)
 		{
 			$this->load->view('templates/header', $data);
+			$data['heading'] = 'Subjects Management';
 			$this->load->view('pages/admin_start', $data);
 			$this->load->view('pages/admin_subject_new', $data);
 			$this->load->view('pages/admin_subjects', $data);
