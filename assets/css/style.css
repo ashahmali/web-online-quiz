@@ -17,7 +17,7 @@ body, html {
   color: #006b70;
   font-size: 18px; }
 
-input[type='text'], input[type='password'], textarea {
+input[type='text'], input[type='password'], textarea, select {
   font-family: inherit;
   font-size: 18px;
   border: 2px solid #a8d5d7;
@@ -25,6 +25,12 @@ input[type='text'], input[type='password'], textarea {
   color: #006b70;
   font-weight: normal;
   background: #FFF; }
+
+select {
+  border-radius: 0px;
+  -webkit-appearance: none;
+  padding-right: 35px;
+  background: transparent url("../img/select.gif") no-repeat 95% 50%; }
 
 textarea {
   height: 120px; }
