@@ -40,6 +40,7 @@
 
 
 $route['default_controller'] = "welcome";
+//$route['subject'] = 'admin_subject';
 $route['404_override'] = '';
 
 

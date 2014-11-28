@@ -1,7 +1,7 @@
 <?php
 
 class Users extends CI_Controller {
-	
+
 	public function __construct(){
 		parent::__construct();
 		$this->load->model('users_model');
@@ -103,6 +103,10 @@ class Users extends CI_Controller {
 		// check if the user exists
 		
 		// log the user in
+	}
+
+	public function all(){
+		$this->load->view('pages/admin_users');
 	}
 	
 	
