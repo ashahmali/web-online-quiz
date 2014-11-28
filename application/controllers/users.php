@@ -6,11 +6,14 @@ class Users extends CI_Controller {
 		parent::__construct();
 		$this->load->model('users_model');
 		$this->load->library('form_validation');
+		$this->load->library('encrypt');
 	}
 	
 	public function register(){
 		$reg_errors =array(); //intializes an array for possible errors
 		$data['title'] = ucfirst('register'); // Capitalize the first letter
+		$id = 0;
+		
 		
 		/**
 		 * Validating user input
@@ -34,12 +37,14 @@ class Users extends CI_Controller {
 				$user_detail = array(
 					'sFirstName' => $this->input->post('first_name'),
 					'sSurname' => $this->input->post('family_name'),
-					'sPassword' => $this->input->post('password'),
+					'sPassword' => $hash = $this->encrypt->sha1($this->input->post('password')),
 					'sEmail' => $this->input->post('email'),
 					'ROLE_idROLE' => 1,
 				);
 			// grabs the value from the select subject list
 			$user_subject = $this->input->post('dd_register');
+			
+			//print_r($this->users_model->check_duplicate_email($user_detail['sEmail']));
 			
 			/**
 			 * check the database to see if the user already exists
@@ -49,19 +54,22 @@ class Users extends CI_Controller {
 			 }
 			
 			// insert a record into the database.
-			$id = $this->users_model->register_user($user_detail);
+			
+			if(empty($reg_errors)){
+				$id = $this->users_model->register_user($user_detail);
+			}
 			
 			/**
 			 * check if a the record was succesfully insrted and update the subject
 			 */
-			 if ($id){
+			 if (!empty($id) || empty($reg_errors)){
 			 	if($this->users_model->add_user_subject($id, $user_subject)){
 			 		// subject has been updated and now redirect to default page
 			 		$data['title'] = ucfirst('Welcome');
 			 		$this->load->view('templates/header', $data);
 					$this->load->view('pages/def_page', $data);
 					$this->load->view('templates/footer');
-					exit();
+					//exit();
 			 	}else{
 			 		// could not update user subject.
 			 		// delete the inserted record

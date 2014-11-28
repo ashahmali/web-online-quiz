@@ -29,7 +29,7 @@ class Users_model extends CI_Model {
 	}
 	
 	public function check_duplicate_email($email){
-		return ($query = $this->db->get('SUBJECT')) ? TRUE : FALSE;
+		return ($query = $this->db->get_where('USER', array('sEmail' => $email))) ? $query->num_rows() : FALSE;
 	}
 	
 	

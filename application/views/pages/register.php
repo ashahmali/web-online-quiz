@@ -27,7 +27,7 @@
 					<label for="first_name">First Name</label>
 				</div>
 				<div class="col-2 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<input type="text" name="first_name" <?php echo set_value('first_name'); ?> placeholder="Name"/>
+					<input type="text" name="first_name" value="<?php echo set_value('first_name'); ?>" placeholder="Name"/>
 				</div>
 			</div>
 			<div class="row" style="margin-bottom:10px;">
@@ -35,7 +35,7 @@
 					<label for="family_name">Family Name</label>
 				</div>
 				<div class="col-2 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<input type="text" name="family_name" <?php echo set_value('family_name'); ?> placeholder="Family Name"/>
+					<input type="text" name="family_name" value="<?php echo set_value('family_name'); ?>" placeholder="Family Name"/>
 				</div>
 			</div>
 			<div class="row" >
@@ -43,7 +43,7 @@
 					<label for="email">Email</label>
 				</div>
 				<div class="col-2 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<input type="text" name="email" <?php echo set_value('email'); ?> placeholder="Email"/>
+					<input type="text" name="email" value="<?php echo set_value('email'); ?>" placeholder="Email"/>
 				</div>
 			</div>
 			<div class="row" style="margin-bottom:10px;">
