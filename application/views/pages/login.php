@@ -10,15 +10,17 @@
 <article class="row page login">
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		<header class="header">
-			<h1>Wellcome</h1>
+			<h1>Welcome</h1>
+			<?php echo validation_errors(); ?>
+			<?php echo ($login_errors) ? $login_errors : ""; ?>
 		</header>
-		<form >
+		<?php echo form_open('users/login') ?>
 			<div class="row" >
 				<div class="col-1 col-lg-5 col-md-5 col-sm-5 col-xs-12">
 					<label for="email">Email</label>
 				</div>
 				<div class="col-2 col-lg-7 col-md-7 col-sm-7 col-xs-12">
-					<input type="text" name="email" placeholder="Email"/>
+					<input type="text" name="email" value="<?php echo set_value('email') ?>" placeholder="Email"/>
 				</div>
 			</div>
 			<div class="row">
@@ -26,7 +28,7 @@
 					<label for="password">Password</label>
 				</div>
 				<div class="col-2 col-lg-7 col-md-7 col-sm-7 col-xs-12">
-					<input type="password" name="password" placeholder=""/>
+					<input type="password" name="password" placeholder="Password"/>
 				</div>
 			</div>
 			<div class="row">

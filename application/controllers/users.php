@@ -101,16 +101,47 @@ class Users extends CI_Controller {
 		
 	}
 	
-	public function login($user){
-		// collect usr data
+	public function login(){
+		$this->load->helper('user_helper');
+		// setting the page title here
+		$data['title'] = ucfirst("User Login");
+		$person = array();
+		$data['login_errors'] = "";
 		
-		// check for null character
 		
-		// load helper file
+		if($_POST){
+			// collect usr data
+			$this->form_validation->set_rules('email', 'Email', 'trim|required|xss_clean');
+			$this->form_validation->set_rules('password', 'Password', 'required');
+			
+			// check for null character
+			if($this->form_validation->run() == TRUE){
+				$person['sEmail'] = $this->input->post('email');
+				$person['sPassword'] = $hash = $this->encrypt->sha1($this->input->post('password'));
+				
+				// check if the user exists
+				$user_data = ($this->users_model->find_user($person)) ? $this->users_model->find_user($person) : FALSE;
+				
+				if($user_data){
+					//print_r($user_data);
+					// load helper file to log the user in
+					$this->session->set_userdata($user_data);
+					redirect('users/def_page');
+				}else{
+					$data['login_errors'] = "Wrong Email/Password Combination";
+				}
+			}
+		}
 		
-		// check if the user exists
-		
-		// log the user in
+		$this->load->view('templates/header', $data);
+		$this->load->view('pages/login', $data);
+		$this->load->view('templates/footer');
+	}
+	
+	public function def_page(){
+		$this->load->view('templates/header', $data);
+		echo "you are";
+		$this->load->view('templates/footer');
 	}
 
 	public function all(){

@@ -34,10 +34,16 @@ class Users_model extends CI_Model {
 	
 	
 	
-	public function user_exist($user){
-		// select from data user
+	public function find_user($person){
+		// A query to select user and their subject.
+		$query = "select USER.*, SUBJECT.* from USER inner join USER_has_SUBJECT ON USER.idUSER = USER_has_SUBJECT.USER_idUser inner join SUBJECT on USER_has_SUBJECT.SUBJECT_idSUBJECT = SUBJECT.idSubject where USER.sEmail = '".$person['sEmail'];
+		$query .=  "' AND USER.sPassword ='".$person['sPassword']."';";
 		
-		// return whether the user exist
+		$logged_in_user = $this->db->query($query);
+		
+		// return user data or false if not exist
+		return ($logged_in_user->num_rows() > 0) ? $logged_in_user->row_array() : FALSE;
+		
 	}
 	
 }
