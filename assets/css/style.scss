@@ -311,6 +311,24 @@ form.subject_new{
 
 
 //=================================================
+//        user details
+//=================================================
+
+.testtaker_detail{
+	.subject_container{
+		@media (max-width: 767px){
+			text-align: center !important;
+		}
+		.name{
+			font-weight: bold;
+			text-decoration: underline;
+		}
+	}
+}
+
+
+
+//=================================================
 //        TABLE
 //=================================================
 
@@ -328,6 +346,10 @@ form.subject_new{
 			white-space: nowrap;
 			text-overflow: ellipsis;
 			overflow: hidden;
+			@media (max-width: 767px){
+				font-size: 14px;
+				font-weight: bold;
+			}
 		}
 		a{
 			cursor: pointer;
@@ -362,6 +384,10 @@ form.subject_new{
 			white-space: nowrap;
 			text-overflow: ellipsis;
 			overflow: hidden;
+			@media (max-width: 767px){
+				font-size: 12px;
+				font-weight: bold;
+			}
 		}
 		a{
 			text-decoration: underline;

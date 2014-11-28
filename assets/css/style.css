@@ -249,6 +249,13 @@ form.subject_new button {
     form.subject_new button {
       top: 0; } }
 
+@media (max-width: 767px) {
+  .testtaker_detail .subject_container {
+    text-align: center !important; } }
+.testtaker_detail .subject_container .name {
+  font-weight: bold;
+  text-decoration: underline; }
+
 .table .header {
   padding-top: 13px;
   background-color: #01575b;
@@ -262,6 +269,10 @@ form.subject_new button {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden; }
+    @media (max-width: 767px) {
+      .table .header p, .table .header a {
+        font-size: 14px;
+        font-weight: bold; } }
   .table .header a {
     cursor: pointer; }
     .table .header a:after {
@@ -289,6 +300,10 @@ form.subject_new button {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden; }
+    @media (max-width: 767px) {
+      .table .table_row p, .table .table_row a {
+        font-size: 12px;
+        font-weight: bold; } }
   .table .table_row a {
     text-decoration: underline; }
 .table + .pagination {
