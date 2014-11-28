@@ -2,7 +2,7 @@
 /**
  * Admin - Header Template
  *
- * @param       
+ * @param       $heading, text for heading 
  * @author 		Ashiru Ali & Eduardo Hernandez
  * @package 	Web Development/Cousework
  * @version     1.0.0
