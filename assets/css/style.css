@@ -249,29 +249,69 @@ form.subject_new button {
     form.subject_new button {
       top: 0; } }
 
-.subjects_list .row {
+.table .header {
+  padding-top: 13px;
+  background-color: #01575b;
+  color: #fff;
+  font-weight: bolder;
+  border-bottom: 3px solid #bababa; }
+  .table .header p, .table .header a {
+    text-transform: uppercase;
+    color: inherit;
+    font-weight: inherit;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; }
+  .table .header a {
+    cursor: pointer; }
+    .table .header a:after {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 50%;
+      margin-left: 5px;
+      margin-top: -5px;
+      border-width: 5px 5px 0px 5px;
+      border-style: solid;
+      border-color: #fff transparent; }
+    .table .header a.order_asc:after {
+      border-width: 0px 5px 5px 5px;
+      border-style: solid;
+      border-color: #fff transparent; }
+.table .table_row {
   background: #006B70;
   border-bottom: 1px solid #bababa;
   margin-bottom: 0 !important;
   padding-top: 13px; }
-  .subjects_list .row p, .subjects_list .row a {
+  .table .table_row p, .table .table_row a {
+    color: #fff;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; }
+  .table .table_row a {
+    text-decoration: underline; }
+.table + .pagination {
+  margin-top: 0 !important;
+  color: #fff;
+  padding-top: 13px;
+  background: #a1c09e;
+  border-radius: 0;
+  border: 0;
+  max-width: 100px; }
+  .table + .pagination a {
+    cursor: pointer;
     color: #fff; }
-  .subjects_list .row .subject a {
-    display: block;
-    width: 100%;
-    height: inherit; }
-  .subjects_list .row.pagination {
-    background: #a1c09e;
-    border-radius: 0;
-    border: 0;
-    max-width: 100px; }
-    .subjects_list .row.pagination a {
-      cursor: pointer; }
-    .subjects_list .row.pagination .splitter {
-      position: relative;
-      top: -3px;
-      left: 2px;
-      margin-bottom: 0 !important; }
+  .table + .pagination .splitter {
+    position: relative;
+    top: -3px;
+    left: 2px;
+    margin-bottom: 0 !important; }
+
+.subjects_list .subject a {
+  display: block;
+  width: 100%;
+  height: inherit; }
 
 article.login .row {
   margin-bottom: 10px; }

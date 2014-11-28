@@ -309,19 +309,101 @@ form.subject_new{
 	}
 }
 
+
 //=================================================
-//        SUBJECT LIST
+//        TABLE
 //=================================================
 
-.subjects_list{
-	.row{
+.table{
+	.header{
+		padding-top:13px;
+		background-color:#01575b;
+		color: #fff;
+		font-weight: bolder;
+		border-bottom:3px solid #bababa;
+		p,a{
+			text-transform: uppercase;
+			color: inherit;
+			font-weight: inherit;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+		a{
+			cursor: pointer;
+			&:after{
+			    content: "";
+				width: 0;
+				height: 0;
+				position: absolute;
+				top: 50%;
+				margin-left: 5px;
+				margin-top: -5px;
+				border-width: 5px 5px 0px 5px;
+				border-style: solid;
+				border-color: #fff transparent;   
+			}
+			&.order_asc:after{
+				border-width: 0px 5px 5px 5px;
+				border-style: solid;
+				border-color: #fff transparent;   
+			}
+
+		}
+
+	}
+	.table_row{
 		background:#006B70;
 		border-bottom:1px solid #bababa;
 		margin-bottom: 0 !important;
 		padding-top:13px;
 		p,a{
 			color: #fff;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
 		}
+		a{
+			text-decoration: underline;
+		}
+	}
+	& + .pagination{
+		margin-top: 0 !important;
+		color: #fff;
+		padding-top:13px;
+		background:#a1c09e;
+		border-radius:0;
+		border:0 ;
+		max-width: 100px;
+		// div:nth-child(1){
+		// 	border-right:1px solid #fff;
+		// }
+		a{
+			cursor: pointer;
+			color: #fff;
+		}
+		.splitter{
+			position: relative;
+			top: -3px;
+			left: 2px;
+			margin-bottom: 0 !important;
+		}
+	}
+}
+
+//=================================================
+//        SUBJECT LIST
+//=================================================
+
+.subjects_list{
+	// .row{
+	// 	background:#006B70;
+	// 	border-bottom:1px solid #bababa;
+	// 	margin-bottom: 0 !important;
+	// 	padding-top:13px;
+	// 	p,a{
+	// 		color: #fff;
+	// 	}
 		.subject{
 			a{
 				display: block;
@@ -329,25 +411,25 @@ form.subject_new{
 				height: inherit;
 			}
 		}
-		&.pagination{
-			background:#a1c09e;
-			border-radius:0;
-			border:0 ;
-			max-width: 100px;
-			// div:nth-child(1){
-			// 	border-right:1px solid #fff;
-			// }
-			a{
-				cursor: pointer;
-			}
-			.splitter{
-				position: relative;
-				top: -3px;
-				left: 2px;
-				margin-bottom: 0 !important;
-			}
-		}
-	}
+		// &.pagination{
+		// 	background:#a1c09e;
+		// 	border-radius:0;
+		// 	border:0 ;
+		// 	max-width: 100px;
+		// 	// div:nth-child(1){
+		// 	// 	border-right:1px solid #fff;
+		// 	// }
+		// 	a{
+		// 		cursor: pointer;
+		// 	}
+		// 	.splitter{
+		// 		position: relative;
+		// 		top: -3px;
+		// 		left: 2px;
+		// 		margin-bottom: 0 !important;
+		// 	}
+		// }
+	//}
 }
 //=================================================
 //        LOGIN
