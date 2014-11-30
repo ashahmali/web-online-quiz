@@ -47,4 +47,114 @@ $(document).ready(function(){
 			alert("Name is required");
 		}
 	});
+
+	
+
+	/////////////////////////////////////////////
+	//				QUESTIONS UI
+	/////////////////////////////////////////////
+
+	//add question button
+	$("#add_question").click(function(){
+		var alterText = $(this).data("alter");
+		var newalter = $(this).text();
+		if($('.new_question_container').is(':visible')){
+			//show interface
+			$('.new_question_container').slideUp('fast');
+			$(this).removeClass('cancel');
+		}else{
+			$('.new_question_container').slideDown('fast');	
+			$(this).addClass('cancel');
+		}
+		$(this).text(alterText);
+		$(this).data('alter',newalter);
+	});
+
+	//Add answer button
+	$(".add_answer").click(function() {
+		var btn = this;
+		if($(".answers_container .new_answer").length > 0){
+			$(this).hide();
+		}else{
+			//insert new answer UI
+			var count = $(".answers_container").data("count");
+			$.ajax({   
+                url: "new_aswer", 
+                async: false,
+                type: "POST", 
+                dataType: "html",
+                data: {
+                	counter:count
+                },
+                success: function(data) {
+                    //data is the html of the page where the request is made.
+                    $('.answers_container').append(data);
+                    
+                    $(btn).hide();
+                }
+            });
+            
+		}
+	});
+
+	//delete answer button
+	$(document).on("click",".answer .delete",function(){
+		$(this).parents(".answer").remove();
+		var count = $(".answers_container").data("count");
+		var countInt = parseInt(count) - 1 ;
+		$(".answers_container").data("count",countInt);
+	});
+
+	//delete new answer button
+	$(document).on("click",".new_answer .delete",function(){
+		$(this).parents(".new_answer").remove();
+		$(".add_answer").show();
+	});
+
+	//ok new answer button
+	$(document).on("click",".new_answer .btn_online.ok",function(){
+		var parent = $(this).parents(".new_answer");
+		var obj = this;
+		if($(parent).length > 0){
+			var clone = $(parent).clone();
+			var input = $(parent).find('textarea')
+			var value = $(input).val();
+			
+			//modify clone
+			$(clone).removeClass('new_answer');
+			$(clone).addClass('answer');
+			$(clone).find('label').text(value).show();
+			$(clone).find('button.ok').remove();
+			$(clone).find('textarea').remove();
+			$(clone).find('input[type="radio"]').val(value);
+
+			//insert clone
+			var count = $(".answers_container").data("count");
+			var countInt = parseInt(count) + 1;
+			$(".answers_container").append(clone);
+			$(".answers_container").data("count",countInt);
+
+			//remove original
+			$(parent).remove();
+
+			//show add answer button
+			$(".add_answer").show();
+		}
+	});
+
+	//Possible answer selected
+	$(document).on("change",".answer .radio input[type='radio']",function(){
+		var container = $(this).parents(".radio");
+		var message = $(".answers_container").first().data("answertext");
+		if($(container).length > 0 ){
+			clenRadioOptions();
+			$(container).append("<span class='message'>"+message+"</span>")
+		}
+	});
+
+	//Remove message for radios wich are not selected
+	function clenRadioOptions(){
+		$(".answer .radio span.message").remove();
+	}
+
 });
