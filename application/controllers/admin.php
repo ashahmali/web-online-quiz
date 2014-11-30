@@ -62,4 +62,16 @@ class Admin extends CI_Controller {
         } 
        
 	}
+
+	public function quizzes(){
+		$data['heading'] = 'Quizzes';
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/modal', $data);
+		
+		$this->load->view('pages/admin_start', $data);
+		$this->load->view('pages/admin_quizzes', $data);
+		$this->load->view('pages/admin_quiz_new', $data);
+		$this->load->view('pages/admin_finish', $data);
+		$this->load->view('templates/footer', $data);
+	}
 }
