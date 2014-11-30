@@ -126,7 +126,11 @@ class Users extends CI_Controller {
 					//print_r($user_data);
 					// load helper file to log the user in
 					$this->session->set_userdata($user_data);
-					redirect('users/def_page');
+					if ($this->session->userdata('ROLE_idROLE') == 1){
+						redirect('users/def_page');
+					}else{
+						redirect('users/detail');
+					}
 				}else{
 					$data['login_errors'] = "Wrong Email/Password Combination";
 				}
@@ -139,7 +143,9 @@ class Users extends CI_Controller {
 	}
 	
 	public function def_page(){
+		$data['title'] = "User Page";
 		$this->load->view('templates/header', $data);
+		print_r($this->session->all_userdata());
 		echo "you are";
 		$this->load->view('templates/footer');
 	}
