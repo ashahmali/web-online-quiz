@@ -17,7 +17,7 @@ body, html {
   color: #006b70;
   font-size: 18px; }
 
-input[type='text'], input[type='password'], textarea, select {
+input[type='text'], input[type='password'], textarea, select, input[type='number'] {
   font-family: inherit;
   font-size: 18px;
   border: 2px solid #a8d5d7;
@@ -401,5 +401,11 @@ input[type=radio]:checked + label.radio_label:before {
 
 .btn_online {
   display: inline-block; }
+
+.new_quiz_container .row {
+  margin-bottom: 10px; }
+  @media (max-width: 767px) {
+    .new_quiz_container .row div {
+      text-align: center !important; } }
 
 /*# sourceMappingURL=style.css.map */

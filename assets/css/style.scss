@@ -24,7 +24,7 @@ $lightControlColor : #a1c09e;
 }
 
 
-input[type='text'],input[type='password'],textarea,select{
+input[type='text'],input[type='password'],textarea,select,input[type='number']{
 	font-family: inherit;
 	font-size: 18px;
 	border: 2px solid #a8d5d7;
@@ -579,4 +579,17 @@ input[type=radio]:checked + label.radio_label:before {
 }
 
 
+//=================================================
+//        Admin  - Quizzes
+//=================================================
 
+.new_quiz_container{
+	.row{
+		margin-bottom:10px;
+		div{
+			@media (max-width: 767px){
+				text-align: center !important;
+			}
+		}
+	}
+}
