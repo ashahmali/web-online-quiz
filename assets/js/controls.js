@@ -157,4 +157,27 @@ $(document).ready(function(){
 		$(".answer .radio span.message").remove();
 	}
 
+	/////////////////////////////////////////////
+	//				QUIZ UI
+	/////////////////////////////////////////////
+
+	//add question button
+	$("#add_quiz").click(function(){
+		var alterText = $(this).data("alter");
+		var newalter = $(this).text();
+		if($('.new_quiz_container').is(':visible')){
+			//show interface
+			$('.new_quiz_container').slideUp('fast');
+			$(this).removeClass('cancel');
+		}else{
+			$('.new_quiz_container').slideDown('fast');	
+			$(this).addClass('cancel');
+		}
+		$(this).text(alterText);
+		$(this).data('alter',newalter);
+	});
+
+	$('.quiz_details').click(function(){
+		$('#modal_global').modal('show');
+	});
 });
