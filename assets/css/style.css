@@ -367,4 +367,39 @@ footer {
       footer .green div {
         text-align: center !important; } }
 
+.dd_subject_questions {
+  margin-bottom: 10px; }
+
+#add_question.cancel {
+  background: #ff9999; }
+
+.question_new textarea {
+  width: 100%; }
+.question_new h3 {
+  display: inline-block; }
+.question_new button.delete {
+  background: #ff9999;
+  padding: 2px 5px 0 !important;
+  margin: 0 !important;
+  height: 25px;
+  width: 25px; }
+.question_new .message {
+  margin-left: 5px;
+  font-style: italic; }
+
+.answers_container .new_answer .radio_label {
+  top: -12px; }
+.answers_container .new_answer input {
+  left: -20px;
+  position: relative; }
+
+input[type=radio]:checked + label.radio_label {
+  text-decoration: underline; }
+
+input[type=radio]:checked + label.radio_label:before {
+  text-decoration: none !important; }
+
+.btn_online {
+  display: inline-block; }
+
 /*# sourceMappingURL=style.css.map */
