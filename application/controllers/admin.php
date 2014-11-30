@@ -41,4 +41,25 @@ class Admin extends CI_Controller {
 		}
 
 	}
+
+	public function questions(){
+		$data['heading'] = 'Questions Management';
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/modal', $data);
+		
+		$this->load->view('pages/admin_start', $data);
+		$this->load->view('pages/admin_questions', $data);
+		$this->load->view('pages/admin_question_new', $data);
+		$this->load->view('pages/admin_finish', $data);
+		$this->load->view('templates/footer', $data);
+	}
+
+	public function new_aswer(){
+		if (isset($_POST) && isset($_POST['counter'])) {
+            $counter = $_POST['counter'];
+            $data['counter'] = $counter;
+			$this->load->view('pages/admin_question_new_simple',$data);
+        } 
+       
+	}
 }
