@@ -30,6 +30,7 @@
 		<script src="<?php echo base_url();?>assets/js/jquery-2.1.1.min.js" type="text/javascript"></script>
 		<script src="<?php echo base_url();?>assets/js/jquery.fs.shifter.js"></script>
 		<script src="<?php echo base_url();?>assets/js/controls.js"></script>
+		<script src="<?php echo base_url();?>assets/js/bootstrap.min.js" type="text/javascript"></script>
 
 		<style>
 			/*.shifter .shifter-handle { float: right; margin: -5px 0 0; }*/
@@ -67,6 +68,23 @@
 				</div>
 			</div>
 		</header>
+		<div class="modal fade" id="modal_global">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+		        <h4 class="modal-title">Modal title</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>One fine body&hellip;</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
 		<div class="shifter-page">
 			<div class="container">
 	
