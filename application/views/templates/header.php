@@ -31,6 +31,7 @@
 		<script src="<?php echo base_url();?>assets/js/jquery.fs.shifter.js"></script>
 		<script src="<?php echo base_url();?>assets/js/controls.js"></script>
 		<script src="<?php echo base_url();?>assets/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="<?php echo base_url();?>assets/js/iosslider.min.js" type="text/javascript"></script>
 
 		<style>
 			/*.shifter .shifter-handle { float: right; margin: -5px 0 0; }*/
@@ -51,7 +52,7 @@
 		<!--[if lt IE 9]>
 		  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<title><?php echo $title ?> - Quiz System</title>
+		<title><?php //echo $title; ?>Quiz System</title>
 		
 	</head>
 	<body class="gridlock demo shifter">
@@ -67,24 +68,46 @@
 					<?php } ?>	
 				</div>
 			</div>
+
 		</header>
 		<div class="modal fade" id="modal_global">
 		  <div class="modal-dialog">
 		    <div class="modal-content">
 		      <div class="modal-header">
 		        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-		        <h4 class="modal-title">Modal title</h4>
+		        <h4 class="modal-title"></h4>
 		      </div>
 		      <div class="modal-body">
-		        <p>One fine body&hellip;</p>
+		        <p></p>
 		      </div>
 		      <div class="modal-footer">
 		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		        <button type="button" class="btn btn-primary">Save changes</button>
+		        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
 		      </div>
 		    </div><!-- /.modal-content -->
 		  </div><!-- /.modal-dialog -->
 		</div><!-- /.modal -->
+		<?php if(isset($showQuizNav) && $showQuizNav){ ?>
+		<div class="container fixed-quiz-elements">
+			<div class="row">
+				<div class="col-sm-2 col-xs-4 text-right timer_container">
+					<p><span class="timer hidden-xs">TIMER</span> <span class="timer"></span></p>
+				</div>
+				<div class="col-sm-10 col-xs-8 text-right quick_nav">
+					<nav class = 'iosslider'>
+						<ul class = 'slider'>
+							<li class = 'slide'><a href="#question_1">1</a></li>
+							<li class = 'slide'><a href="#question_2">2</a></li>
+							<li class = 'slide'><a href="#question_3">3</a></li>
+							<li class = 'slide'><a href="#question_4">4</a></li>
+							<li class = 'slide'><a href="#question_5">5</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<?php } ?>
 		<div class="shifter-page">
 			<div class="container">
+
 	

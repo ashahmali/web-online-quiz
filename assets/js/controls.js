@@ -143,13 +143,34 @@ $(document).ready(function(){
 	});
 
 	//Possible answer selected
-	$(document).on("change",".answer .radio input[type='radio']",function(){
+	$(document).on("change",".question_new .answer .radio input[type='radio']",function(){
 		var container = $(this).parents(".radio");
 		var message = $(".answers_container").first().data("answertext");
 		if($(container).length > 0 ){
 			clenRadioOptions();
 			$(container).append("<span class='message'>"+message+"</span>")
 		}
+	});
+
+	$(document).on("click",".question_detail",function(){
+		var questionid = $(this).data('questionid');
+		var modaltitle = $(this).data('modaltitle');
+		$.ajax({
+			url: "question_detail", 
+                async: false,
+                type: "POST", 
+                dataType: "html",
+                data: {
+                	id:questionid
+            	},
+            success: function(data) {
+                //data is the html of the page where the request is made.
+                $('#modal_global .modal-body').html(data);
+                $('#modal_global .modal-title').text(modaltitle);
+                $('#modal_global').modal('show'); 
+            }
+		});
+		
 	});
 
 	//Remove message for radios wich are not selected
@@ -178,6 +199,91 @@ $(document).ready(function(){
 	});
 
 	$('.quiz_details').click(function(){
-		$('#modal_global').modal('show');
+		var questionid = $(this).data('quizid');
+		var modaltitle = $(this).data('modaltitle');
+		$.ajax({
+			url: "quiz_detail", 
+                async: false,
+                type: "POST", 
+                dataType: "html",
+                data: {
+                	id:questionid
+            	},
+            success: function(data) {
+                //data is the html of the page where the request is made.
+                $('#modal_global .modal-body').html(data);
+                $('#modal_global .modal-title').text(modaltitle);
+                $('#modal_global').modal('show'); 
+            }
+		});
 	});
+
+	jQuery('iosslider').iosSlider({
+		snapToChildren: true,
+		desktopClickDrag: true,
+		scrollbar: false,
+		scrollbarHide: false,
+		scrollbarLocation: 'top',
+		scrollbarHeight: '2px',
+		scrollbarBackground: '#bcbcbc',
+		scrollbarBorder: '0',
+		scrollbarMargin: '0',
+		scrollbarOpacity: '0.7',
+		navNextSelector: jQuery('.carrousel_control .after.handler'),
+		navPrevSelector: jQuery('.carrousel_control .before.handler') ,
+		onSliderLoaded: updateCategorySliderHeight,
+		onSlideChange: categoryChange
+	});
+
+	function updateCategorySliderHeight(args) {
+		var t = 0; // height of the highest element
+		var t_elem; // the highest element (after the function runs)
+
+		jQuery('#category_carrousel').each(function(){
+			$this = jQuery(this);
+			if ( $this.outerHeight() > t ) {
+				t_elem = this;
+				t = $this.outerHeight();
+			}
+		});
+
+		setTimeout(function() {
+			jQuery('#category_carrousel').css({
+				height: t+30,
+				visibility: "visible"
+			});
+		},300);
+	}
+
+	function categoryChange(args){
+		//if it is the first
+		if(args.currentSlideNumber == 1){
+			//disable handler
+			jQuery('.carrousel_control .before.handler').css('opacity','0.2');
+			jQuery('.carrousel_control .before.handler').css('cursor','normal');
+
+		}else{
+			//enable handler
+			jQuery('.carrousel_control .before.handler').css('opacity','1');
+			jQuery('.carrousel_control .before.handler').css('cursor','pointer');
+		}
+
+		//if it is the last
+		var offsetsCount = args.data.childrenOffsets.length;
+		if(args.currentSliderOffset >= (args.data.childrenOffsets[offsetsCount-2]) * -1 ){
+			//disable handler
+			jQuery('.carrousel_control .after.handler').css('opacity','0.2');
+			jQuery('.carrousel_control .after.handler').css('cursor','normal');
+		}else{
+			//enable handler
+			jQuery('.carrousel_control .after.handler').css('opacity','1');
+			jQuery('.carrousel_control .after.handler').css('cursor','pointer');
+
+		}
+	}
+	$(document).on("click",'.slider .slide a',function(){
+		var link =  $(this).attr('href');
+		$("html, body").animate({ scrollTop: $(link).offset().top - 80 }, 1000);
+	});
+	
 });
