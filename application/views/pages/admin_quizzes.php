@@ -49,7 +49,7 @@
 					<p >20</p>
 				</div>
 				<div class="col-sm-2 col-xs-3">
-					<a href="#" class="quiz_details">Details</a>
+					<a href="#" class="quiz_details" data-quizid="1" data-modaltitle="Quiz Detail">Details</a>
 				</div>
 			</div>
 			<div class="row table_row">
@@ -63,7 +63,7 @@
 					<p >20</p>
 				</div>
 				<div class="col-sm-2 col-xs-3">
-					<a href="#" class="quiz_details">Details</a>
+					<a href="#" class="quiz_details" data-quizid="2" data-modaltitle="Quiz Detail">Details</a>
 				</div>
 			</div>
 		</div>

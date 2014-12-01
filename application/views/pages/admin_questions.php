@@ -37,7 +37,7 @@
 					<p class="name">This is a queston test, bla bla bla bla</p>
 				</div>
 				<div class="col-sm-2 col-xs-3">
-					<a href="#" alt="View Details" title="View Details" data-toggle="modal" data-target="#myModal">Details</a>
+					<a href="#" data-questionid="1" data-modaltitle="Question Detail" alt="View Details" title="View Details" class="question_detail">Details</a>
 				</div>
 			</div>
 			<div class="row table_row">
@@ -45,7 +45,7 @@
 					<p class="name">This is a queston test, bla bla bla bla</p>
 				</div>
 				<div class="col-sm-2 col-xs-3">
-					<a href="#" alt="View Details" title="View Details" data-toggle="modal" data-target="#myModal">Details</a>
+					<a href="#" data-questionid="2" data-modaltitle="Question Detail" alt="View Details" title="View Details" class="question_detail">Details</a>
 				</div>
 			</div>
 		</div>

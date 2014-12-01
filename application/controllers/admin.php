@@ -93,4 +93,30 @@ class Admin extends CI_Controller {
 		$this->load->view('pages/admin_finish', $data);
 		$this->load->view('templates/footer', $data);
 	}
+
+	public function question_detail(){
+		if (isset($_POST) && isset($_POST['id'])) {
+            $question_id = $_POST['id'];
+            //We need to get question details here
+
+            //get statement
+
+            //get answers
+
+            $data['question_id'] = $question_id;
+			$this->load->view('pages/admin_question_detail',$data);
+        }
+	}
+
+	public function quiz_detail(){
+		if (isset($_POST) && isset($_POST['id'])) {
+            $quiz_id = $_POST['id'];
+            //We need to get Quiz details here
+
+
+
+            $data['quiz_id'] = $quiz_id;
+			$this->load->view('pages/admin_quiz_detail',$data);
+        }
+	}
 }
