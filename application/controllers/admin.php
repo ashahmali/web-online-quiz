@@ -66,10 +66,10 @@ class Admin extends CI_Controller {
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/modal', $data);
 		
-		$this->load->view('pages/admin_start', $data);
+		//$this->load->view('pages/admin_start', $data);
 		$this->load->view('pages/admin_questions', $data);
 		$this->load->view('pages/admin_question_new', $data);
-		$this->load->view('pages/admin_finish', $data);
+		//$this->load->view('pages/admin_finish', $data);
 		$this->load->view('templates/footer', $data);
 	}
 
@@ -118,5 +118,11 @@ class Admin extends CI_Controller {
             $data['quiz_id'] = $quiz_id;
 			$this->load->view('pages/admin_quiz_detail',$data);
         }
+	}
+
+	public function home(){
+		$this->load->view('templates/header');
+		$this->load->view('pages/admin_home');
+		$this->load->view('templates/footer');
 	}
 }
