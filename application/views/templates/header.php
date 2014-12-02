@@ -31,7 +31,7 @@
 		<script src="<?php echo base_url();?>assets/js/jquery.fs.shifter.js"></script>
 		<script src="<?php echo base_url();?>assets/js/controls.js"></script>
 		<script src="<?php echo base_url();?>assets/js/bootstrap.min.js" type="text/javascript"></script>
-		<script src="<?php echo base_url();?>assets/js/iosslider.min.js" type="text/javascript"></script>
+		<script src="<?php echo base_url();?>assets/js/owl.carousel.min.js" type="text/javascript"></script>
 
 		<style>
 			/*.shifter .shifter-handle { float: right; margin: -5px 0 0; }*/
@@ -41,7 +41,10 @@
 
 		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/style.css" />
-		
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/owl.carousel.css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/owl.theme.css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/owl.transitions.css" />
+
 		<script>
 			$(document).ready(function() {
 				$.shifter({
@@ -90,18 +93,27 @@
 		<?php if(isset($showQuizNav) && $showQuizNav){ ?>
 		<div class="container fixed-quiz-elements">
 			<div class="row">
-				<div class="col-sm-2 col-xs-4 text-right timer_container">
-					<p><span class="timer hidden-xs">TIMER</span> <span class="timer"></span></p>
+				<div class="col-sm-3 col-xs-4 text-right timer_container">
+					<p><span class="timer hidden-xs">TIMER</span> <span class="timer">15:00 m</span></p>
 				</div>
-				<div class="col-sm-10 col-xs-8 text-right quick_nav">
-					<nav class = 'iosslider'>
-						<ul class = 'slider'>
-							<li class = 'slide'><a href="#question_1">1</a></li>
-							<li class = 'slide'><a href="#question_2">2</a></li>
-							<li class = 'slide'><a href="#question_3">3</a></li>
-							<li class = 'slide'><a href="#question_4">4</a></li>
-							<li class = 'slide'><a href="#question_5">5</a></li>
-						</ul>
+				<div class="col-sm-9 col-xs-8 text-right quick_nav">
+					<nav class ='quick_nav_inner'>
+						<div class = 'owl-carousel'>
+							<div class = 'slide'><a href="#question_1" class="question_1_link">1</a></div>
+							<div class = 'slide'><a href="#question_2" class="question_2_link">2</a></div>
+							<div class = 'slide'><a href="#question_3" class="question_3_link">3</a></div>
+							<div class = 'slide'><a href="#question_4" class="question_4_link">4</a></div>
+							<div class = 'slide'><a href="#question_5" class="question_5_link">5</a></div>
+						</div>
+						<!-- <div class="owl-carousel">
+						  <div> Your Content </div>
+						  <div> Your Content </div>
+						  <div> Your Content </div>
+						  <div> Your Content </div>
+						  <div> Your Content </div>
+						  <div> Your Content </div>
+						  <div> Your Content </div>
+						</div> -->
 					</nav>
 				</div>
 			</div>
