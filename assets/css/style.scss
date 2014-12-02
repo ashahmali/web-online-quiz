@@ -636,7 +636,24 @@ input[type=radio]:checked + label.radio_label:before {
 	.quick_nav{
 		background-color:#01575b;
 		color: #fff;
-		height:inherit;
+		height:35px;
+		overflow: hidden;
+		.owl-carousel{
+			display: block !important
+		}
+		.slide{
+			padding: 0px 10px;
+			a{
+				color: #fff;
+				font-weight: bold;
+				&:after{
+					content: '*';
+				}
+				&.answered:after{
+					content: '';
+				}
+			}
+		}
 	}
 }
 
