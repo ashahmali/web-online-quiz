@@ -218,23 +218,29 @@ $(document).ready(function(){
 		});
 	});
 
-	jQuery('iosslider').iosSlider({
-		snapToChildren: true,
-		desktopClickDrag: true,
-		scrollbar: false,
-		scrollbarHide: false,
-		scrollbarLocation: 'top',
-		scrollbarHeight: '2px',
-		scrollbarBackground: '#bcbcbc',
-		scrollbarBorder: '0',
-		scrollbarMargin: '0',
-		scrollbarOpacity: '0.7',
-		navNextSelector: jQuery('.carrousel_control .after.handler'),
-		navPrevSelector: jQuery('.carrousel_control .before.handler') ,
-		onSliderLoaded: updateCategorySliderHeight,
-		onSlideChange: categoryChange
+	$('.owl-carousel').owlCarousel({
+	    loop:false,
+	    margin:10,
+	    dots:false,
+	    center:true,
+	    responsiveClass:true,
+	    responsive:{
+	        0:{
+	            items:5,
+	            nav:false
+	        },
+	        600:{
+	            items:10,
+	            nav:false
+	        },
+	        1000:{
+	            items:10,
+	            nav:false,
+	            loop:false
+	        }
+	    }
 	});
-
+	
 	function updateCategorySliderHeight(args) {
 		var t = 0; // height of the highest element
 		var t_elem; // the highest element (after the function runs)
@@ -281,9 +287,18 @@ $(document).ready(function(){
 
 		}
 	}
-	$(document).on("click",'.slider .slide a',function(){
+	$(document).on("click",'.slide a',function(){
 		var link =  $(this).attr('href');
 		$("html, body").animate({ scrollTop: $(link).offset().top - 80 }, 1000);
+	});
+
+	$(document).on("change",".testtaker_quiz .question .answers .answer .radio input[type='radio']",function(){
+		var id = this.id;
+		var pieces = id.split('_');
+		if(pieces && pieces.length > 0){
+			var selector = '.question_'+pieces[1]+'_link'; //pregunta
+			$(selector).addClass('answered');
+		}
 	});
 	
 });
