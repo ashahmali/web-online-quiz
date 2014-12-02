@@ -98,13 +98,15 @@
 				</div>
 				<div class="col-sm-9 col-xs-8 text-right quick_nav">
 					<nav class ='quick_nav_inner'>
+						<div class="handler prev"><a href="javascript:void(0);"><i class="fa fa-chevron-left"></i></a></div>
 						<div class = 'owl-carousel'>
-							<div class = 'slide'><a href="#question_1" class="question_1_link">1</a></div>
-							<div class = 'slide'><a href="#question_2" class="question_2_link">2</a></div>
-							<div class = 'slide'><a href="#question_3" class="question_3_link">3</a></div>
-							<div class = 'slide'><a href="#question_4" class="question_4_link">4</a></div>
-							<div class = 'slide'><a href="#question_5" class="question_5_link">5</a></div>
+							<div class = 'slide' style="width:20px"><a href="#question_1" class="question_1_link">1</a></div>
+							<div class = 'slide' style="width:20px"><a href="#question_2" class="question_2_link">2</a></div>
+							<div class = 'slide' style="width:20px"><a href="#question_3" class="question_3_link">3</a></div>
+							<div class = 'slide' style="width:20px"><a href="#question_4" class="question_4_link">4</a></div>
+							<div class = 'slide' style="width:20px"><a href="#question_5" class="question_5_link">5</a></div>
 						</div>
+						<div class="handler next"><a href="javascript:void(0);"><i class="fa fa-chevron-right"></i></a></div>
 						<!-- <div class="owl-carousel">
 						  <div> Your Content </div>
 						  <div> Your Content </div>
