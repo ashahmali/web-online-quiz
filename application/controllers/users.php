@@ -129,7 +129,7 @@ class Users extends CI_Controller {
 					if ($this->session->userdata('ROLE_idROLE') == 1){
 						redirect('users/def_page');
 					}else{
-						redirect('users/detail');
+						redirect('admin');
 					}
 				}else{
 					$data['login_errors'] = "Wrong Email/Password Combination";

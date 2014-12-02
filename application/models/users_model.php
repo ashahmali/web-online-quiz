@@ -46,5 +46,28 @@ class Users_model extends CI_Model {
 		
 	}
 	
+	public function users_count() {
+        return $this->db->count_all("USER");
+    }
+	
+	public function fetch_users($limit, $start) {
+		$this->db->select("USER.*");
+		$this->db->select("SUBJECT.*");
+		$this->db->from("USER");
+		$this->db->join('USER_has_SUBJECT', 'USER.idUSER = USER_has_SUBJECT.USER_idUSER', 'inner');
+		$this->db->join('SUBJECT', 'SUBJECT.idSUBJECT = USER_has_SUBJECT.SUBJECT_idSUBJECT', 'inner');
+		$this->db->where(array('ROLE_idROLE' => 1));
+        $this->db->limit($limit, $start);
+        $query = $this->db->get();
+ 
+        if ($query->num_rows() > 0) {
+            foreach ($query->result_array() as $row) {
+                $data[] = $row;
+            }
+            return $data;
+        }
+        return false;
+   }
+	
 }
 ?>
