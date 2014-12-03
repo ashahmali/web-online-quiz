@@ -71,7 +71,8 @@ $(document).ready(function(){
 	});
 
 	//Add answer button
-	$(".add_answer").click(function() {
+	$(".add_answer").click(function(e) {
+		e.preventDefault();
 		var btn = this;
 		if($(".answers_container .new_answer").length > 0){
 			$(this).hide();

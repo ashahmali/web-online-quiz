@@ -29,13 +29,13 @@
 		</div>
 		<div class="row bottom">
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 tile users">
-				<a href="" alt="Manage Users" title="Manage Users">
+				<a href="admin/manage_users" alt="Manage Users" title="Manage Users">
 					<i class="fa fa-user"></i>
 					<h2>Manage Users</h2>
 				</a>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 tile questions">
-				<a href="" alt="Add Questions" title="Add Questions">
+				<a href="admin/questions" alt="Add Questions" title="Add Questions">
 					<i class="fa fa-question"></i>
 					<h2>Add Questions</h2>
 				</a>

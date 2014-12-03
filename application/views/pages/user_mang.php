@@ -24,8 +24,23 @@
 	<div class="col-lg-8 col-md-8 col-sm-10 col-xs-10 ">
 		<!-- list starts -->
 		<div class="table">
-			<?php foreach ($users as $key):?>
 			<div class="row header">
+				<!-- if the field is sortable use a tag for the column title otherwise use p tag, order_asc class when the field is sorted -->
+				<div class=" col-sm-5 col-xs-6">
+					<p class="name">Name</p>
+				</div>
+				<div class=" col-sm-3 hidden-xs">
+					<a class="name">Subject</a>
+				</div>
+				<div class=" col-sm-2 col-xs-3">
+					<a class="name order_asc">Status</a>
+				</div>
+				<div class="col-sm-2 col-xs-3">
+					<a href="#" data-value="1" class="edit_subject" alt="edit subject" title="edit subject"><i class="fa fa-pencil-square-o"></i></a>
+				</div>
+			</div>
+			<?php foreach ($users as $key):?>
+			<div class="row table_row">
 				<!-- if the field is sortable use a tag for the column title otherwise use p tag, order_asc class when the field is sorted -->
 				<div class=" col-sm-5 col-xs-6">
 					<p class="name"><?php echo $key['sFirstName']." ".$key['sSurname'] ?></p>
