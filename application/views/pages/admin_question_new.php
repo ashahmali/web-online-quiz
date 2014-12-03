@@ -35,6 +35,7 @@
 				<div class="col-sm-8 col-xs-12 text-left">
 					<button class="add_answer btn_online">Add Answer</button>
 				</div>
+				<input id="answers_counter" type="hidden" name="answers_counter" />
 				<div class="answers_container" data-answertext="This is the correct answer" data-count="0">
 					<!-- <div class="col-xs-12 text-left answer">
 						<div class="radio">

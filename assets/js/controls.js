@@ -134,6 +134,7 @@ $(document).ready(function(){
 			var countInt = parseInt(count) + 1;
 			$(".answers_container").append(clone);
 			$(".answers_container").data("count",countInt);
+			$(".question_new #answers_counter").val(countInt);
 
 			//remove original
 			$(parent).remove();
