@@ -11,6 +11,7 @@
 <div class="col-xs-12 text-left new_answer">
 	<div class="radio">
 		<input id="answer_<?php echo $counter + 1;?>" type="radio" name="answers" value="" style="display:none;">  
+		<input id="answer_<?php echo $counter + 1;?>_hidden" type="hidden" value="" > 
 	    <label for="answer_<?php echo $counter + 1;?>" class="radio_label" style="display:none;"></label> 
 	    <textarea type="text" name="new_option"></textarea>
 	    <button class="btn_online ok">OK</button>

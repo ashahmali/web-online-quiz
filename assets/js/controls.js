@@ -127,6 +127,7 @@ $(document).ready(function(){
 			$(clone).find('button.ok').remove();
 			$(clone).find('textarea').remove();
 			$(clone).find('input[type="radio"]').val(value);
+			$(clone).find('input[type="hidden"]').val(value);
 
 			//insert clone
 			var count = $(".answers_container").data("count");
