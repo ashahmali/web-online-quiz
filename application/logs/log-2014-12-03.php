@@ -3922,3 +3922,874 @@ DEBUG - 2014-12-03 17:31:20 --> File loaded: application/views/templates/navigat
 DEBUG - 2014-12-03 17:31:20 --> File loaded: application/views/templates/footer.php
 DEBUG - 2014-12-03 17:31:20 --> Final output sent to browser
 DEBUG - 2014-12-03 17:31:20 --> Total execution time: 0.0379
+DEBUG - 2014-12-03 18:02:00 --> Config Class Initialized
+DEBUG - 2014-12-03 18:02:00 --> Hooks Class Initialized
+DEBUG - 2014-12-03 18:02:00 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 18:02:00 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 18:02:00 --> URI Class Initialized
+DEBUG - 2014-12-03 18:02:00 --> Router Class Initialized
+DEBUG - 2014-12-03 18:02:00 --> Output Class Initialized
+DEBUG - 2014-12-03 18:02:00 --> Security Class Initialized
+DEBUG - 2014-12-03 18:02:00 --> Input Class Initialized
+DEBUG - 2014-12-03 18:02:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 18:02:00 --> Language Class Initialized
+DEBUG - 2014-12-03 18:02:00 --> Loader Class Initialized
+DEBUG - 2014-12-03 18:02:00 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 18:02:00 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 18:02:00 --> Database Driver Class Initialized
+ERROR - 2014-12-03 18:02:00 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 18:02:00 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 18:02:00 --> Session Class Initialized
+DEBUG - 2014-12-03 18:02:00 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 18:02:00 --> Session routines successfully run
+DEBUG - 2014-12-03 18:02:00 --> Controller Class Initialized
+DEBUG - 2014-12-03 18:02:00 --> Model Class Initialized
+DEBUG - 2014-12-03 18:02:00 --> Model Class Initialized
+DEBUG - 2014-12-03 18:02:00 --> Model Class Initialized
+DEBUG - 2014-12-03 18:02:00 --> Pagination Class Initialized
+DEBUG - 2014-12-03 18:02:00 --> File loaded: application/views/templates/header.php
+DEBUG - 2014-12-03 18:02:00 --> File loaded: application/views/pages/admin_quizzes.php
+DEBUG - 2014-12-03 18:02:00 --> File loaded: application/views/pages/admin_quiz_new.php
+DEBUG - 2014-12-03 18:02:00 --> File loaded: application/views/templates/navigation.php
+DEBUG - 2014-12-03 18:02:00 --> File loaded: application/views/templates/footer.php
+DEBUG - 2014-12-03 18:02:00 --> Final output sent to browser
+DEBUG - 2014-12-03 18:02:00 --> Total execution time: 0.0590
+DEBUG - 2014-12-03 18:02:01 --> Config Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Hooks Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 18:02:01 --> URI Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Router Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Output Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Security Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Input Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 18:02:01 --> Language Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Loader Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 18:02:01 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 18:02:01 --> Database Driver Class Initialized
+ERROR - 2014-12-03 18:02:01 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 18:02:01 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Session Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 18:02:01 --> Session routines successfully run
+DEBUG - 2014-12-03 18:02:01 --> Controller Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Model Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Model Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Model Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Pagination Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> File loaded: application/views/templates/header.php
+DEBUG - 2014-12-03 18:02:01 --> File loaded: application/views/pages/admin_home.php
+DEBUG - 2014-12-03 18:02:01 --> File loaded: application/views/templates/navigation.php
+DEBUG - 2014-12-03 18:02:01 --> File loaded: application/views/templates/footer.php
+DEBUG - 2014-12-03 18:02:01 --> Final output sent to browser
+DEBUG - 2014-12-03 18:02:01 --> Total execution time: 0.0304
+DEBUG - 2014-12-03 18:02:01 --> Config Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Hooks Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 18:02:01 --> URI Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Router Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Output Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Security Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Input Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 18:02:01 --> Language Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Loader Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 18:02:01 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 18:02:01 --> Database Driver Class Initialized
+ERROR - 2014-12-03 18:02:01 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 18:02:01 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Session Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 18:02:01 --> Session routines successfully run
+DEBUG - 2014-12-03 18:02:01 --> Controller Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Model Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Model Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Model Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> Pagination Class Initialized
+DEBUG - 2014-12-03 18:02:01 --> File loaded: application/views/templates/header.php
+DEBUG - 2014-12-03 18:02:01 --> File loaded: application/views/pages/admin_questions.php
+DEBUG - 2014-12-03 18:02:01 --> File loaded: application/views/pages/admin_question_new.php
+DEBUG - 2014-12-03 18:02:01 --> File loaded: application/views/templates/navigation.php
+DEBUG - 2014-12-03 18:02:01 --> File loaded: application/views/templates/footer.php
+DEBUG - 2014-12-03 18:02:01 --> Final output sent to browser
+DEBUG - 2014-12-03 18:02:01 --> Total execution time: 0.0589
+DEBUG - 2014-12-03 18:02:02 --> Config Class Initialized
+DEBUG - 2014-12-03 18:02:02 --> Hooks Class Initialized
+DEBUG - 2014-12-03 18:02:02 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 18:02:02 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 18:02:02 --> URI Class Initialized
+DEBUG - 2014-12-03 18:02:02 --> Router Class Initialized
+DEBUG - 2014-12-03 18:02:02 --> No URI present. Default controller set.
+DEBUG - 2014-12-03 18:02:02 --> Output Class Initialized
+DEBUG - 2014-12-03 18:02:02 --> Security Class Initialized
+DEBUG - 2014-12-03 18:02:02 --> Input Class Initialized
+DEBUG - 2014-12-03 18:02:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 18:02:02 --> Language Class Initialized
+DEBUG - 2014-12-03 18:02:02 --> Loader Class Initialized
+DEBUG - 2014-12-03 18:02:02 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 18:02:02 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 18:02:02 --> Database Driver Class Initialized
+ERROR - 2014-12-03 18:02:02 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 18:02:02 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 18:02:02 --> Session Class Initialized
+DEBUG - 2014-12-03 18:02:02 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 18:02:02 --> Session routines successfully run
+DEBUG - 2014-12-03 18:02:02 --> Controller Class Initialized
+DEBUG - 2014-12-03 18:02:02 --> File loaded: application/views/welcome_message.php
+DEBUG - 2014-12-03 18:02:02 --> Final output sent to browser
+DEBUG - 2014-12-03 18:02:02 --> Total execution time: 0.0253
+DEBUG - 2014-12-03 18:02:03 --> Config Class Initialized
+DEBUG - 2014-12-03 18:02:03 --> Hooks Class Initialized
+DEBUG - 2014-12-03 18:02:03 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 18:02:03 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 18:02:03 --> URI Class Initialized
+DEBUG - 2014-12-03 18:02:03 --> Router Class Initialized
+DEBUG - 2014-12-03 18:02:03 --> Output Class Initialized
+DEBUG - 2014-12-03 18:02:03 --> Security Class Initialized
+DEBUG - 2014-12-03 18:02:03 --> Input Class Initialized
+DEBUG - 2014-12-03 18:02:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 18:02:03 --> Language Class Initialized
+DEBUG - 2014-12-03 18:02:03 --> Loader Class Initialized
+DEBUG - 2014-12-03 18:02:03 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 18:02:03 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 18:02:03 --> Database Driver Class Initialized
+ERROR - 2014-12-03 18:02:03 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 18:02:03 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 18:02:03 --> Session Class Initialized
+DEBUG - 2014-12-03 18:02:03 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 18:02:03 --> Session routines successfully run
+DEBUG - 2014-12-03 18:02:03 --> Controller Class Initialized
+DEBUG - 2014-12-03 18:02:03 --> Model Class Initialized
+DEBUG - 2014-12-03 18:02:03 --> Model Class Initialized
+DEBUG - 2014-12-03 18:02:03 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2014-12-03 18:02:03 --> Encrypt Class Initialized
+DEBUG - 2014-12-03 18:02:03 --> File loaded: application/views/templates/header.php
+DEBUG - 2014-12-03 18:02:03 --> File loaded: application/views/pages/register.php
+DEBUG - 2014-12-03 18:02:03 --> File loaded: application/views/templates/navigation.php
+DEBUG - 2014-12-03 18:02:03 --> File loaded: application/views/templates/footer.php
+DEBUG - 2014-12-03 18:02:03 --> Final output sent to browser
+DEBUG - 2014-12-03 18:02:03 --> Total execution time: 0.0348
+DEBUG - 2014-12-03 18:02:06 --> Config Class Initialized
+DEBUG - 2014-12-03 18:02:06 --> Hooks Class Initialized
+DEBUG - 2014-12-03 18:02:06 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 18:02:06 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 18:02:06 --> URI Class Initialized
+DEBUG - 2014-12-03 18:02:06 --> Router Class Initialized
+DEBUG - 2014-12-03 18:02:06 --> Output Class Initialized
+DEBUG - 2014-12-03 18:02:06 --> Security Class Initialized
+DEBUG - 2014-12-03 18:02:06 --> Input Class Initialized
+DEBUG - 2014-12-03 18:02:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 18:02:06 --> Language Class Initialized
+DEBUG - 2014-12-03 18:02:06 --> Loader Class Initialized
+DEBUG - 2014-12-03 18:02:06 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 18:02:06 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 18:02:06 --> Database Driver Class Initialized
+ERROR - 2014-12-03 18:02:06 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 18:02:06 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 18:02:06 --> Session Class Initialized
+DEBUG - 2014-12-03 18:02:06 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 18:02:06 --> Session routines successfully run
+DEBUG - 2014-12-03 18:02:06 --> Controller Class Initialized
+DEBUG - 2014-12-03 18:02:06 --> Model Class Initialized
+DEBUG - 2014-12-03 18:02:06 --> Model Class Initialized
+DEBUG - 2014-12-03 18:02:06 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2014-12-03 18:02:06 --> Encrypt Class Initialized
+ERROR - 2014-12-03 18:02:06 --> 404 Page Not Found --> users/index
+DEBUG - 2014-12-03 18:02:07 --> Config Class Initialized
+DEBUG - 2014-12-03 18:02:07 --> Hooks Class Initialized
+DEBUG - 2014-12-03 18:02:07 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 18:02:07 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 18:02:07 --> URI Class Initialized
+DEBUG - 2014-12-03 18:02:07 --> Router Class Initialized
+DEBUG - 2014-12-03 18:02:07 --> Output Class Initialized
+DEBUG - 2014-12-03 18:02:07 --> Security Class Initialized
+DEBUG - 2014-12-03 18:02:07 --> Input Class Initialized
+DEBUG - 2014-12-03 18:02:07 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 18:02:07 --> Language Class Initialized
+DEBUG - 2014-12-03 18:02:07 --> Loader Class Initialized
+DEBUG - 2014-12-03 18:02:07 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 18:02:07 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 18:02:07 --> Database Driver Class Initialized
+ERROR - 2014-12-03 18:02:07 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 18:02:07 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 18:02:07 --> Session Class Initialized
+DEBUG - 2014-12-03 18:02:07 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 18:02:07 --> Session routines successfully run
+DEBUG - 2014-12-03 18:02:07 --> Controller Class Initialized
+DEBUG - 2014-12-03 18:02:07 --> Model Class Initialized
+DEBUG - 2014-12-03 18:02:07 --> Model Class Initialized
+DEBUG - 2014-12-03 18:02:07 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2014-12-03 18:02:07 --> Encrypt Class Initialized
+DEBUG - 2014-12-03 18:02:07 --> Helper loaded: user_helper
+DEBUG - 2014-12-03 18:02:07 --> File loaded: application/views/templates/header.php
+DEBUG - 2014-12-03 18:02:07 --> File loaded: application/views/pages/login.php
+DEBUG - 2014-12-03 18:02:07 --> File loaded: application/views/templates/navigation.php
+DEBUG - 2014-12-03 18:02:07 --> File loaded: application/views/templates/footer.php
+DEBUG - 2014-12-03 18:02:07 --> Final output sent to browser
+DEBUG - 2014-12-03 18:02:07 --> Total execution time: 0.0292
+DEBUG - 2014-12-03 18:02:30 --> Config Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Hooks Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 18:02:30 --> URI Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Router Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Output Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Security Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Input Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 18:02:30 --> Language Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Loader Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 18:02:30 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 18:02:30 --> Database Driver Class Initialized
+ERROR - 2014-12-03 18:02:30 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 18:02:30 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Session Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 18:02:30 --> Session routines successfully run
+DEBUG - 2014-12-03 18:02:30 --> Controller Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Model Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Model Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2014-12-03 18:02:30 --> Encrypt Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Helper loaded: user_helper
+DEBUG - 2014-12-03 18:02:30 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2014-12-03 18:02:30 --> XSS Filtering completed
+DEBUG - 2014-12-03 18:02:30 --> Config Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Hooks Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 18:02:30 --> URI Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Router Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Output Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Security Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Input Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 18:02:30 --> Language Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Loader Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 18:02:30 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 18:02:30 --> Database Driver Class Initialized
+ERROR - 2014-12-03 18:02:30 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 18:02:30 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Session Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 18:02:30 --> Session routines successfully run
+DEBUG - 2014-12-03 18:02:30 --> Controller Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Model Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Model Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2014-12-03 18:02:30 --> Encrypt Class Initialized
+DEBUG - 2014-12-03 18:02:30 --> File loaded: application/views/templates/header.php
+DEBUG - 2014-12-03 18:02:30 --> File loaded: application/views/templates/navigation.php
+DEBUG - 2014-12-03 18:02:30 --> File loaded: application/views/templates/footer.php
+DEBUG - 2014-12-03 18:02:30 --> Final output sent to browser
+DEBUG - 2014-12-03 18:02:30 --> Total execution time: 0.0338
+DEBUG - 2014-12-03 18:02:43 --> Config Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Hooks Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 18:02:43 --> URI Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Router Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Output Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Security Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Input Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 18:02:43 --> Language Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Loader Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 18:02:43 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 18:02:43 --> Database Driver Class Initialized
+ERROR - 2014-12-03 18:02:43 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 18:02:43 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Session Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 18:02:43 --> Session routines successfully run
+DEBUG - 2014-12-03 18:02:43 --> Controller Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Model Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Model Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2014-12-03 18:02:43 --> Encrypt Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Helper loaded: user_helper
+DEBUG - 2014-12-03 18:02:43 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2014-12-03 18:02:43 --> XSS Filtering completed
+DEBUG - 2014-12-03 18:02:43 --> Config Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Hooks Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 18:02:43 --> URI Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Router Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Output Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Security Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Input Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 18:02:43 --> Language Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Loader Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 18:02:43 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 18:02:43 --> Database Driver Class Initialized
+ERROR - 2014-12-03 18:02:43 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 18:02:43 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Session Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 18:02:43 --> Session routines successfully run
+DEBUG - 2014-12-03 18:02:43 --> Controller Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Model Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Model Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Model Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> Pagination Class Initialized
+DEBUG - 2014-12-03 18:02:43 --> File loaded: application/views/templates/header.php
+DEBUG - 2014-12-03 18:02:43 --> File loaded: application/views/pages/admin_home.php
+DEBUG - 2014-12-03 18:02:43 --> File loaded: application/views/templates/navigation.php
+DEBUG - 2014-12-03 18:02:43 --> File loaded: application/views/templates/footer.php
+DEBUG - 2014-12-03 18:02:43 --> Final output sent to browser
+DEBUG - 2014-12-03 18:02:43 --> Total execution time: 0.0513
+DEBUG - 2014-12-03 20:06:35 --> Config Class Initialized
+DEBUG - 2014-12-03 20:06:35 --> Hooks Class Initialized
+DEBUG - 2014-12-03 20:06:35 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 20:06:35 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 20:06:35 --> URI Class Initialized
+DEBUG - 2014-12-03 20:06:35 --> Router Class Initialized
+DEBUG - 2014-12-03 20:06:35 --> Output Class Initialized
+DEBUG - 2014-12-03 20:06:35 --> Security Class Initialized
+DEBUG - 2014-12-03 20:06:35 --> Input Class Initialized
+DEBUG - 2014-12-03 20:06:35 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 20:06:35 --> Language Class Initialized
+DEBUG - 2014-12-03 20:06:35 --> Loader Class Initialized
+DEBUG - 2014-12-03 20:06:35 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 20:06:35 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 20:06:35 --> Database Driver Class Initialized
+ERROR - 2014-12-03 20:06:35 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 20:06:35 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 20:06:35 --> Session Class Initialized
+DEBUG - 2014-12-03 20:06:35 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 20:06:35 --> A session cookie was not found.
+DEBUG - 2014-12-03 20:06:35 --> Session routines successfully run
+DEBUG - 2014-12-03 20:06:35 --> Controller Class Initialized
+DEBUG - 2014-12-03 20:06:35 --> Model Class Initialized
+DEBUG - 2014-12-03 20:06:35 --> Model Class Initialized
+DEBUG - 2014-12-03 20:06:35 --> Model Class Initialized
+DEBUG - 2014-12-03 20:06:35 --> Pagination Class Initialized
+ERROR - 2014-12-03 20:06:35 --> you do not have permission to be here!
+DEBUG - 2014-12-03 20:06:35 --> Final output sent to browser
+DEBUG - 2014-12-03 20:06:35 --> Total execution time: 0.0462
+DEBUG - 2014-12-03 20:06:44 --> Config Class Initialized
+DEBUG - 2014-12-03 20:06:44 --> Hooks Class Initialized
+DEBUG - 2014-12-03 20:06:44 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 20:06:44 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 20:06:44 --> URI Class Initialized
+DEBUG - 2014-12-03 20:06:44 --> Router Class Initialized
+DEBUG - 2014-12-03 20:06:44 --> Output Class Initialized
+DEBUG - 2014-12-03 20:06:44 --> Security Class Initialized
+DEBUG - 2014-12-03 20:06:44 --> Input Class Initialized
+DEBUG - 2014-12-03 20:06:44 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 20:06:44 --> Language Class Initialized
+DEBUG - 2014-12-03 20:06:44 --> Loader Class Initialized
+DEBUG - 2014-12-03 20:06:44 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 20:06:44 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 20:06:44 --> Database Driver Class Initialized
+ERROR - 2014-12-03 20:06:44 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 20:06:44 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 20:06:44 --> Session Class Initialized
+DEBUG - 2014-12-03 20:06:44 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 20:06:44 --> Session routines successfully run
+DEBUG - 2014-12-03 20:06:44 --> Controller Class Initialized
+DEBUG - 2014-12-03 20:06:44 --> Model Class Initialized
+DEBUG - 2014-12-03 20:06:44 --> Model Class Initialized
+DEBUG - 2014-12-03 20:06:44 --> Model Class Initialized
+DEBUG - 2014-12-03 20:06:44 --> Pagination Class Initialized
+ERROR - 2014-12-03 20:06:44 --> you do not have permission to be here!
+DEBUG - 2014-12-03 20:06:44 --> Final output sent to browser
+DEBUG - 2014-12-03 20:06:44 --> Total execution time: 0.0344
+DEBUG - 2014-12-03 20:06:53 --> Config Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Hooks Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 20:06:53 --> URI Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Router Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Output Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Security Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Input Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 20:06:53 --> Language Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Loader Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 20:06:53 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 20:06:53 --> Database Driver Class Initialized
+ERROR - 2014-12-03 20:06:53 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 20:06:53 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Session Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 20:06:53 --> Session routines successfully run
+DEBUG - 2014-12-03 20:06:53 --> Controller Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Model Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Model Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Model Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Pagination Class Initialized
+ERROR - 2014-12-03 20:06:53 --> you do not have permission to be here!
+DEBUG - 2014-12-03 20:06:53 --> Final output sent to browser
+DEBUG - 2014-12-03 20:06:53 --> Total execution time: 0.0298
+DEBUG - 2014-12-03 20:06:53 --> Config Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Hooks Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 20:06:53 --> URI Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Router Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Output Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Security Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Input Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 20:06:53 --> Language Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Loader Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 20:06:53 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 20:06:53 --> Database Driver Class Initialized
+ERROR - 2014-12-03 20:06:53 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 20:06:53 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Session Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 20:06:53 --> Session routines successfully run
+DEBUG - 2014-12-03 20:06:53 --> Controller Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Model Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Model Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Model Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> Pagination Class Initialized
+DEBUG - 2014-12-03 20:06:53 --> File loaded: application/views/templates/header.php
+DEBUG - 2014-12-03 20:06:53 --> File loaded: application/views/pages/admin_questions.php
+DEBUG - 2014-12-03 20:06:53 --> File loaded: application/views/pages/admin_question_new.php
+DEBUG - 2014-12-03 20:06:53 --> File loaded: application/views/templates/navigation.php
+DEBUG - 2014-12-03 20:06:53 --> File loaded: application/views/templates/footer.php
+DEBUG - 2014-12-03 20:06:53 --> Final output sent to browser
+DEBUG - 2014-12-03 20:06:53 --> Total execution time: 0.0342
+DEBUG - 2014-12-03 20:06:58 --> Config Class Initialized
+DEBUG - 2014-12-03 20:06:58 --> Hooks Class Initialized
+DEBUG - 2014-12-03 20:06:58 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 20:06:58 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 20:06:58 --> URI Class Initialized
+DEBUG - 2014-12-03 20:06:58 --> Router Class Initialized
+DEBUG - 2014-12-03 20:06:58 --> Output Class Initialized
+DEBUG - 2014-12-03 20:06:58 --> Security Class Initialized
+DEBUG - 2014-12-03 20:06:58 --> Input Class Initialized
+DEBUG - 2014-12-03 20:06:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 20:06:58 --> Language Class Initialized
+DEBUG - 2014-12-03 20:06:58 --> Loader Class Initialized
+DEBUG - 2014-12-03 20:06:59 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 20:06:59 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 20:06:59 --> Database Driver Class Initialized
+ERROR - 2014-12-03 20:06:59 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 20:06:59 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 20:06:59 --> Session Class Initialized
+DEBUG - 2014-12-03 20:06:59 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 20:06:59 --> Session routines successfully run
+DEBUG - 2014-12-03 20:06:59 --> Controller Class Initialized
+DEBUG - 2014-12-03 20:06:59 --> Model Class Initialized
+DEBUG - 2014-12-03 20:06:59 --> Model Class Initialized
+DEBUG - 2014-12-03 20:06:59 --> Model Class Initialized
+DEBUG - 2014-12-03 20:06:59 --> Pagination Class Initialized
+DEBUG - 2014-12-03 20:06:59 --> File loaded: application/views/templates/header.php
+DEBUG - 2014-12-03 20:06:59 --> File loaded: application/views/pages/admin_questions.php
+DEBUG - 2014-12-03 20:06:59 --> File loaded: application/views/pages/admin_question_new.php
+DEBUG - 2014-12-03 20:06:59 --> File loaded: application/views/templates/navigation.php
+DEBUG - 2014-12-03 20:06:59 --> File loaded: application/views/templates/footer.php
+DEBUG - 2014-12-03 20:06:59 --> Final output sent to browser
+DEBUG - 2014-12-03 20:06:59 --> Total execution time: 0.0312
+DEBUG - 2014-12-03 20:07:01 --> Config Class Initialized
+DEBUG - 2014-12-03 20:07:01 --> Hooks Class Initialized
+DEBUG - 2014-12-03 20:07:01 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 20:07:01 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 20:07:01 --> URI Class Initialized
+DEBUG - 2014-12-03 20:07:01 --> Router Class Initialized
+DEBUG - 2014-12-03 20:07:01 --> Output Class Initialized
+DEBUG - 2014-12-03 20:07:01 --> Security Class Initialized
+DEBUG - 2014-12-03 20:07:01 --> Input Class Initialized
+DEBUG - 2014-12-03 20:07:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 20:07:01 --> Language Class Initialized
+DEBUG - 2014-12-03 20:07:01 --> Loader Class Initialized
+DEBUG - 2014-12-03 20:07:01 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 20:07:01 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 20:07:01 --> Database Driver Class Initialized
+ERROR - 2014-12-03 20:07:01 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 20:07:01 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 20:07:01 --> Session Class Initialized
+DEBUG - 2014-12-03 20:07:01 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 20:07:01 --> Session routines successfully run
+DEBUG - 2014-12-03 20:07:01 --> Controller Class Initialized
+DEBUG - 2014-12-03 20:07:01 --> Model Class Initialized
+DEBUG - 2014-12-03 20:07:01 --> Model Class Initialized
+DEBUG - 2014-12-03 20:07:01 --> Model Class Initialized
+DEBUG - 2014-12-03 20:07:01 --> Pagination Class Initialized
+DEBUG - 2014-12-03 20:07:01 --> File loaded: application/views/templates/header.php
+DEBUG - 2014-12-03 20:07:01 --> File loaded: application/views/pages/admin_quizzes.php
+DEBUG - 2014-12-03 20:07:01 --> File loaded: application/views/pages/admin_quiz_new.php
+DEBUG - 2014-12-03 20:07:01 --> File loaded: application/views/templates/navigation.php
+DEBUG - 2014-12-03 20:07:01 --> File loaded: application/views/templates/footer.php
+DEBUG - 2014-12-03 20:07:01 --> Final output sent to browser
+DEBUG - 2014-12-03 20:07:01 --> Total execution time: 0.0290
+DEBUG - 2014-12-03 20:43:02 --> Config Class Initialized
+DEBUG - 2014-12-03 20:43:02 --> Hooks Class Initialized
+DEBUG - 2014-12-03 20:43:02 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 20:43:02 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 20:43:02 --> URI Class Initialized
+DEBUG - 2014-12-03 20:43:02 --> Router Class Initialized
+DEBUG - 2014-12-03 20:43:02 --> Output Class Initialized
+DEBUG - 2014-12-03 20:43:02 --> Security Class Initialized
+DEBUG - 2014-12-03 20:43:02 --> Input Class Initialized
+DEBUG - 2014-12-03 20:43:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 20:43:02 --> Language Class Initialized
+DEBUG - 2014-12-03 20:43:02 --> Loader Class Initialized
+DEBUG - 2014-12-03 20:43:02 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 20:43:02 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 20:43:02 --> Database Driver Class Initialized
+ERROR - 2014-12-03 20:43:02 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 20:43:02 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 20:43:02 --> Session Class Initialized
+DEBUG - 2014-12-03 20:43:02 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 20:43:02 --> Session routines successfully run
+DEBUG - 2014-12-03 20:43:02 --> Controller Class Initialized
+DEBUG - 2014-12-03 20:43:02 --> Model Class Initialized
+DEBUG - 2014-12-03 20:43:02 --> Model Class Initialized
+DEBUG - 2014-12-03 20:43:02 --> Model Class Initialized
+DEBUG - 2014-12-03 20:43:02 --> Pagination Class Initialized
+DEBUG - 2014-12-03 20:43:02 --> File loaded: application/views/templates/header.php
+ERROR - 2014-12-03 20:43:02 --> Severity: Notice  --> Undefined variable: subjects /Applications/MAMP/htdocs/web-online-quiz/application/views/pages/admin_quizzes.php 13
+ERROR - 2014-12-03 20:43:02 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/web-online-quiz/application/views/pages/admin_quizzes.php 13
+DEBUG - 2014-12-03 20:43:02 --> File loaded: application/views/pages/admin_quizzes.php
+DEBUG - 2014-12-03 20:43:02 --> File loaded: application/views/pages/admin_quiz_new.php
+DEBUG - 2014-12-03 20:43:02 --> File loaded: application/views/templates/navigation.php
+DEBUG - 2014-12-03 20:43:02 --> File loaded: application/views/templates/footer.php
+DEBUG - 2014-12-03 20:43:02 --> Final output sent to browser
+DEBUG - 2014-12-03 20:43:02 --> Total execution time: 0.0496
+DEBUG - 2014-12-03 20:43:33 --> Config Class Initialized
+DEBUG - 2014-12-03 20:43:33 --> Hooks Class Initialized
+DEBUG - 2014-12-03 20:43:33 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 20:43:33 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 20:43:33 --> URI Class Initialized
+DEBUG - 2014-12-03 20:43:33 --> Router Class Initialized
+DEBUG - 2014-12-03 20:43:33 --> Output Class Initialized
+DEBUG - 2014-12-03 20:43:33 --> Security Class Initialized
+DEBUG - 2014-12-03 20:43:33 --> Input Class Initialized
+DEBUG - 2014-12-03 20:43:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 20:43:33 --> Language Class Initialized
+DEBUG - 2014-12-03 20:43:33 --> Loader Class Initialized
+DEBUG - 2014-12-03 20:43:33 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 20:43:33 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 20:43:33 --> Database Driver Class Initialized
+ERROR - 2014-12-03 20:43:33 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 20:43:33 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 20:43:33 --> Session Class Initialized
+DEBUG - 2014-12-03 20:43:33 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 20:43:33 --> Session routines successfully run
+DEBUG - 2014-12-03 20:43:33 --> Controller Class Initialized
+DEBUG - 2014-12-03 20:43:33 --> Model Class Initialized
+DEBUG - 2014-12-03 20:43:33 --> Model Class Initialized
+DEBUG - 2014-12-03 20:43:33 --> Model Class Initialized
+DEBUG - 2014-12-03 20:43:33 --> Pagination Class Initialized
+DEBUG - 2014-12-03 20:43:33 --> File loaded: application/views/templates/header.php
+DEBUG - 2014-12-03 20:43:33 --> File loaded: application/views/pages/admin_quizzes.php
+DEBUG - 2014-12-03 20:43:33 --> File loaded: application/views/pages/admin_quiz_new.php
+DEBUG - 2014-12-03 20:43:33 --> File loaded: application/views/templates/navigation.php
+DEBUG - 2014-12-03 20:43:33 --> File loaded: application/views/templates/footer.php
+DEBUG - 2014-12-03 20:43:33 --> Final output sent to browser
+DEBUG - 2014-12-03 20:43:33 --> Total execution time: 0.0373
+DEBUG - 2014-12-03 20:47:55 --> Config Class Initialized
+DEBUG - 2014-12-03 20:47:55 --> Hooks Class Initialized
+DEBUG - 2014-12-03 20:47:55 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 20:47:55 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 20:47:55 --> URI Class Initialized
+DEBUG - 2014-12-03 20:47:55 --> Router Class Initialized
+DEBUG - 2014-12-03 20:47:55 --> Output Class Initialized
+DEBUG - 2014-12-03 20:47:55 --> Security Class Initialized
+DEBUG - 2014-12-03 20:47:56 --> Input Class Initialized
+DEBUG - 2014-12-03 20:47:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 20:47:56 --> Language Class Initialized
+DEBUG - 2014-12-03 20:47:56 --> Loader Class Initialized
+DEBUG - 2014-12-03 20:47:56 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 20:47:56 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 20:47:56 --> Database Driver Class Initialized
+ERROR - 2014-12-03 20:47:56 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 20:47:56 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 20:47:56 --> Session Class Initialized
+DEBUG - 2014-12-03 20:47:56 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 20:47:56 --> Session routines successfully run
+DEBUG - 2014-12-03 20:47:56 --> Controller Class Initialized
+DEBUG - 2014-12-03 20:47:56 --> Model Class Initialized
+DEBUG - 2014-12-03 20:47:56 --> Model Class Initialized
+DEBUG - 2014-12-03 20:47:56 --> Model Class Initialized
+DEBUG - 2014-12-03 20:47:56 --> Pagination Class Initialized
+DEBUG - 2014-12-03 20:47:56 --> File loaded: application/views/templates/header.php
+DEBUG - 2014-12-03 20:47:56 --> File loaded: application/views/pages/admin_quizzes.php
+DEBUG - 2014-12-03 20:47:56 --> File loaded: application/views/pages/admin_quiz_new.php
+DEBUG - 2014-12-03 20:47:56 --> File loaded: application/views/templates/navigation.php
+DEBUG - 2014-12-03 20:47:56 --> File loaded: application/views/templates/footer.php
+DEBUG - 2014-12-03 20:47:56 --> Final output sent to browser
+DEBUG - 2014-12-03 20:47:56 --> Total execution time: 0.0321
+DEBUG - 2014-12-03 20:48:11 --> Config Class Initialized
+DEBUG - 2014-12-03 20:48:11 --> Hooks Class Initialized
+DEBUG - 2014-12-03 20:48:11 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 20:48:11 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 20:48:11 --> URI Class Initialized
+DEBUG - 2014-12-03 20:48:11 --> Router Class Initialized
+DEBUG - 2014-12-03 20:48:11 --> Output Class Initialized
+DEBUG - 2014-12-03 20:48:11 --> Security Class Initialized
+DEBUG - 2014-12-03 20:48:11 --> Input Class Initialized
+DEBUG - 2014-12-03 20:48:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 20:48:11 --> Language Class Initialized
+DEBUG - 2014-12-03 20:48:11 --> Loader Class Initialized
+DEBUG - 2014-12-03 20:48:11 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 20:48:11 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 20:48:11 --> Database Driver Class Initialized
+ERROR - 2014-12-03 20:48:11 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 20:48:11 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 20:48:11 --> Session Class Initialized
+DEBUG - 2014-12-03 20:48:11 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 20:48:11 --> Session routines successfully run
+DEBUG - 2014-12-03 20:48:11 --> Controller Class Initialized
+DEBUG - 2014-12-03 20:48:11 --> Model Class Initialized
+DEBUG - 2014-12-03 20:48:11 --> Model Class Initialized
+DEBUG - 2014-12-03 20:48:11 --> Model Class Initialized
+DEBUG - 2014-12-03 20:48:11 --> Pagination Class Initialized
+DEBUG - 2014-12-03 20:48:11 --> File loaded: application/views/templates/header.php
+DEBUG - 2014-12-03 20:48:11 --> File loaded: application/views/pages/admin_quizzes.php
+DEBUG - 2014-12-03 20:48:11 --> File loaded: application/views/pages/admin_quiz_new.php
+DEBUG - 2014-12-03 20:48:11 --> File loaded: application/views/templates/navigation.php
+DEBUG - 2014-12-03 20:48:11 --> File loaded: application/views/templates/footer.php
+DEBUG - 2014-12-03 20:48:11 --> Final output sent to browser
+DEBUG - 2014-12-03 20:48:11 --> Total execution time: 0.0386
+DEBUG - 2014-12-03 20:48:15 --> Config Class Initialized
+DEBUG - 2014-12-03 20:48:15 --> Hooks Class Initialized
+DEBUG - 2014-12-03 20:48:15 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 20:48:15 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 20:48:15 --> URI Class Initialized
+DEBUG - 2014-12-03 20:48:15 --> Router Class Initialized
+DEBUG - 2014-12-03 20:48:15 --> Output Class Initialized
+DEBUG - 2014-12-03 20:48:15 --> Security Class Initialized
+DEBUG - 2014-12-03 20:48:15 --> Input Class Initialized
+DEBUG - 2014-12-03 20:48:15 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 20:48:15 --> Language Class Initialized
+DEBUG - 2014-12-03 20:48:15 --> Loader Class Initialized
+DEBUG - 2014-12-03 20:48:15 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 20:48:15 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 20:48:15 --> Database Driver Class Initialized
+ERROR - 2014-12-03 20:48:15 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 20:48:15 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 20:48:15 --> Session Class Initialized
+DEBUG - 2014-12-03 20:48:15 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 20:48:15 --> Session routines successfully run
+DEBUG - 2014-12-03 20:48:15 --> Controller Class Initialized
+DEBUG - 2014-12-03 20:48:15 --> Model Class Initialized
+DEBUG - 2014-12-03 20:48:15 --> Model Class Initialized
+DEBUG - 2014-12-03 20:48:15 --> Model Class Initialized
+DEBUG - 2014-12-03 20:48:15 --> Pagination Class Initialized
+DEBUG - 2014-12-03 20:48:15 --> File loaded: application/views/templates/header.php
+DEBUG - 2014-12-03 20:48:15 --> File loaded: application/views/pages/admin_quizzes.php
+DEBUG - 2014-12-03 20:48:15 --> File loaded: application/views/pages/admin_quiz_new.php
+DEBUG - 2014-12-03 20:48:15 --> File loaded: application/views/templates/navigation.php
+DEBUG - 2014-12-03 20:48:15 --> File loaded: application/views/templates/footer.php
+DEBUG - 2014-12-03 20:48:15 --> Final output sent to browser
+DEBUG - 2014-12-03 20:48:15 --> Total execution time: 0.0306
+DEBUG - 2014-12-03 20:50:58 --> Config Class Initialized
+DEBUG - 2014-12-03 20:50:58 --> Hooks Class Initialized
+DEBUG - 2014-12-03 20:50:58 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 20:50:58 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 20:50:58 --> URI Class Initialized
+DEBUG - 2014-12-03 20:50:58 --> Router Class Initialized
+DEBUG - 2014-12-03 20:50:58 --> Output Class Initialized
+DEBUG - 2014-12-03 20:50:58 --> Security Class Initialized
+DEBUG - 2014-12-03 20:50:58 --> Input Class Initialized
+DEBUG - 2014-12-03 20:50:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 20:50:58 --> Language Class Initialized
+DEBUG - 2014-12-03 20:50:58 --> Loader Class Initialized
+DEBUG - 2014-12-03 20:50:58 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 20:50:58 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 20:50:58 --> Database Driver Class Initialized
+ERROR - 2014-12-03 20:50:58 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 20:50:58 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 20:50:58 --> Session Class Initialized
+DEBUG - 2014-12-03 20:50:58 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 20:50:58 --> Session routines successfully run
+DEBUG - 2014-12-03 20:50:58 --> Controller Class Initialized
+DEBUG - 2014-12-03 20:50:58 --> Model Class Initialized
+DEBUG - 2014-12-03 20:50:58 --> Model Class Initialized
+DEBUG - 2014-12-03 20:50:58 --> Model Class Initialized
+DEBUG - 2014-12-03 20:50:58 --> Pagination Class Initialized
+DEBUG - 2014-12-03 20:50:58 --> File loaded: application/views/templates/header.php
+DEBUG - 2014-12-03 20:50:58 --> File loaded: application/views/pages/admin_quizzes.php
+DEBUG - 2014-12-03 20:50:58 --> File loaded: application/views/pages/admin_quiz_new.php
+DEBUG - 2014-12-03 20:50:58 --> File loaded: application/views/templates/navigation.php
+DEBUG - 2014-12-03 20:50:58 --> File loaded: application/views/templates/footer.php
+DEBUG - 2014-12-03 20:50:58 --> Final output sent to browser
+DEBUG - 2014-12-03 20:50:58 --> Total execution time: 0.0399
+DEBUG - 2014-12-03 23:19:37 --> Config Class Initialized
+DEBUG - 2014-12-03 23:19:37 --> Hooks Class Initialized
+DEBUG - 2014-12-03 23:19:37 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 23:19:37 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 23:19:37 --> URI Class Initialized
+DEBUG - 2014-12-03 23:19:37 --> Router Class Initialized
+DEBUG - 2014-12-03 23:19:37 --> Output Class Initialized
+DEBUG - 2014-12-03 23:19:37 --> Security Class Initialized
+DEBUG - 2014-12-03 23:19:37 --> Input Class Initialized
+DEBUG - 2014-12-03 23:19:37 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 23:19:37 --> Language Class Initialized
+DEBUG - 2014-12-03 23:19:37 --> Loader Class Initialized
+DEBUG - 2014-12-03 23:19:37 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 23:19:37 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 23:19:37 --> Database Driver Class Initialized
+ERROR - 2014-12-03 23:19:37 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 23:19:37 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 23:19:37 --> Session Class Initialized
+DEBUG - 2014-12-03 23:19:37 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 23:19:37 --> A session cookie was not found.
+DEBUG - 2014-12-03 23:19:37 --> Session routines successfully run
+DEBUG - 2014-12-03 23:19:37 --> Controller Class Initialized
+DEBUG - 2014-12-03 23:19:37 --> Model Class Initialized
+DEBUG - 2014-12-03 23:19:37 --> Model Class Initialized
+DEBUG - 2014-12-03 23:19:37 --> Model Class Initialized
+DEBUG - 2014-12-03 23:19:37 --> Pagination Class Initialized
+DEBUG - 2014-12-03 23:19:37 --> File loaded: application/views/templates/header.php
+DEBUG - 2014-12-03 23:19:37 --> File loaded: application/views/pages/admin_quizzes.php
+DEBUG - 2014-12-03 23:19:37 --> File loaded: application/views/pages/admin_quiz_new.php
+DEBUG - 2014-12-03 23:19:37 --> File loaded: application/views/templates/navigation.php
+DEBUG - 2014-12-03 23:19:37 --> File loaded: application/views/templates/footer.php
+DEBUG - 2014-12-03 23:19:37 --> Final output sent to browser
+DEBUG - 2014-12-03 23:19:37 --> Total execution time: 0.0467
+DEBUG - 2014-12-03 23:19:45 --> Config Class Initialized
+DEBUG - 2014-12-03 23:19:45 --> Hooks Class Initialized
+DEBUG - 2014-12-03 23:19:45 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 23:19:45 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 23:19:45 --> URI Class Initialized
+DEBUG - 2014-12-03 23:19:45 --> Router Class Initialized
+DEBUG - 2014-12-03 23:19:45 --> Output Class Initialized
+DEBUG - 2014-12-03 23:19:45 --> Security Class Initialized
+DEBUG - 2014-12-03 23:19:45 --> Input Class Initialized
+DEBUG - 2014-12-03 23:19:45 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 23:19:45 --> Language Class Initialized
+DEBUG - 2014-12-03 23:19:45 --> Loader Class Initialized
+DEBUG - 2014-12-03 23:19:45 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 23:19:45 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 23:19:45 --> Database Driver Class Initialized
+ERROR - 2014-12-03 23:19:45 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 23:19:45 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 23:19:45 --> Session Class Initialized
+DEBUG - 2014-12-03 23:19:45 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 23:19:45 --> Session routines successfully run
+DEBUG - 2014-12-03 23:19:45 --> Controller Class Initialized
+DEBUG - 2014-12-03 23:19:45 --> Model Class Initialized
+DEBUG - 2014-12-03 23:19:45 --> Model Class Initialized
+DEBUG - 2014-12-03 23:19:45 --> Model Class Initialized
+DEBUG - 2014-12-03 23:19:45 --> Pagination Class Initialized
+DEBUG - 2014-12-03 23:19:45 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2014-12-03 23:19:45 --> File loaded: application/views/templates/header.php
+DEBUG - 2014-12-03 23:19:45 --> File loaded: application/views/pages/admin_quizzes.php
+DEBUG - 2014-12-03 23:19:45 --> File loaded: application/views/pages/admin_quiz_new.php
+DEBUG - 2014-12-03 23:19:45 --> File loaded: application/views/templates/navigation.php
+DEBUG - 2014-12-03 23:19:45 --> File loaded: application/views/templates/footer.php
+DEBUG - 2014-12-03 23:19:45 --> Final output sent to browser
+DEBUG - 2014-12-03 23:19:45 --> Total execution time: 0.0326
+DEBUG - 2014-12-03 23:51:58 --> Config Class Initialized
+DEBUG - 2014-12-03 23:51:58 --> Hooks Class Initialized
+DEBUG - 2014-12-03 23:51:58 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 23:51:58 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 23:51:58 --> URI Class Initialized
+DEBUG - 2014-12-03 23:51:58 --> Router Class Initialized
+DEBUG - 2014-12-03 23:51:58 --> Output Class Initialized
+DEBUG - 2014-12-03 23:51:58 --> Security Class Initialized
+DEBUG - 2014-12-03 23:51:58 --> Input Class Initialized
+DEBUG - 2014-12-03 23:51:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 23:51:58 --> Language Class Initialized
+DEBUG - 2014-12-03 23:51:58 --> Loader Class Initialized
+DEBUG - 2014-12-03 23:51:58 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 23:51:58 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 23:51:58 --> Database Driver Class Initialized
+ERROR - 2014-12-03 23:51:58 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 23:51:58 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 23:51:58 --> Session Class Initialized
+DEBUG - 2014-12-03 23:51:58 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 23:51:58 --> Session routines successfully run
+DEBUG - 2014-12-03 23:51:58 --> Controller Class Initialized
+DEBUG - 2014-12-03 23:51:58 --> Model Class Initialized
+DEBUG - 2014-12-03 23:51:58 --> Model Class Initialized
+DEBUG - 2014-12-03 23:51:58 --> Model Class Initialized
+DEBUG - 2014-12-03 23:51:58 --> Pagination Class Initialized
+DEBUG - 2014-12-03 23:51:58 --> File loaded: application/views/templates/header.php
+DEBUG - 2014-12-03 23:51:58 --> File loaded: application/views/pages/admin_quizzes.php
+DEBUG - 2014-12-03 23:51:58 --> File loaded: application/views/pages/admin_quiz_new.php
+DEBUG - 2014-12-03 23:51:58 --> File loaded: application/views/templates/navigation.php
+DEBUG - 2014-12-03 23:51:58 --> File loaded: application/views/templates/footer.php
+DEBUG - 2014-12-03 23:51:58 --> Final output sent to browser
+DEBUG - 2014-12-03 23:51:58 --> Total execution time: 0.0356
+DEBUG - 2014-12-03 23:53:46 --> Config Class Initialized
+DEBUG - 2014-12-03 23:53:46 --> Hooks Class Initialized
+DEBUG - 2014-12-03 23:53:46 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 23:53:46 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 23:53:46 --> URI Class Initialized
+DEBUG - 2014-12-03 23:53:46 --> Router Class Initialized
+DEBUG - 2014-12-03 23:53:46 --> Output Class Initialized
+DEBUG - 2014-12-03 23:53:46 --> Security Class Initialized
+DEBUG - 2014-12-03 23:53:46 --> Input Class Initialized
+DEBUG - 2014-12-03 23:53:46 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 23:53:46 --> Language Class Initialized
+DEBUG - 2014-12-03 23:53:46 --> Loader Class Initialized
+DEBUG - 2014-12-03 23:53:46 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 23:53:46 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 23:53:46 --> Database Driver Class Initialized
+ERROR - 2014-12-03 23:53:46 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 23:53:46 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 23:53:46 --> Session Class Initialized
+DEBUG - 2014-12-03 23:53:46 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 23:53:46 --> Session routines successfully run
+DEBUG - 2014-12-03 23:53:46 --> Controller Class Initialized
+DEBUG - 2014-12-03 23:53:46 --> Model Class Initialized
+DEBUG - 2014-12-03 23:53:46 --> Model Class Initialized
+DEBUG - 2014-12-03 23:53:46 --> Model Class Initialized
+DEBUG - 2014-12-03 23:53:46 --> Pagination Class Initialized
+DEBUG - 2014-12-03 23:53:46 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2014-12-03 23:53:46 --> XSS Filtering completed
+DEBUG - 2014-12-03 23:53:46 --> XSS Filtering completed
+ERROR - 2014-12-03 23:53:46 --> Severity: Notice  --> Undefined variable: test_id /Applications/MAMP/htdocs/web-online-quiz/application/controllers/admin.php 175
+DEBUG - 2014-12-03 23:53:46 --> File loaded: application/views/templates/header.php
+DEBUG - 2014-12-03 23:53:46 --> File loaded: application/views/pages/admin_quizzes.php
+DEBUG - 2014-12-03 23:53:46 --> File loaded: application/views/pages/admin_quiz_new.php
+DEBUG - 2014-12-03 23:53:46 --> File loaded: application/views/templates/navigation.php
+DEBUG - 2014-12-03 23:53:46 --> File loaded: application/views/templates/footer.php
+DEBUG - 2014-12-03 23:53:46 --> Final output sent to browser
+DEBUG - 2014-12-03 23:53:46 --> Total execution time: 0.0470
+DEBUG - 2014-12-03 23:56:33 --> Config Class Initialized
+DEBUG - 2014-12-03 23:56:33 --> Hooks Class Initialized
+DEBUG - 2014-12-03 23:56:33 --> Utf8 Class Initialized
+DEBUG - 2014-12-03 23:56:33 --> UTF-8 Support Enabled
+DEBUG - 2014-12-03 23:56:33 --> URI Class Initialized
+DEBUG - 2014-12-03 23:56:33 --> Router Class Initialized
+DEBUG - 2014-12-03 23:56:33 --> Output Class Initialized
+DEBUG - 2014-12-03 23:56:33 --> Security Class Initialized
+DEBUG - 2014-12-03 23:56:33 --> Input Class Initialized
+DEBUG - 2014-12-03 23:56:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-12-03 23:56:33 --> Language Class Initialized
+DEBUG - 2014-12-03 23:56:33 --> Loader Class Initialized
+DEBUG - 2014-12-03 23:56:33 --> Helper loaded: url_helper
+DEBUG - 2014-12-03 23:56:33 --> Helper loaded: form_helper
+DEBUG - 2014-12-03 23:56:33 --> Database Driver Class Initialized
+ERROR - 2014-12-03 23:56:33 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/web-online-quiz/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-12-03 23:56:33 --> Form Validation Class Initialized
+DEBUG - 2014-12-03 23:56:33 --> Session Class Initialized
+DEBUG - 2014-12-03 23:56:33 --> Helper loaded: string_helper
+DEBUG - 2014-12-03 23:56:33 --> Session routines successfully run
+DEBUG - 2014-12-03 23:56:33 --> Controller Class Initialized
+DEBUG - 2014-12-03 23:56:33 --> Model Class Initialized
+DEBUG - 2014-12-03 23:56:33 --> Model Class Initialized
+DEBUG - 2014-12-03 23:56:33 --> Model Class Initialized
+DEBUG - 2014-12-03 23:56:33 --> Pagination Class Initialized
+DEBUG - 2014-12-03 23:56:33 --> Language file loaded: language/english/form_validation_lang.php
+DEBUG - 2014-12-03 23:56:33 --> XSS Filtering completed
+DEBUG - 2014-12-03 23:56:33 --> XSS Filtering completed
+DEBUG - 2014-12-03 23:56:33 --> File loaded: application/views/templates/header.php
+ERROR - 2014-12-03 23:56:33 --> Severity: Notice  --> Use of undefined constant add_test_feedback - assumed 'add_test_feedback' /Applications/MAMP/htdocs/web-online-quiz/application/views/pages/admin_quizzes.php 12
+DEBUG - 2014-12-03 23:56:33 --> File loaded: application/views/pages/admin_quizzes.php
+DEBUG - 2014-12-03 23:56:33 --> File loaded: application/views/pages/admin_quiz_new.php
+DEBUG - 2014-12-03 23:56:33 --> File loaded: application/views/templates/navigation.php
+DEBUG - 2014-12-03 23:56:33 --> File loaded: application/views/templates/footer.php
+DEBUG - 2014-12-03 23:56:33 --> Final output sent to browser
+DEBUG - 2014-12-03 23:56:33 --> Total execution time: 0.0418

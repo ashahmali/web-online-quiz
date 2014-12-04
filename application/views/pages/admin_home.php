@@ -21,7 +21,7 @@
 				</a>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 tile quiz">
-				<a href="" alt="Create Quiz" title="Create Quiz">
+				<a href="admin/quizzes" alt="Create Quiz" title="Create Quiz">
 					<i class="fa fa-book"></i>
 					<h2>Create Quiz</h2>
 				</a>

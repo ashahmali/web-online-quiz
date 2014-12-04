@@ -17,6 +17,7 @@
 			</div>
 		</div>
 		<div class="new_quiz_container" style="display:none;">
+			<?php echo form_open('admin/quizzes') ?>
 			<div class="row" >
 				<div class="col-xs-12 text-center">
 					<h2>Add Quiz</h2>
@@ -27,7 +28,7 @@
 					<p>Name</p>
 				</div>
 				<div class="col-sm-8 col-xs-12 text-left">
-					<input name="" type="text"></input>
+					<input name="qq_name" type="text"></input>
 				</div>
 			</div>
 			<div class="row">
@@ -36,9 +37,9 @@
 				</div>
 				<div class="col-sm-8 col-xs-12 text-left">
 					<select name="dd_subject_questions" class="dd_subject_questions">
-						<option>Web DEvelopment</option>
-						<option>Web DEvelopment</option>
-						<option>Web DEvelopment</option>
+						<?php foreach($subjects as $sub){
+			echo "<option value='".$sub['idSUBJECT']."'>".$sub['sName']."</option>";
+		}?>
 					</select>
 				</div>
 			</div>
@@ -47,7 +48,7 @@
 					<p>Time(minutes)</p>
 				</div>
 				<div class="col-sm-8 col-xs-12 text-left">
-					<input name="" type="number"></input>
+					<input name="qq_time" type="number"></input>
 				</div>
 			</div>
 			<div class="row">
@@ -55,7 +56,7 @@
 					<p>Questions</p>
 				</div>
 				<div class="col-sm-8 col-xs-12 text-left">
-					<input name="" type="number"></input>
+					<input name="qq_no_ques" type="number"></input>
 				</div>
 			</div>
 			<div class="row">
@@ -63,7 +64,7 @@
 					<p>Passmark</p>
 				</div>
 				<div class="col-sm-8 col-xs-12 text-left">
-					<input name="" type="number"></input>
+					<input name="qq_passmark" type="number"></input>
 				</div>
 			</div>
 			<div class="row">
@@ -71,7 +72,7 @@
 					<p>Retake</p>
 				</div>
 				<div class="col-sm-8 col-xs-12 text-left">
-					<input name="" type="number"></input>
+					<input name="qq_retake" type="number"></input>
 				</div>
 			</div>
 			<div class="row">
@@ -79,6 +80,7 @@
 					<button>Save Quiz</button>
 				</div>
 			</div>
+		 </form>
 		</div>
 	</div>
 	<div class="col-lg-2 col-md-2 col-sm-1 col-xs-1">

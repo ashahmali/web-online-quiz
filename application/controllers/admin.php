@@ -114,9 +114,9 @@ class Admin extends CI_Controller {
 		
 		$config = array();
 			// sets the base url for pagination purpose
-	    $config["base_url"] = base_url() . "admin/index";
+	    $config["base_url"] = base_url() . "admin/questions";
 			// sets the total number of items to the number of user in the database.
-	    $config["total_rows"] = $this->users_model->users_count();
+	    $config["total_rows"] = $this->question_model->question_count();
 			// sets the number of items to be displauyed per page
 	    $config["per_page"] = 20;
 	    $config["uri_segment"] = 3;
@@ -155,6 +155,62 @@ class Admin extends CI_Controller {
 	}
 
 	public function quizzes(){
+			
+		if($_POST){
+			$this->form_validation->set_rules('qq_name', 'Quiz Name', 'required|xss_clean');
+			$this->form_validation->set_rules('dd_subject_questions', 'Subject', 'required|integer');
+			$this->form_validation->set_rules('qq_time', 'Time', 'required|integer');
+			$this->form_validation->set_rules('qq_no_ques', 'No. of Question', 'required|xss_clean|integer');
+			$this->form_validation->set_rules('qq_passmark', 'Passmark', 'required|integer');
+			$this->form_validation->set_rules('qq_retake', 'No. of Retake', 'required|integer');
+			
+			if($this->form_validation->run() == TRUE){
+				$test = array(
+					'sTestName' => $this->input->post('qq_name'),
+					'iTime' => $this->input->post('qq_time'),
+					'iQuestions' => $this->input->post('qq_no_ques'),
+					'iPassmark' => $this->input->post('qq_passmark'),
+					'iRetake' => $this->input->post('qq_passmark'),
+				 );
+				 $test_id = ($id = $this->question_model->add_test($test))?$id:'';
+				 
+				 if($test_id){
+				 	$test_sub_rel = array(
+						'TEST_idTEST' => $test_id,
+						'SUBJECT_idSUBJECT' => $this->input->post('dd_subject_questions'),
+					);
+					if($this->question_model->add_test_sub_rship($test_sub_rel)){
+						$data['add_test_feedback'] = "Successfuly Added";
+					}
+				 }
+				 
+			}
+		}
+		
+		
+		/*
+		 * Fetches subjects from the db and lists them in a paginated view
+		 */
+		 $data["subjects"] = $this->question_model->get_subjects();
+		 
+		 $config = array();
+			// sets the base url for pagination purpose
+	    $config["base_url"] = base_url() . "admin/quizzes";
+			// sets the total number of items to the number of user in the database.
+	    $config["total_rows"] = $this->question_model->tests_count();
+			// sets the number of items to be displauyed per page
+	    $config["per_page"] = 20;
+	    $config["uri_segment"] = 3;
+		
+	 	$this->pagination->initialize($config);
+	 
+	    $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+		
+		 
+		 
+		$data['tests'] = $this->question_model->fetch_tests($sub='', $config["per_page"], $page);
+		$data["links"] = $this->pagination->create_links();
+		
 		$data['heading'] = 'Quizzes';
 		$this->load->view('templates/header', $data);
 		//$this->load->view('templates/modal', $data);
