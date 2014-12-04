@@ -7,6 +7,7 @@ class Quiz extends CI_Controller {
 	{
 		$data['heading'] = '';
 		$data['showQuizNav'] = true;
+		$data['showMenu'] = false;
 		$data['questions'] = array(
 				'Question 1' => array('Answer 1 Question 1','Answer 2 Question 1','Answer 3 Question 1'),
 				'Question 2' => array('Answer 1 Question 2','Answer 2 Question 2','Answer 3 Question 2'),
