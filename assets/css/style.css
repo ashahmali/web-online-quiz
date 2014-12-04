@@ -94,7 +94,15 @@ button:hover {
 .page-name:hover {
   text-decoration: none; }
 
-.shifter-navigation a {
+.shifter-navigation .menu_options li {
+  list-style: none;
+  padding: 10px 0;
+  border-bottom: 1px solid #BABABA; }
+  .shifter-navigation .menu_options li a {
+    color: #006B70; }
+  .shifter-navigation .menu_options li:last-child {
+    border-bottom: 0; }
+.shifter-navigation a.question {
   border-radius: 50%;
   width: 40px;
   height: 40px;
