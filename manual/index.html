@@ -1,0 +1,184 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<!-- Modernizer -->
+		<script src="js/modernizr.js"></script>
+
+		<!--[if IE 8]>
+        	<script>var IE8 = true;</script>
+        	<script src="http://formstone.it/js/site.ie8.js"></script>
+			<link rel="stylesheet" href="http://formstone.it/css/demo.ie8.css">
+		<![endif]-->
+		<!--[if IE 9]>
+        	<script>var IE9 = true;</script>
+        	<script src="http://formstone.it/js/site.ie9.js"></script>
+		<![endif]-->
+
+
+		<!-- Demo Resources 
+		<link href="http://formstone.it/css/demo.css" rel="stylesheet" type="text/css" media="all">
+		<script src="http://formstone.it/js/demo.js"></script>-->
+		<link href="css/jquery.fs.shifter.css" rel="stylesheet" type="text/css" media="all">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style_dropdown.css">
+		<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+		<script src="js/jquery.fs.shifter.js"></script>
+
+		<style>
+			/*.shifter .shifter-handle { float: right; margin: -5px 0 0; }*/
+			.shifter .shifter-navigation { background: #f9f9f9; padding: 100px 30px 30px; }
+			.shifter .shifter-navigation a { color: #666; display: block; font-size: 18px; margin: 0 0 15px; }
+		</style>
+		<!-- <link rel="stylesheet" href="css/style_accordion.css" />
+		<link rel="stylesheet" href="css/style_tabs.css" />
+		<link rel="stylesheet" href="css/animate.min.css" />
+		<link rel="stylesheet" href="css/style_tabs.css" />
+		<link rel="stylesheet" href="css/style_tabs.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/jquery-ui.min.css" />
+		<link rel="stylesheet" href="css/style_tabs_main.css" /> -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+
+		
+		<!--  // <script src="js/jquery-ui.min.js" type="text/javascript"></script>  -->
+	
+
+		
+		<script>
+			$(document).ready(function() {
+				$.shifter({
+					maxWidth: Infinity
+				});
+			});
+		</script>
+		<!--[if lt IE 9]>
+		  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<title>Web Development Assignament</title>
+		
+	</head>
+	<body>
+		
+		<body class="gridlock demo shifter">
+		<header id="header">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-sm-12">
+					<a href="" class="page-name">Testing System</a>
+					<span class="shifter-handle"><i class="fa fa-bars"></i></span>
+				</div>
+			</div>
+		</header>
+		<div class="shifter-page">
+			<div class="conatiner">
+				<article class="row page">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<header class="header">
+							<h1>Web development coursework design toolkit</h1>
+							<!-- <p>A technical demonstration of the jQuery plugin.</p> -->
+							<!-- <br>
+							<a href="http://formstone.it/shifter/" class="button">View Documentation</a -->
+						</header>
+						<div class="row" style="margin-bottom:10px;">
+							<label for="text1">This is a label</label><input type="text" name="text1" placeholder="Type some text"/>
+						</div>
+						<div class="row" style="">
+						<label for="text1">This is a label</label><textarea name="text1" placeholder="Type some text"></textarea>
+						</div>
+
+						<div class="row radio">  
+						     <input id="male" type="radio" name="gender" value="male">  
+						    <label for="male" class="radio_label">Male</label>  
+						    <input id="female" type="radio" name="gender" value="female">  
+						    <label for="female" class="radio_label">Female</label>  
+						</div>  
+						<div id="dd" class="wrapper-dropdown-5" tabindex="1">
+							<span>Transport</span>
+							<ul class="dropdown">
+								<li><a href="#"><i class="icon-envelope icon-large"></i>Classic mail</a></li>
+								<li><a href="#"><i class="icon-truck icon-large"></i>UPS Delivery</a></li>
+								<li><a href="#"><i class="icon-plane icon-large"></i>Private jet</a></li>
+							</ul>
+						</div>
+						<button>Button</button>
+					</div>
+				</article>
+
+				<footer id="footer" class="row">
+					<div class="all-full copyright">
+						<!-- Made with &hearts; in Hampden -->
+					</div>
+				</footer>
+			</div>
+		</div>
+		<nav class="shifter-navigation">
+			<a href="#1">1</a>
+			<a href="#2">2</a>
+			<a href="#3">3</a>
+			<a href="#4">4</a>
+			<a href="#5">5</a>
+		</nav>
+		<script type="text/javascript">
+
+			// function DropDown(el) {
+			// 	this.dd = el;
+			// 	this.initEvents();
+			// }
+			// DropDown.prototype = {
+			// 	initEvents : function() {
+			// 		var obj = this;
+
+			// 		obj.dd.on('click', function(event){
+			// 			$(this).toggleClass('active');
+			// 			event.stopPropagation();
+			// 		});	
+			// 	}
+			// }
+
+			function DropDown(el) {
+				this.dd = el;
+				this.placeholder = this.dd.children('span');
+				this.opts = this.dd.find('ul.dropdown > li');
+				this.val = '';
+				this.index = -1;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						$(this).toggleClass('active');
+						return false;
+					});
+
+					obj.opts.on('click',function(){
+						var opt = $(this);
+						obj.val = opt.text();
+						obj.index = opt.index();
+						obj.placeholder.text(obj.val);
+					});
+				},
+				getValue : function() {
+					return this.val;
+				},
+				getIndex : function() {
+					return this.index;
+				}
+			}
+
+			$(function() {
+
+				var dd = new DropDown( $('#dd') );
+
+				$(document).click(function() {
+					// all dropdowns
+					$('.wrapper-dropdown-5').removeClass('active');
+				});
+
+			});
+
+		</script>
+	</body>
+</html>
