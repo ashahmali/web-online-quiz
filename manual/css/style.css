@@ -247,3 +247,63 @@ input[type=radio]:checked + label.radio_label:before {
 	max-height: 0;
 	overflow: hidden;
 }
+
+/*overwrite jquery ui styles*/
+.ui-accordion .ui-accordion-header{
+	border-radius: 0px !important;
+	color:#fff;
+	background: #006b70 !important;
+	border: none;
+	font-family: 'Conv_Dual-300';
+	outline: none;
+	padding: 10px;
+	margin-bottom: 0;
+	margin-top: 0;
+	border-bottom: 1px solid #fff;
+}
+
+
+.ui-accordion .ui-accordion-header.ui-state-active{
+	border-bottom: 0;
+}
+
+.ui-accordion .ui-accordion-header .ui-state-active .ui-accordion-header-icon:after{
+	content: '\25b2';
+	color: #000;
+	font-size: 20px;
+}
+
+.ui-accordion .ui-accordion-header .ui-state-default .ui-accordion-header-icon:after{
+	content: '\25bc';
+	color: #000;
+	font-size: 20px;
+}
+
+.ui-accordion .ui-accordion-header.ui-state-active:before{
+	content: '\25b2' !important;
+	padding-right: 15px;
+}
+.ui-accordion .ui-accordion-header.ui-state-default:before {
+	
+	content: '\25bc' ;
+	padding-right: 15px;
+	position: absolute;
+	left: 30px;
+}
+
+.ui-accordion .ui-accordion-content{
+	font-family: 'Conv_Dual-300';
+	/*background: #FFA24D !important;*/
+	border: 1px solid;
+	padding: 20px;
+
+}
+
+ @media screen and  (max-width: 480px){
+	.ui-accordion .ui-accordion-content {
+		padding: 1em 0;
+	}
+	.ui-accordion .ui-accordion-header{
+		text-align: left;
+	}
+}

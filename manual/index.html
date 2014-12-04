@@ -22,8 +22,10 @@
 		<link href="css/jquery.fs.shifter.css" rel="stylesheet" type="text/css" media="all">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/style_dropdown.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
 		<script src="js/jquery.fs.shifter.js"></script>
+		<script src="js/jquery-ui.min.js" type="text/javascript"></script>
 
 		<style>
 			/*.shifter .shifter-handle { float: right; margin: -5px 0 0; }*/
@@ -51,6 +53,13 @@
 				$.shifter({
 					maxWidth: Infinity
 				});
+
+				$( ".manual_accordion" ).accordion({
+					heightStyle: "content",
+					collapsible: true,
+					icons: 'icons'
+				});
+
 			});
 		</script>
 		<!--[if lt IE 9]>
@@ -87,6 +96,8 @@
 						<label for="text1">This is a label</label><textarea name="text1" placeholder="Type some text"></textarea>
 						</div>
 
+
+
 						<div class="row radio">  
 						     <input id="male" type="radio" name="gender" value="male">  
 						    <label for="male" class="radio_label">Male</label>  
@@ -101,6 +112,21 @@
 								<li><a href="#"><i class="icon-plane icon-large"></i>Private jet</a></li>
 							</ul>
 						</div>
+						<div class="row radio">  
+							<div class="col-sm-8 col-sm-offset-2 col-xs-12">
+							    <div class="manual_accordion">
+					            		<h3>Student 1 -  Ashiru Ali</h3>
+					            		<div>
+					            			This is the content
+					            		</div>
+					            		<h3>Student 2 - Eduardo Hernandez</h3>
+					            		<div>
+					            			This is the content
+					            		</div>	
+					        	</div> 
+					        </div> 
+						</div> 
+						
 						<button>Button</button>
 					</div>
 				</article>
