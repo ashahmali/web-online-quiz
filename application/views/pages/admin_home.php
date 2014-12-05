@@ -15,7 +15,7 @@
 	<div class="col-lg-8 col-md-8 col-sm-10 col-xs-10 tiles">
 		<div class="row top">
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 tile subject">
-				<a href="" alt="Create Subject" title="Create Subject">
+				<a href="admin/add_subject" alt="Create Subject" title="Create Subject">
 					<i class="fa fa-university"></i> 
 					<h2>Create Subject</h2>
 				</a>
