@@ -12,6 +12,7 @@ class Users extends CI_Controller {
 	public function register(){
 		$reg_errors =array(); //intializes an array for possible errors
 		$data['title'] = ucfirst('register'); // Capitalize the first letter
+		$data['showMenu'] = false;
 		$id = 0;
 		
 		
@@ -86,7 +87,7 @@ class Users extends CI_Controller {
 		 * Fetches subject option data from the DB
 		 */
 		$data['drop_option'] = $this->users_model->fetch_subject();
-		
+		$this->output->enable_profiler(FALSE);	
 		/*
 		 * loads the header, main page and and footer, passing data
 		 * @argument $data.
