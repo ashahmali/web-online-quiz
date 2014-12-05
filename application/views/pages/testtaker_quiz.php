@@ -28,21 +28,21 @@
 		<p>General Intructions</p>
 	</div>
 	<?php $counterQuestion = 1; ?>
-	<?php foreach ($questions as $statement => $answers) { ?>
+	<?php foreach ($questions as $q) { ?>
 		<!-- question start-->
 		<div id="question_<?php echo $counterQuestion; ?>" class="col-xs-12 question">
 			<div class="row statement">
 				<div class="col-sm-12">
-					<p><span><?php echo $counterQuestion; ?> - </span><?php echo $statement;?></p>
+					<p><span><?php echo $counterQuestion; ?> - </span><?php echo $q['statement'];?></p> 
 				</div>
 			</div>
 			<div class="row answers">
 				<?php $counterAnswers = 1; ?>
-				<?php foreach ($answers as $value) { ?>
+				<?php foreach ($q['options'] as $option) { ?>
 					<div class=" col-sm-12 answer">
 						<div class="radio">
-							<input id="answer_<?php echo $counterQuestion.'_'.$counterAnswers; ?>" type="radio" name="answers_<?php echo $counterQuestion; ?>" value="<?php echo $value;?>" style="display:none;">  
-						    <label for="answer_<?php echo $counterQuestion.'_'.$counterAnswers; ?>" class="radio_label"><?php echo $value;?></label> 
+							<input id="answer_<?php echo $counterQuestion.'_'.$counterAnswers; ?>" type="radio" name="answers_<?php echo $counterQuestion; ?>" value="<?php echo $q['id'].'_'.$option['id'] ;?>" style="display:none;">  
+						    <label for="answer_<?php echo $counterQuestion.'_'.$counterAnswers; ?>" class="radio_label"><?php echo $option['description'];?></label> 
 						</div>
 					</div>
 					<?php $counterAnswers++; ?>
