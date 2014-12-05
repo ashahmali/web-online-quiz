@@ -100,11 +100,9 @@
 					<nav class ='quick_nav_inner'>
 						<div class="handler prev"><a href="javascript:void(0);"><i class="fa fa-chevron-left"></i></a></div>
 						<div class = 'owl-carousel'>
-							<div class = 'slide' style="width:20px"><a href="#question_1" class="question_1_link">1</a></div>
-							<div class = 'slide' style="width:20px"><a href="#question_2" class="question_2_link">2</a></div>
-							<div class = 'slide' style="width:20px"><a href="#question_3" class="question_3_link">3</a></div>
-							<div class = 'slide' style="width:20px"><a href="#question_4" class="question_4_link">4</a></div>
-							<div class = 'slide' style="width:20px"><a href="#question_5" class="question_5_link">5</a></div>
+							<?php for ($i=1; $i <= $questionsCount; $i++) { ?>
+								<div class = 'slide' style="width:20px"><a href="#question_<?php echo $i;?>" class="question_<?php echo $i;?>_link"><?php echo $i;?></a></div>
+							<?php } ?>
 						</div>
 						<div class="handler next"><a href="javascript:void(0);"><i class="fa fa-chevron-right"></i></a></div>
 						<!-- <div class="owl-carousel">

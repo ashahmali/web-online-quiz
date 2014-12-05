@@ -9,8 +9,7 @@ class Quiz extends CI_Controller {
 		$data['showMenu'] = false;
 		if(isset($subject) && $subject != "" &&
 			isset($quiz_id) && $quiz_id != ""){
-			$data['showQuizNav'] = true;
-			$this->load->view('templates/header', $data);
+			
 			log_message('subject', $subject);
 			log_message('quiz_id', $quiz_id);
 			$CI =& get_instance();
@@ -55,7 +54,9 @@ class Quiz extends CI_Controller {
 
 				//var_dump($data['questions']);
 			}
-			
+			$data['showQuizNav'] = true;
+			$data['questionsCount'] = $quiz['iQuestions'];
+			$this->load->view('templates/header', $data);
 			$this->load->view('pages/testtaker_start', $data);
 			$this->load->view('pages/testtaker_quiz', $data);
 			$this->load->view('pages/testtaker_finish', $data);
