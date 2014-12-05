@@ -12,7 +12,7 @@
 		<header class="header">
 			<h1>Welcome</h1>
 			<?php echo validation_errors(); ?>
-			<?php echo ($login_errors) ? $login_errors : ""; ?>
+			<?php echo (isset($login_errors))  ?  $login_errors : ""; ?>
 		</header>
 		<?php echo form_open('users/login') ?>
 			<div class="row" >

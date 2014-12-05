@@ -13,10 +13,12 @@
 		<header class="header">
 			<h1>Registration Form</h1>
 			<?php echo validation_errors(); ?>
-			<ul>
+			<ul class="error_list">
 			<?php
-				foreach ($reg_errors as $error) {
-					echo "<li>$error</li>";
+				if(isset($reg_errors)){
+					foreach ($reg_errors as $error) {
+						echo "<li>$error</li>";
+					}
 				}
 			?>
 			</ul>
@@ -72,9 +74,11 @@
 					<?php 
 						//if(isset($dd_subject))
 							//echo $dd_subject;
+						if(isset($drop_option)){
 							foreach ($drop_option as $option){
 								echo '<option value="'.$option['idSUBJECT'].'">'.$option['sName'].'</option>';
 							} 
+						}
 					?>
 					</select>
 
