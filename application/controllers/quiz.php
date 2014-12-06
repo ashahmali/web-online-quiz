@@ -17,7 +17,7 @@ class Quiz extends CI_Controller {
          	$CI->load->model('quiz_model');
 			$quizData = $CI->quiz_model->getbySubjectandID($subject,$quiz_id);
 
-			log_message('quizData[0]',$quizData[0]);
+			//log_message('quizData[0]',$quizData[0]);
 			//get quiz info
 			if(!empty($quizData) && count($quizData) > 0){
 	   			// $quiz->idTEST = $data[0]['idTEST'];
@@ -53,13 +53,23 @@ class Quiz extends CI_Controller {
 				}
 
 				//var_dump($data['questions']);
+				//$idUser = $this->session->userdata('idUSER');
+				//$this->session->set_userdata('TEST_idTEST',$idTest);
+				//$this->session->set_userdata('dTestDate',$date);
+				// $CI->quiz_model->startQuiz($quiz_id,$idUser);
+				$data['showQuizNav'] = true;
+				$data['questionsCount'] = $quiz['iQuestions'];
 			}
-			$data['showQuizNav'] = true;
-			$data['questionsCount'] = $quiz['iQuestions'];
+			
 			$this->load->view('templates/header', $data);
 			$this->load->view('pages/testtaker_start', $data);
-			$this->load->view('pages/testtaker_quiz', $data);
+			if(isset($quiz)){
+				$this->load->view('pages/testtaker_quiz', $data);
+			}else{
+				$this->load->view('pages/testtaker_quiz_error');
+			}
 			$this->load->view('pages/testtaker_finish', $data);
+
 		
 		}
 		else{
@@ -72,5 +82,22 @@ class Quiz extends CI_Controller {
 	
 	}
 
-	
+	public function timer(){
+		$values = array();
+		$idTest = $this->session->userdata('TEST_idTEST');
+		$idUser = $this->session->userdata('idUSER');
+		if(isset($idTest) && isset($idUser)){
+			$date = new DateTime();
+			$timestamp = $date->getTimestamp(); 
+			$this->load->model('quiz_model');
+			$this->quiz_model->updateTime($idTest,$idUser,$timestamp);
+			$values["start"] = "";
+			$values["end"] = $timestamp;
+		}
+		return json_encode($values);
+	}
+
+	public function evaluate(){
+		
+	}
 }
