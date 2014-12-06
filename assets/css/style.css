@@ -378,6 +378,9 @@ footer {
 .dd_subject_questions {
   margin: 20px 0; }
 
+.question_detail_container p {
+  padding-top: 7px !important; }
+
 #add_question.cancel {
   background: #ff9999; }
 

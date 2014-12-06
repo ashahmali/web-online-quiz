@@ -20,7 +20,7 @@
 			<?php echo form_open('admin/quizzes') ?>
 			<div class="row" >
 				<div class="col-xs-12 text-center">
-					<h2>Add Quiz</h2>
+					<h2 id="add_quiz_title">Add Quiz</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -36,7 +36,7 @@
 					<p>Subject</p>
 				</div>
 				<div class="col-sm-8 col-xs-12 text-left">
-					<select name="dd_subject_questions" class="dd_subject_questions">
+					<select name="dd_subject_questions" class="dd_newquiz_subject">
 						<?php foreach($subjects as $sub){
 			echo "<option value='".$sub['idSUBJECT']."'>".$sub['sName']."</option>";
 		}?>

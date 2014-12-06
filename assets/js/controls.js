@@ -197,6 +197,7 @@ $(document).ready(function(){
 		}else{
 			$('.new_quiz_container').slideDown('fast');	
 			$(this).addClass('cancel');
+			$("html, body").animate({ scrollTop: $('#add_quiz_title').offset().top - 80 }, 1000);
 		}
 		$(this).text(alterText);
 		$(this).data('alter',newalter);
