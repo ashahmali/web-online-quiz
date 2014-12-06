@@ -1,1 +1,1 @@
-<div>you are succesfully registered, thanks</div>
+<div class="message">You information has been received. Your account is waiting for moderation. </div>
