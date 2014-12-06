@@ -229,27 +229,27 @@ $(document).ready(function(){
 		onTranslate: callback
 	});
 	function callback(event) {
-	    if(event.page.index == 1){
-			//disable handler
-			jQuery('.quick_nav_inner .handler.prev').css('opacity','0.2');
-			jQuery('.quick_nav_inner .handler.prev').css('cursor','normal');
+	 //    if(event.page.index == 1){
+		// 	//disable handler
+		// 	jQuery('.quick_nav_inner .handler.prev').css('opacity','0.2');
+		// 	jQuery('.quick_nav_inner .handler.prev').css('cursor','normal');
 
-		}else{
-			//enable handler
-			jQuery('.quick_nav_inner .handler.prev').css('opacity','1');
-			jQuery('.quick_nav_inner .handler.prev').css('cursor','pointer');
-		}
+		// }else{
+		// 	//enable handler
+		// 	jQuery('.quick_nav_inner .handler.prev').css('opacity','1');
+		// 	jQuery('.quick_nav_inner .handler.prev').css('cursor','pointer');
+		// }
 
-		if(event.page.count == event.page.index){
-			//disable handler
-			jQuery('.quick_nav_inner .handler.next').css('opacity','0.2');
-			jQuery('.quick_nav_inner .handler.next').css('cursor','normal');
-		}else{
-			//enable handler
-			jQuery('.quick_nav_inner .handler.next').css('opacity','1');
-			jQuery('.quick_nav_inner .handler.next').css('cursor','pointer');
+		// if(event.page.count == event.page.index){
+		// 	//disable handler
+		// 	jQuery('.quick_nav_inner .handler.next').css('opacity','0.2');
+		// 	jQuery('.quick_nav_inner .handler.next').css('cursor','normal');
+		// }else{
+		// 	//enable handler
+		// 	jQuery('.quick_nav_inner .handler.next').css('opacity','1');
+		// 	jQuery('.quick_nav_inner .handler.next').css('cursor','pointer');
 
-		}
+		// }
 	}
 
 	$('.quick_nav_inner .handler.prev').click(function(){
@@ -319,7 +319,16 @@ $(document).ready(function(){
 			$(selector).addClass('answered');
 		}
 	});
+	var eventTime= 1366549200; // Timestamp - Sun, 21 Apr 2013 13:00:00 GMT
+	var currentTime = 1366547400; // Timestamp - Sun, 21 Apr 2013 12:30:00 GMT
+	var diffTime = eventTime - currentTime;
+	var duration = moment.duration(diffTime*1000, 'milliseconds');
+	var interval = 1000;
 
+	setInterval(function(){
+	  duration = moment.duration(duration - interval, 'milliseconds');
+	    $('.timer_container .timer').text(duration.hours() + ":" + duration.minutes() + ":" + duration.seconds())
+	}, interval); 
 	
 	
 });

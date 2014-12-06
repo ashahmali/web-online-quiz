@@ -32,6 +32,10 @@
 		<script src="<?php echo base_url();?>assets/js/controls.js"></script>
 		<script src="<?php echo base_url();?>assets/js/bootstrap.min.js" type="text/javascript"></script>
 		<script src="<?php echo base_url();?>assets/js/owl.carousel.min.js" type="text/javascript"></script>
+		<script src="<?php echo base_url();?>assets/js/moment.min.js" type="text/javascript"></script>
+
+
+		
 
 		<style>
 			/*.shifter .shifter-handle { float: right; margin: -5px 0 0; }*/
@@ -94,7 +98,7 @@
 		<div class="container fixed-quiz-elements">
 			<div class="row">
 				<div class="col-sm-3 col-xs-4 text-right timer_container">
-					<p><span class="timer hidden-xs">TIMER</span> <span class="timer">15:00 m</span></p>
+					<p><span class=" hidden-xs">TIMER</span> <span class="timer">15:00 m</span></p>
 				</div>
 				<div class="col-sm-9 col-xs-8 text-right quick_nav">
 					<nav class ='quick_nav_inner'>
@@ -105,15 +109,6 @@
 							<?php } ?>
 						</div>
 						<div class="handler next"><a href="javascript:void(0);"><i class="fa fa-chevron-right"></i></a></div>
-						<!-- <div class="owl-carousel">
-						  <div> Your Content </div>
-						  <div> Your Content </div>
-						  <div> Your Content </div>
-						  <div> Your Content </div>
-						  <div> Your Content </div>
-						  <div> Your Content </div>
-						  <div> Your Content </div>
-						</div> -->
 					</nav>
 				</div>
 			</div>
