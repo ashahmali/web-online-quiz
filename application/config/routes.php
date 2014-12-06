@@ -37,9 +37,13 @@
 | in the URL cannot be matched to a valid route.
 |
 */
+$route['(:any)/timer'] = "quiz/timer";
+$route['(:any)/save_answer'] = "quiz/save_answer";
+$route['quiz/(\d+)/(\d+)'] = "quiz/showQuiz/$1/$2";
+$route['quiz/(:any)'] = "quiz/showQuiz";
 
 
-$route['default_controller'] = "welcome";
+$route['default_controller'] = "login";
 //$route['subject'] = 'admin_subject';
 $route['404_override'] = '';
 

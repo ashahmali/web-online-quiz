@@ -313,23 +313,47 @@ $(document).ready(function(){
 		$("html, body").animate({ scrollTop: $(link).offset().top - 80 }, 1000);
 	});
 
+	//a queston is solved
 	$(document).on("change",".testtaker_quiz .question .answers .answer .radio input[type='radio']",function(){
 		var id = this.id;
-		var pieces = id.split('_');
-		if(pieces && pieces.length > 0){
-			var selector = '.question_'+pieces[1]+'_link'; //pregunta
-			$(selector).addClass('answered');
-		}
+		var pieces = id.split('_');	
+		var value = $(this).val();
+
+		$.ajax({
+			url: "save_answer", 
+                async: false,
+                type: "POST", 
+                dataType: "html",
+                data: {
+                	newAnswer:value
+            	},
+            success: function(data) {
+                if(pieces && pieces.length > 0){
+					var selector = '.question_'+pieces[1]+'_link'; //pregunta
+					$(selector).addClass('answered');
+				}
+            }
+		});
 	});
-	var eventTime= 1366549200; // Timestamp - Sun, 21 Apr 2013 13:00:00 GMT
-	var currentTime = 1366547400; // Timestamp - Sun, 21 Apr 2013 12:30:00 GMT
-	var diffTime = eventTime - currentTime;
-	var duration = moment.duration(diffTime*1000, 'milliseconds');
+
+	var duration = moment.duration(parseInt($('#test_form').attr('data-start')),'milliseconds');
 	var interval = 1000;
 
 	setInterval(function(){
-	  duration = moment.duration(duration - interval, 'milliseconds');
-	    $('.timer_container .timer').text(duration.hours() + ":" + duration.minutes() + ":" + duration.seconds())
+	  	duration = moment.duration(duration - interval, 'milliseconds');
+	    $('#test_form').attr('data-current',duration._milliseconds);
+	    $.ajax({
+			url: "timer", 
+                async: false,
+                type: "POST", 
+                dataType: "html",
+                data: {
+                	duration:duration._milliseconds
+            	},
+            success: function(data) {
+               $('.timer_container .timer').text(duration.hours() + ":" + duration.minutes() + ":" + duration.seconds());
+            }
+		});
 	}, interval); 
 	
 	

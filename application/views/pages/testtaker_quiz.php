@@ -24,7 +24,7 @@
 		<p class="name">Web Performance and Optimization</p>
 	</div>
 
-	<form id="#test_form" >
+	<form id="test_form" data-start="<?php echo $timer;?>" data-current="">
 		<div class="col-xs-12 text-center">
 			<p>General Intructions</p>
 		</div>
@@ -39,10 +39,18 @@
 				</div>
 				<div class="row answers">
 					<?php $counterAnswers = 1; ?>
+					
 					<?php foreach ($q['options'] as $option) { ?>
 						<div class=" col-sm-12 answer">
 							<div class="radio">
-								<input id="answer_<?php echo $counterQuestion.'_'.$counterAnswers; ?>" type="radio" name="answers_<?php echo $counterQuestion; ?>" value="<?php echo $q['id'].'_'.$option['id'] ;?>" style="display:none;">  
+								<?php $selected = ""; ?>
+								<?php 
+								if(isset($answers) && isset($answers[$q['id']]) && $answers[$q['id']] == $option['id']) {
+									//var_dump($answers[$q['id']]);
+									//var_dump($option['id']);
+									$selected = 'checked';
+								}?>
+								<input id="answer_<?php echo $counterQuestion.'_'.$counterAnswers; ?>" type="radio" name="answers_<?php echo $counterQuestion; ?>" value="<?php echo $q['id'].'_'.$option['id'] ;?>" <?php echo $selected;?> style="display:none;">  
 							    <label for="answer_<?php echo $counterQuestion.'_'.$counterAnswers; ?>" class="radio_label"><?php echo $option['description'];?></label> 
 							</div>
 						</div>

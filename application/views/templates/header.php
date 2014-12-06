@@ -98,7 +98,7 @@
 		<div class="container fixed-quiz-elements">
 			<div class="row">
 				<div class="col-sm-3 col-xs-4 text-right timer_container">
-					<p><span class=" hidden-xs">TIMER</span> <span class="timer">15:00 m</span></p>
+					<p><span class=" hidden-xs">TIMER</span> <span class="timer"></span></p>
 				</div>
 				<div class="col-sm-9 col-xs-8 text-right quick_nav">
 					<nav class ='quick_nav_inner'>

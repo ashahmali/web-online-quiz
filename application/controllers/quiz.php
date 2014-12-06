@@ -53,12 +53,17 @@ class Quiz extends CI_Controller {
 				}
 
 				//var_dump($data['questions']);
-				//$idUser = $this->session->userdata('idUSER');
-				//$this->session->set_userdata('TEST_idTEST',$idTest);
-				//$this->session->set_userdata('dTestDate',$date);
-				// $CI->quiz_model->startQuiz($quiz_id,$idUser);
+				$idUser = $this->session->userdata('idUSER');
+				$this->session->set_userdata('TEST_idTEST',$quiz_id);
+				$date = new DateTime();
+				$this->session->set_userdata('dTestDate',$date);
+				$this->load->model('quiz_model');
+				$this->quiz_model->startQuiz($quiz_id,$idUser);
 				$data['showQuizNav'] = true;
 				$data['questionsCount'] = $quiz['iQuestions'];
+				$sessionArray = $this->session->userdata('answers');
+				$data['answers'] = $sessionArray;
+				$data['timer'] =  $this->calculateRemainingTimer($quizData[0]['iTime']);
 			}
 			
 			$this->load->view('templates/header', $data);
@@ -83,21 +88,62 @@ class Quiz extends CI_Controller {
 	}
 
 	public function timer(){
-		$values = array();
-		$idTest = $this->session->userdata('TEST_idTEST');
-		$idUser = $this->session->userdata('idUSER');
-		if(isset($idTest) && isset($idUser)){
-			$date = new DateTime();
-			$timestamp = $date->getTimestamp(); 
-			$this->load->model('quiz_model');
-			$this->quiz_model->updateTime($idTest,$idUser,$timestamp);
-			$values["start"] = "";
-			$values["end"] = $timestamp;
+		if(isset($_POST['duration'])){
+			// $values = array();
+			// $idTest = $this->session->userdata('TEST_idTEST');
+			// $idUser = $this->session->userdata('idUSER');
+			$this->session->set_userdata('timer',$_POST['duration']);
+			// if(isset($idTest) && isset($idUser)){
+			// 	$date = new DateTime();
+			// 	$timestamp = $date->getTimestamp(); 
+			// 	//$this->load->model('quiz_model');
+			// 	//$this->quiz_model->updateTime($idTest,$idUser,$timestamp);
+			// 	//$values["start"] = "";
+			// 	//$values["end"] = $timestamp;
+			// }
 		}
-		return json_encode($values);
+		//return json_encode($values);
 	}
 
 	public function evaluate(){
 		
+	}
+
+	public function save_answer($value = ''){
+		
+		if(isset($value) || isset($_POST['newAnswer'])){
+
+			$objective = (isset($value) && $value != '') ? $value : $_POST['newAnswer'];
+			//split value
+			$pieces = explode('_',$objective);
+			
+			if(isset($pieces) && count($pieces) > 1)
+			{
+				$question = $pieces[0];
+				$answer = $pieces[1];
+				//uppdate associateive aaray in the session
+				$sessionArray = $this->session->userdata('answers');
+				if(isset($sessionArray) && $sessionArray){
+					$sessionArray[$question] = $answer;
+				}else{
+					$sessionArray = array();
+					$sessionArray[$question] = $answer;
+				}
+				//var_dump($sessionArray);
+				log_message('answers',$sessionArray);
+				$this->session->set_userdata('answers',$sessionArray);
+			}
+
+		}
+	}
+
+
+	private function calculateRemainingTimer($originalTime){
+		$remainingTime = $originalTime * 60 * 1000;
+		$time = $this->session->userdata('timer');
+		if (isset($time) && $time != "") {
+			$remainingTime = $time;
+		}
+		return $remainingTime;
 	}
 }
