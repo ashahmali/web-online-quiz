@@ -65,6 +65,7 @@ $(document).ready(function(){
 		}else{
 			$('.new_question_container').slideDown('fast');	
 			$(this).addClass('cancel');
+			$("html, body").animate({ scrollTop: $('#add_question_title').offset().top - 80 }, 1000);
 		}
 		$(this).text(alterText);
 		$(this).data('alter',newalter);

@@ -23,7 +23,7 @@
 			<?php echo form_open('admin/questions') ?>
 			<div class="row" >
 				<div class="col-xs-12 text-center">
-					<h2>Add Question</h2>
+					<h2 id="add_question_title">Add Question</h2>
 				</div>
 				<div class="col-sm-4 col-xs-12 text-left">
 					<h3>Question Statement</h3>
