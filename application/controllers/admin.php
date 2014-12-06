@@ -198,13 +198,12 @@ class Admin extends CI_Controller {
 	public function question_detail() {
 		if (isset($_POST) && isset($_POST['id'])) {
 			$question_id = $_POST['id'];
+			
 			//We need to get question details here
+			$this->load->model('question_model');
+			$questionData = $this -> question_model -> questionDetail($question_id);
 
-			//get statement
-
-			//get answers
-
-			$data['question_id'] = $question_id;
+			$data['questionData'] = $questionData;
 			$this -> load -> view('pages/admin_question_detail', $data);
 		}
 	}

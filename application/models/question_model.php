@@ -88,6 +88,25 @@ class Question_model extends CI_Model {
 	public function add_subject($sub){
 		return $this->db->insert('SUBJECT', $sub);
 	}
+
+	public function questionDetail($questionID){
+		$data = array();
+		$this->db->select('*');
+		$this->db->from('QUESTION');
+		$whereClause = array("idQUESTION" => $questionID);
+		$this->db->where($whereClause);
+		$query = $this->db->get();
+		
+		if ($query->num_rows() > 0) {
+			$this->load->model('option_model');
+            foreach ($query->result_array() as $row) {
+                $data['question'] = $row;
+                $data['options'] = $this->option_model->getbyQuestion($questionID);
+            }
+        }
+
+        return $data;  
+	}
 	
 	
 }
