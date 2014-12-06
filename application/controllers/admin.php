@@ -198,7 +198,7 @@ class Admin extends CI_Controller {
 	public function question_detail() {
 		if (isset($_POST) && isset($_POST['id'])) {
 			$question_id = $_POST['id'];
-			
+
 			//We need to get question details here
 			$this->load->model('question_model');
 			$questionData = $this -> question_model -> questionDetail($question_id);
@@ -235,9 +235,13 @@ class Admin extends CI_Controller {
 		if (isset($_POST) && isset($_POST['id'])) {
 			$quiz_id = $_POST['id'];
 			//We need to get Quiz details here
+			$this->load->model('quiz_model');
+			$quizData = $this -> quiz_model -> quizDetail($quiz_id);
 
-			$data['quiz_id'] = $quiz_id;
-			$this -> load -> view('pages/admin_quiz_detail', $data);
+			if(isset($quizData) && count($quizData) > 0){
+				$data['quizData'] = $quizData[0];
+				$this -> load -> view('pages/admin_quiz_detail', $data);
+			}
 		}
 	}
 

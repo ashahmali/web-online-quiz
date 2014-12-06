@@ -12,10 +12,10 @@
 		<div class="question_detail_container">
 			<div class="row" >
 				<div class="col-xs-12 text-center">
-					<h4>Name <?php echo $quiz_id;?></h4>
+					<h4>Name</h4>  
 				</div>
-				<div class="col-sm-offset-1 col-sm-10 text-left">
-					<p>test Quiz</p>
+				<div class="col-sm-offset-1 col-sm-10 text-center">	
+					<p><?php echo $quizData['sTestName'];?></p>
 				</div>
 			</div>
 			<div class="row">
@@ -23,7 +23,7 @@
 					<h4 class="">Subject</h4>
 				</div>
 				<div class="col-xs-6 text-left ">
-					<p>Maths</p>
+					<p><?php echo $quizData['sTestName'];?></p>
 				</div>
 			</div>
 			<div class="row">
@@ -31,7 +31,7 @@
 					<h4 class="">Time</h4>
 				</div>
 				<div class="col-xs-6 text-left ">
-					<p>60 minutes</p>
+					<p><?php echo $quizData['iTime'];?> minutes</p>
 				</div>
 			</div>
 			<div class="row">
@@ -39,7 +39,7 @@
 					<h4 class="">Questions</h4>
 				</div>
 				<div class="col-xs-6 text-left ">
-					<p>15</p>
+					<p><?php echo $quizData['iQuestions'];?></p>
 				</div>
 			</div>
 			<div class="row">
@@ -47,7 +47,7 @@
 					<h4 class="">Passmark</h4>
 				</div>
 				<div class="col-xs-6 text-left ">
-					<p>100</p>
+					<p><?php echo $quizData['iPassmark'];?></p>
 				</div>
 			</div>
 			<div class="row">
@@ -55,7 +55,7 @@
 					<h4 class="">Retake</h4>
 				</div>
 				<div class="col-xs-6 text-left ">
-					<p>10</p>
+					<p><?php echo $quizData['iRetake'];?></p>
 				</div>
 			</div>
 		</div>
