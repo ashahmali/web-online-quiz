@@ -31,19 +31,20 @@
 				<div class="col-sm-8 col-xs-12">
 					<textarea name="add_que"></textarea>
 				</div>
-				
-				<div class="row">
-				<div class="row">
-					<select name="dd_add_que_sub" class="dd_subject_questions">
-					<?php foreach($subjects as $sub){
-						echo "<option value='".$sub['idSUBJECT']."'>".$sub['sName']."</option>";
-					}
-					?>
-					</select>
+			</div>
+			<div class="row">
+					<div class="col-sm-4 col-xs-12 text-left">
+						<h3>Subject</h3>
+					</div>
+					<div class="col-sm-8 col-xs-12 text-left">
+						<select name="dd_add_que_sub" class="dd_subject_questions">
+						<?php foreach($subjects as $sub){
+							echo "<option value='".$sub['idSUBJECT']."'>".$sub['sName']."</option>";
+						}
+						?>
+						</select>
+					</div>
 				</div>
-			</div>
-				
-			</div>
 			<div class="row">
 				<div class="col-sm-4 col-xs-12 text-left">
 					<h3 class="">Possible Answers</h3>

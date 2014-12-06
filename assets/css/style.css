@@ -376,7 +376,7 @@ footer {
         text-align: center !important; } }
 
 .dd_subject_questions {
-  margin-bottom: 10px; }
+  margin: 20px 0; }
 
 #add_question.cancel {
   background: #ff9999; }
@@ -527,5 +527,8 @@ input[type=radio]:checked + label.radio_label:before {
       border-right: 1px solid; }
   .admin_home .tiles .top .tile:nth-child(1) {
     border-right: 1px solid; }
+
+.error_list {
+  list-style: none; }
 
 /*# sourceMappingURL=style.css.map */

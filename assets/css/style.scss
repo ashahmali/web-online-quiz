@@ -541,7 +541,7 @@ footer{
 //=================================================
 
 .dd_subject_questions{
-	margin-bottom:10px;
+	margin:20px 0;
 }
 
 .questions_list{
@@ -782,4 +782,11 @@ input[type=radio]:checked + label.radio_label:before {
 //=================================================
 //        Navigation
 //=================================================
+
+
+.error_list{
+	list-style:none;
+}
+
+
 
