@@ -9,13 +9,15 @@ class Admin extends CI_Controller {
 		$this -> load -> model("users_model");
 		$this -> load -> model("question_model");
 		$this -> load -> library("pagination");
+		
 	}
 
 	public function index() {
+		$this->checkSession();
 		if ($this -> session -> userdata('ROLE_idROLE') == 2) {
 			$this -> load -> view('templates/header');
 			$this -> load -> view('pages/admin_home');
-			$this -> load -> view('templates/footer');
+			$this -> load -> view('templates/footer',$this->dataCustom);
 		} else {
 			log_message('error', 'you do not have permission to be here!');
 		}
@@ -31,7 +33,7 @@ class Admin extends CI_Controller {
 
 		$data['title'] = ucfirst('User Management');
 		// Capitalize the first letter
-
+		$this->checkSession();
 		if ($this -> session -> userdata('ROLE_idROLE') == 2) {
 			$this -> load -> view('templates/header', $data);
 			$data['heading'] = 'Users Management';
@@ -61,7 +63,7 @@ class Admin extends CI_Controller {
 			$data["links"] = $this -> pagination -> create_links();
 
 			$this -> load -> view('pages/user_mang', $data);
-			$this -> load -> view('templates/footer');
+			$this -> load -> view('templates/footer',$this->dataCustom);
 		} else {
 			redirect('users/def_page');
 
@@ -71,7 +73,9 @@ class Admin extends CI_Controller {
 
 	public function questions($sub = "") {
 
+		$this->checkSession();
 		if ($_POST) {
+			
 			$this -> load -> library('form_validation');
 
 			$this -> form_validation -> set_rules('add_que', 'Question', 'required|xss_clean');
@@ -127,11 +131,12 @@ class Admin extends CI_Controller {
 		$this -> load -> view('pages/admin_question_new', $data);
 		//$this->load->view('pages/admin_finish', $data);
 
-		$this -> load -> view('templates/footer', $data);
+		$this -> load -> view('templates/footer', $this->dataCustom);
 	}
 
 	public function new_aswer() {
 		if (isset($_POST) && isset($_POST['counter'])) {
+			$this->checkSession();
 			$counter = $_POST['counter'];
 			$data['counter'] = $counter;
 			$this -> load -> view('pages/admin_question_new_simple', $data);
@@ -140,8 +145,9 @@ class Admin extends CI_Controller {
 	}
 
 	public function quizzes() {
-
+		$this->checkSession();
 		if ($_POST) {
+			
 			$this -> form_validation -> set_rules('qq_name', 'Quiz Name', 'required|xss_clean');
 			$this -> form_validation -> set_rules('dd_subject_questions', 'Subject', 'required|integer');
 			$this -> form_validation -> set_rules('qq_time', 'Time', 'required|integer');
@@ -192,11 +198,12 @@ class Admin extends CI_Controller {
 		$this -> load -> view('pages/admin_quizzes', $data);
 		$this -> load -> view('pages/admin_quiz_new', $data);
 		//$this->load->view('pages/admin_finish', $data);
-		$this -> load -> view('templates/footer', $data);
+		$this -> load -> view('templates/footer', $this->dataCustom);
 	}
 
 	public function question_detail() {
 		if (isset($_POST) && isset($_POST['id'])) {
+			$this->checkSession();
 			$question_id = $_POST['id'];
 
 			//We need to get question details here
@@ -210,29 +217,32 @@ class Admin extends CI_Controller {
 	
 	public function add_subject()
 	{
-		$data['subjects'] = ($this->question_model->get_subjects())?$this->question_model->get_subjects():array();
 		
+		$this->checkSession();
 		if (isset($_POST)){
+			
 			$this->form_validation->set_rules('add_subject', 'Subject Field', 'required|xss_clean');
 			
 			if ($this -> form_validation -> run() == TRUE) {
 				$sub = array('sName' => $this->input->post('add_subject'),);
 				
 				if($this->question_model->add_subject($sub)){
-					$data['add_sub_fb'] = "subject Successfully added";
+					$data['add_sub_fb'] = "Subject Successfully added";
 				}else{
-					$data['add_sub_fb'] = "subject Could not be added";
+					$data['add_sub_fb'] = "Subject Could not be added";
 				}
 			}
 		}
+		$data['subjects'] = ($this->question_model->get_subjects())?$this->question_model->get_subjects():array();
 		$data['heading'] = 'Add Subject';
 		$this -> load -> view('templates/header', $data);
 		$this -> load -> view('pages/add_subject', $data);
-		$this -> load -> view('templates/footer');
+		$this -> load -> view('templates/footer',$this->dataCustom);
 	}
 
 	public function quiz_detail() {
 		if (isset($_POST) && isset($_POST['id'])) {
+			$this->checkSession();
 			$quiz_id = $_POST['id'];
 			//We need to get Quiz details here
 			$this->load->model('quiz_model');
@@ -242,6 +252,14 @@ class Admin extends CI_Controller {
 				$data['quizData'] = $quizData[0];
 				$this -> load -> view('pages/admin_quiz_detail', $data);
 			}
+		}	
+	}
+
+	private function checkSession(){
+		if ($this -> session -> userdata('ROLE_idROLE') == 2) {
+			$this->dataCustom['showAdminMenu'] = true;
+		}else{
+			$this->dataCustom['showAdminMenu'] = false;
 		}
 	}
 
