@@ -24,7 +24,7 @@
 		<p class="name">Web Performance and Optimization</p>
 	</div>
 
-	<form id="test_form" data-start="<?php echo $timer;?>" data-current="">
+	<form id="test_form" data-start="<?php echo $timer;?>" data-current="" action="evaluate" method="post">
 		<div class="col-xs-12 text-center">
 			<p>General Intructions</p>
 		</div>
@@ -61,7 +61,7 @@
 			<!-- question finish-->
 		<?php $counterQuestion++; ?>
 		<?php } ?>
-		
+		<input type="hidden" name="question_counter" value="<?php echo $counterQuestion -1; ?>"/>
 
 		<div class="col-xs-12 text-center">
 			<button>Submit</button>
