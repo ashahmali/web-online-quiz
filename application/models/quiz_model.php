@@ -136,5 +136,19 @@ class Quiz_model extends CI_Model {
 
 
 	}
+
+	public function evaluateQuiz($idTest,$idUser,$correctAnswers,$wrongAnswers,$grade,$timestamp){
+		
+		//$this->db->set('stopTime', $timestamp); 
+		$data = array('iGrade' => $grade,
+					'iCorrect' => $correctAnswers,
+					'iIncorrect' => $wrongAnswers);
+
+		$this->db->where('TEST_idTEST', $idTest); 
+		$this->db->where('USER_idUSER', $idUser); 
+		$this->db->where('dTestDate', $timestamp); 
+
+		$this->db->update('TEST_has_USER', $data); 
+	}
 }
 ?>
