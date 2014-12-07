@@ -37,6 +37,33 @@
 | in the URL cannot be matched to a valid route.
 |
 */
+$route['home'] = "users/home";
+$route['(:any)/home'] = "users/home";
+
+$route['add_subject'] = "admin/add_subject";
+$route['(:any)/add_subject'] = "admin/add_subject";
+
+$route['quizzes'] = "admin/quizzes";
+$route['(:any)/quizzes'] = "admin/quizzes";
+
+$route['questions'] = "admin/questions";
+$route['(:any)/questions'] = "admin/questions";
+
+$route['register'] = "users/register";
+$route['(:any)/register'] = "users/register";
+
+$route['login'] = "users/login";
+$route['(:any)/login'] = "users/login";
+
+$route['manage_users'] = "admin/manage_users";
+$route['(:any)/manage_users'] = "admin/manage_users";
+
+
+
+
+$route['(:any)/home'] = "users/home";
+$route['(:any)/detail'] = "users/detail";
+$route['(:any)/evaluate'] = "quiz/evaluate";
 $route['(:any)/timer'] = "quiz/timer";
 $route['(:any)/save_answer'] = "quiz/save_answer";
 $route['quiz/(\d+)/(\d+)'] = "quiz/showQuiz/$1/$2";
