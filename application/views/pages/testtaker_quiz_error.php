@@ -13,6 +13,7 @@
 
 	<div class="col-xs-12 text-center subject_container">
 		<p>We could not provide the information for the requested quiz. Contact the sys admin.</p>
+		<p><?php echo $customNote;?></p>
 	</div>
 	
 	<div class="col-xs-12 text-center">
