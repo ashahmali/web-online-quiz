@@ -1,0 +1,510 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<!-- Modernizer -->
+		<script src="js/modernizr.js"></script>
+
+		<!--[if IE 8]>
+        	<script>var IE8 = true;</script>
+        	<script src="http://formstone.it/js/site.ie8.js"></script>
+			<link rel="stylesheet" href="http://formstone.it/css/demo.ie8.css">
+		<![endif]-->
+		<!--[if IE 9]>
+        	<script>var IE9 = true;</script>
+        	<script src="http://formstone.it/js/site.ie9.js"></script>
+		<![endif]-->
+
+
+		<!-- Demo Resources 
+		<link href="http://formstone.it/css/demo.css" rel="stylesheet" type="text/css" media="all">
+		<script src="http://formstone.it/js/demo.js"></script>-->
+		<link href="css/jquery.fs.shifter.css" rel="stylesheet" type="text/css" media="all">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style_dropdown.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+		<script src="js/jquery.fs.shifter.js"></script>
+		<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+		<script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+		
+		<style>
+			/*.shifter .shifter-handle { float: right; margin: -5px 0 0; }*/
+			.shifter .shifter-navigation { background: #f9f9f9; padding: 100px 30px 30px; }
+			.shifter .shifter-navigation a { color: #666; display: block; font-size: 18px; margin: 0 0 15px; }
+		</style>
+		<!-- <link rel="stylesheet" href="css/style_accordion.css" />
+		<link rel="stylesheet" href="css/style_tabs.css" />
+		<link rel="stylesheet" href="css/animate.min.css" />
+		<link rel="stylesheet" href="css/style_tabs.css" />
+		<link rel="stylesheet" href="css/style_tabs.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/jquery-ui.min.css" />
+		<link rel="stylesheet" href="css/style_tabs_main.css" /> -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/magnific-popup.css" />
+
+		
+		<!--  // <script src="js/jquery-ui.min.js" type="text/javascript"></script>  -->
+	
+
+		
+		<script>
+			$(document).ready(function() {
+				$.shifter({
+					maxWidth: Infinity
+				});
+
+				$( ".manual_accordion" ).accordion({
+					heightStyle: "content",
+					collapsible: true,
+					icons: 'icons'
+				});
+
+				//init lightbox
+				$('.thumb_link').magnificPopup({ 
+				  type: 'image'
+				});
+			});
+		</script>
+		<!--[if lt IE 9]>
+		  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<title>Web Development Assignament</title>
+		
+	</head>
+	<body>
+		
+		<body class="gridlock demo shifter">
+		<header id="header">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-sm-12">
+					<a href="" class="page-name">Testing System</a>
+					<span class="shifter-handle"><i class="fa fa-bars"></i></span>
+				</div>
+			</div>
+		</header>
+		<div class="shifter-page">
+			<div class="conatiner">
+				<article class="row page">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<header class="header">
+							<h1>Administrator Activities</h1>
+							<!-- <p>A technical demonstration of the jQuery plugin.</p> -->
+							<!-- <br>
+							<a href="http://formstone.it/shifter/" class="button">View Documentation</a -->
+						</header>
+						
+						<div class="row">  
+							<div class="col-sm-10 col-sm-offset-1 col-xs-12">
+							    <div class="manual_accordion">
+
+							    		<!-- TAB -->
+					            		<h3>Creating a Subject</h3>
+					            		<div class="steps_container">
+
+					            			<!-- STEP -->
+					            			<div class="row step">
+					            				<div class="col-sm-5 col-xs-12">
+					            					<div class="step_container row">
+						            					<div class="step_number col-sm-2 col-xs-12">
+						            						1
+						            					</div>
+						            					<div class="step_desc col-sm-10 col-xs-12">
+						            						<p>Open the menu and click on the "Create Subject" option or if you are at home page click in this option.</p>
+						            					</div>
+					            					</div>
+					            				</div>
+					            				<div class="col-sm-5 col-xs-12 ">
+					            					<div class="image_container text-center">
+					            						<a class="thumb_link" href="img/admin_menu1.jpg">
+					            							<img class="img-responsive" src="img/admin_menu1_thumb.jpg" alt="Create Subject" title="Create Subject" />
+					            							<div class="expand"></div>
+					            						</a>
+					            						<p>DESKTOP</p>
+					            					</div>
+					            				</div>
+					            				<div class="col-sm-2 col-xs-12 ">
+					            					<div class="image_container text-center">
+					            						<a class="thumb_link" href="img/admin_menu_mobile.jpg">
+					            							<img class="img-responsive" src="img/admin_menu_mobile_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
+					            							<div class="expand"></div>
+					            						</a>
+					            						<P>MOBILE</p>
+					            					</div>
+					            				</div>
+					            			</div>
+					            			<!-- END STEP -->
+
+					            			<!-- STEP -->
+					            			<div class="row step">
+					            				<div class="col-sm-5 col-xs-12">
+					            					<div class="step_container row">
+						            					<div class="step_number col-sm-2 col-xs-12">
+						            						2
+						            					</div>
+						            					<div class="step_desc col-sm-10 col-xs-12">
+						            						<p>Once this window is open, a list of the previous created subjects will appear.</p>
+						            					</div>
+					            					</div>
+					            				</div>
+					            				<div class="col-sm-5 col-xs-12 ">
+					            					<div class="image_container text-center">
+					            						<a class="thumb_link" href="img/subject/admin_subject.jpg">
+					            							<img class="img-responsive" src="img/subject/admin_subject_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
+					            							<div class="expand"></div>
+					            						</a>
+					            						<p>DESKTOP</p>
+					            					</div>
+					            				</div>
+					            				<div class="col-sm-2 col-xs-12 ">
+					            					<div class="image_container text-center">
+					            						<a class="thumb_link" href="img/subject/admin_subject_mobile.jpg">
+					            							<img class="img-responsive" src="img/subject/admin_subject_mobile_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
+					            							<div class="expand"></div>
+					            						</a>
+					            					</div>
+					            					<p>MOBILE</p>
+					            				</div>
+					            			</div>
+					            			<!-- END STEP -->
+
+					            			<!-- STEP -->
+					            			<div class="row step">
+					            				<div class="col-sm-5 col-xs-12">
+					            					<div class="step_container row">
+						            					<div class="step_number col-sm-2 col-xs-12">
+						            						3
+						            					</div>
+						            					<div class="step_desc col-sm-10 col-xs-12">
+						            						<p>At the bottom of it a text box will be available to type the new subject's name.</p>
+						            						<p>Provide the name of the new subject and save your changes clicking on the bottom below this section.</p>
+						            					</div>
+					            					</div>
+					            				</div>
+					            				<div class="col-sm-5 col-xs-12 ">
+					            					<div class="image_container text-center">
+					            						<a class="thumb_link" href="img/subject/admin_subject.jpg">
+					            							<img class="img-responsive" src="img/subject/admin_subject_add_thumb.jpg" alt="Add Subject" title="Add Subject" />
+					            							<div class="expand"></div>
+					            						</a>
+					            						<p>DESKTOP</p>
+					            					</div>
+					            				</div>
+					            				<div class="col-sm-2 col-xs-12 ">
+					            					<div class="image_container text-center">
+					            						<a class="thumb_link" href="img/subject/admin_subject_mobile.jpg">
+					            							<img class="img-responsive" src="img/subject/admin_subject_add_mobile_thumb.jpg" alt="Add Subject Mobile" title="Add Subject Mobile" />
+					            							<div class="expand"></div>
+					            						</a>
+					            					</div>
+					            					<p>MOBILE</p>
+					            				</div>
+					            			</div>
+					            			<!-- END STEP -->
+
+					            			<!-- STEP -->
+					            			<div class="row step">
+					            				<div class="col-sm-12 col-xs-12">
+					            					<div class="step_container row">
+						            					<div class="step_number col-sm-2 col-xs-12">
+						            						4
+						            					</div>
+						            					<div class="step_desc col-sm-10 col-xs-12">
+						            						<p>If everything went ok, the new subject should be displayed as part of the subject's list, otherwise the system will let you know what happened.</p>
+						            					</div>
+					            					</div>
+					            				</div>
+					            				
+					            			</div>
+					            			<!-- END STEP -->
+
+					            			
+
+					            		</div>
+					            		<!-- END TAB -->
+
+
+					            		<!-- TAB -->
+					            		<h3>Creating a Test</h3>
+					            		<div class="steps_container">
+					            			<div class="row">
+					            				<div class="col-sm-6 col-xs-12">
+					            				</div>
+					            				<div class="col-sm-6 col-xs-12">
+					            				</div>
+					            			</div>
+					            		</div>	
+					            		<!-- END TAB -->
+
+
+					            		<!-- TAB -->
+					            		<h3>Adding Questions</h3>
+					            		<div class="steps_container">
+					            			<!-- STEP -->
+					            			<div class="row step">
+					            				<div class="col-sm-7 col-xs-12">
+					            					<div class="step_container row">
+						            					<div class="step_number col-sm-2 col-xs-12">
+						            						1
+						            					</div>
+						            					<div class="step_desc col-sm-10 col-xs-12">
+						            						<p>1.	Open the menu and click on the "Adding Questions" option or if you are at home page click on the option with the same name.</p>
+						            					</div>
+					            					</div>
+					            				</div>
+					            				<div class="col-sm-5 col-xs-12 ">
+					            					<div class="image_container text-center">
+					            						<a class="thumb_link" href="img/admin_home.jpg">
+					            							<img class="img-responsive" src="img/admin_home_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
+					            							<div class="expand"></div>
+					            						</a>
+					            					</div>
+					            				</div>
+					            			</div>
+					            			<!-- END STEP -->
+
+					            			<!-- STEP -->
+					            			<div class="row step">
+					            				<div class="col-sm-7 col-xs-12">
+					            					<div class="step_container row">
+						            					<div class="step_number col-sm-2 col-xs-12">
+						            						2
+						            					</div>
+						            					<div class="step_desc col-sm-10 col-xs-12">
+						            						<p>Once this window is open, a list of the previous created questions will appear and at the top of it a select control will let you filter the questions per subject.</p>
+						            					</div>
+					            					</div>
+					            				</div>
+					            				<div class="col-sm-5 col-xs-12 ">
+					            					<div class="image_container text-center">
+					            						<a class="thumb_link" href="img/admin_home.jpg">
+					            							<img class="img-responsive" src="img/admin_home_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
+					            							<div class="expand"></div>
+					            						</a>
+					            					</div>
+					            				</div>
+					            			</div>
+					            			<!-- END STEP -->
+
+					            			<!-- STEP -->
+					            			<div class="row step">
+					            				<div class="col-sm-7 col-xs-12">
+					            					<div class="step_container row">
+						            					<div class="step_number col-sm-2 col-xs-12">
+						            						3
+						            					</div>
+						            					<div class="step_desc col-sm-10 col-xs-12">
+						            						<p>At the bottom of this list an "Add Quiz" button will be available. Click on it, and a new section within the page will be opened. It is possible to cancel this action clicking on the red bottom ad the top of the section.</p>
+						            					</div>
+					            					</div>
+					            				</div>
+					            				<div class="col-sm-5 col-xs-12 ">
+					            					<div class="image_container text-center">
+					            						<a class="thumb_link" href="img/admin_home.jpg">
+					            							<img class="img-responsive" src="img/admin_home_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
+					            							<div class="expand"></div>
+					            						</a>
+					            					</div>
+					            				</div>
+					            			</div>
+					            			<!-- END STEP -->
+
+					            			<!-- STEP -->
+					            			<div class="row step">
+					            				<div class="col-sm-7 col-xs-12">
+					            					<div class="step_container row">
+						            					<div class="step_number col-sm-2 col-xs-12">
+						            						4
+						            					</div>
+						            					<div class="step_desc col-sm-10 col-xs-12">
+						            						<p>Provide new question's details including the answers.You can add as many answers per question as you want but is mandatory to define the one which is correct. Answers deletion before saving is allowed.</p>
+						            					</div>
+					            					</div>
+					            				</div>
+					            				<div class="col-sm-5 col-xs-12 ">
+					            					<div class="image_container text-center">
+					            						<a class="thumb_link" href="img/admin_home.jpg">
+					            							<img class="img-responsive" src="img/admin_home_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
+					            							<div class="expand"></div>
+					            						</a>
+					            					</div>
+					            				</div>
+					            			</div>
+					            			<!-- END STEP -->
+
+					            			<!-- STEP -->
+					            			<div class="row step">
+					            				<div class="col-sm-7 col-xs-12">
+					            					<div class="step_container row">
+						            					<div class="step_number col-sm-2 col-xs-12">
+						            						5
+						            					</div>
+						            					<div class="step_desc col-sm-10 col-xs-12">
+						            						<p>To add a new possible answer click on the "Add Answer" button, a text area will appear. Type the answer's content and click on the "OK" button to add it. </p><p>To select the correct answer click on one of the possible answers and the control located at the left side of the text will get filled indicating that this question has been selected as the correct one.</p>
+						            					</div>
+					            					</div>
+					            				</div>
+					            				<div class="col-sm-5 col-xs-12 ">
+					            					<div class="image_container text-center">
+					            						<a class="thumb_link" href="img/admin_home.jpg">
+					            							<img class="img-responsive" src="img/admin_home_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
+					            							<div class="expand"></div>
+					            						</a>
+					            					</div>
+					            				</div>
+					            			</div>
+					            			<!-- END STEP -->
+
+					            			<!-- STEP -->
+					            			<div class="row step">
+					            				<div class="col-sm-7 col-xs-12">
+					            					<div class="step_container row">
+						            					<div class="step_number col-sm-2 col-xs-12">
+						            						6
+						            					</div>
+						            					<div class="step_desc col-sm-10 col-xs-12">
+						            						<p>Once the information for the new question has been captured save your changes clicking on the botton located below this section.</p>
+						            					</div>
+					            					</div>
+					            				</div>
+					            				<div class="col-sm-5 col-xs-12 ">
+					            					<div class="image_container text-center">
+					            						<a class="thumb_link" href="img/admin_home.jpg">
+					            							<img class="img-responsive" src="img/admin_home_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
+					            							<div class="expand"></div>
+					            						</a>
+					            					</div>
+					            				</div>
+					            			</div>
+					            			<!-- END STEP -->
+
+					            			<!-- STEP -->
+					            			<div class="row step">
+					            				<div class="col-sm-7 col-xs-12">
+					            					<div class="step_container row">
+						            					<div class="step_number col-sm-2 col-xs-12">
+						            						7
+						            					</div>
+						            					<div class="step_desc col-sm-10 col-xs-12">
+						            						<p>If everything went ok, the new subject should be displayed as part of the subject's list, otherwise the system will let you know what happened.</p>
+						            					</div>
+					            					</div>
+					            				</div>
+					            				<div class="col-sm-5 col-xs-12 ">
+					            					<div class="image_container text-center">
+					            						<a class="thumb_link" href="img/admin_home.jpg">
+					            							<img class="img-responsive" src="img/admin_home_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
+					            							<div class="expand"></div>
+					            						</a>
+					            					</div>
+					            				</div>
+					            			</div>
+					            			<!-- END STEP -->
+
+
+					            		</div>
+					            		<!-- END TAB -->
+
+
+					            		<!-- TAB -->	
+					            		<h3>Managing Users</h3>
+					            		<div class="steps_container">
+					            			<div class="row">
+					            				<div class="col-sm-6 col-xs-12">
+					            				</div>
+					            				<div class="col-sm-6 col-xs-12">
+					            				</div>
+					            			</div>
+					            		</div>	
+					            		<!-- END TAB -->
+
+					        	</div> 
+					        </div> 
+						</div> 
+					</div>
+				</article>
+
+				<footer id="footer" class="row">
+					<div class="all-full copyright">
+						<!-- Made with &hearts; in Hampden -->
+					</div>
+				</footer>
+			</div>
+		</div>
+		<nav class="shifter-navigation">
+			<ul class="user_manual_options">
+				<li class="main_cat"><a href="#1">Home</a></li>
+				<li class="main_cat"><a href="#2">Administrator</a></li>
+				<li><a href="#3">Creating a Subject</a></li>
+				<li><a href="#3">Creating a Test</a></li>
+				<li><a href="#3">Adding Questions</a></li>
+				<li><a href="#3">Managing Users</a></li>
+				<li class="main_cat"><a href="#4">Test Taker</a></li>
+				<li><a href="#5">Taking a test</a></li>
+			</ul>
+		</nav>
+		<script type="text/javascript">
+
+			// function DropDown(el) {
+			// 	this.dd = el;
+			// 	this.initEvents();
+			// }
+			// DropDown.prototype = {
+			// 	initEvents : function() {
+			// 		var obj = this;
+
+			// 		obj.dd.on('click', function(event){
+			// 			$(this).toggleClass('active');
+			// 			event.stopPropagation();
+			// 		});	
+			// 	}
+			// }
+
+			function DropDown(el) {
+				this.dd = el;
+				this.placeholder = this.dd.children('span');
+				this.opts = this.dd.find('ul.dropdown > li');
+				this.val = '';
+				this.index = -1;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						$(this).toggleClass('active');
+						return false;
+					});
+
+					obj.opts.on('click',function(){
+						var opt = $(this);
+						obj.val = opt.text();
+						obj.index = opt.index();
+						obj.placeholder.text(obj.val);
+					});
+				},
+				getValue : function() {
+					return this.val;
+				},
+				getIndex : function() {
+					return this.index;
+				}
+			}
+
+			$(function() {
+
+				var dd = new DropDown( $('#dd') );
+
+				$(document).click(function() {
+					// all dropdowns
+					$('.wrapper-dropdown-5').removeClass('active');
+				});
+
+			});
+
+		</script>
+	</body>
+</html>
