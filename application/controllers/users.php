@@ -168,5 +168,13 @@ class Users extends CI_Controller {
 		$this->load->view('templates/footer', $data);
 	}
 	
+
+	public function home(){
+		if ($this -> session -> userdata('ROLE_idROLE') == 2) {
+			redirect('admin', 'refresh');
+		}else{
+			redirect('users/detail', 'refresh');
+		}
+	}
 	
 }
