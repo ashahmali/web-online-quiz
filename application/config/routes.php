@@ -64,6 +64,9 @@ $route['(:any)/question_detail'] = "admin/question_detail";
 $route['quiz_detail'] = "admin/quiz_detail";
 $route['(:any)/quiz_detail'] = "admin/quiz_detail";
 
+$route['new_aswer'] = "admin/new_aswer";
+$route['(:any)/new_aswer'] = "admin/new_aswer";
+
 
 $route['(:any)/home'] = "users/home";
 $route['(:any)/detail'] = "users/detail";
