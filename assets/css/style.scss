@@ -278,25 +278,25 @@ input[type=radio]:checked + label.radio_label:before {
 //=================================================
 //        REGISTER
 //=================================================
-
+.col-1{
+	text-align: right;
+	@media (max-width: 767px){
+		text-align: center;
+	}
+}
+.col-2{
+	text-align: left;
+	@media (max-width: 767px){
+		text-align: center;
+	}
+}
 article.register{
 	.row{
 		margin-bottom: 10px;
 		label{
 			margin-top: 8px;
 		}
-		.col-1{
-			text-align: right;
-			@media (max-width: 767px){
-				text-align: center;
-			}
-		}
-		.col-2{
-			text-align: left;
-			@media (max-width: 767px){
-				text-align: center;
-			}
-		}
+		
 	}
 	.dropdown_ui{
 		float: left !important;
@@ -413,16 +413,24 @@ form.subject_new{
 		margin-top: 0 !important;
 		color: #fff;
 		padding-top:13px;
-		background:#a1c09e;
 		border-radius:0;
 		border:0 ;
-		max-width: 100px;
+
 		// div:nth-child(1){
 		// 	border-right:1px solid #fff;
 		// }
+		strong{
+			display: inline-block;
+			background:#a1c09e;
+			padding: 5px 5px 3px;
+			text-decoration: underline;
+		}
 		a{
+			background:#a1c09e;
+			display: inline-block;
 			cursor: pointer;
 			color: #fff;
+			padding: 5px 5px 3px;
 		}
 		.splitter{
 			position: relative;
