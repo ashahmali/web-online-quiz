@@ -5,6 +5,7 @@ class Quiz extends CI_Controller {
 	
 	public function showQuiz($subject = "",$quiz_id = "")
 	{
+		//$this->session->set_userdata('timer',1000);
 		$data['heading'] = '';
 		$data['showMenu'] = false;
 		if(isset($subject) && $subject != "" &&
@@ -52,23 +53,33 @@ class Quiz extends CI_Controller {
 					array_push($data['questions'], $newQuestion);
 				}
 
-				//var_dump($data['questions']);
+				//init quiz and store in the database
 				$idUser = $this->session->userdata('idUSER');
 				$this->session->set_userdata('TEST_idTEST',$quiz_id);
 				$date = new DateTime();
 				$this->session->set_userdata('dTestDate',$date);
 				$this->load->model('quiz_model');
 				$this->quiz_model->startQuiz($quiz_id,$idUser);
-				$data['showQuizNav'] = true;
+				
 				$data['questionsCount'] = $quiz['iQuestions'];
+
+				//get session answers
 				$sessionArray = $this->session->userdata('answers');
 				$data['answers'] = $sessionArray;
+
+				//calculate remaining time session or new test
 				$data['timer'] =  $this->calculateRemainingTimer($quizData[0]['iTime']);
+				if($data['timer'] > 0){
+					$data['showQuizNav'] = true;
+				}else{
+					$data['customNote'] = 'Current Quiz time has expired.';
+					$this->cleanSession();
+				}
 			}
 			
 			$this->load->view('templates/header', $data);
 			$this->load->view('pages/testtaker_start', $data);
-			if(isset($quiz)){
+			if(isset($quiz) && $data['timer'] > 0){
 				$this->load->view('pages/testtaker_quiz', $data);
 			}else{
 				$this->load->view('pages/testtaker_quiz_error');
@@ -87,26 +98,60 @@ class Quiz extends CI_Controller {
 	
 	}
 
+	//updates session timer
 	public function timer(){
 		if(isset($_POST['duration'])){
-			// $values = array();
-			// $idTest = $this->session->userdata('TEST_idTEST');
-			// $idUser = $this->session->userdata('idUSER');
 			$this->session->set_userdata('timer',$_POST['duration']);
-			// if(isset($idTest) && isset($idUser)){
-			// 	$date = new DateTime();
-			// 	$timestamp = $date->getTimestamp(); 
-			// 	//$this->load->model('quiz_model');
-			// 	//$this->quiz_model->updateTime($idTest,$idUser,$timestamp);
-			// 	//$values["start"] = "";
-			// 	//$values["end"] = $timestamp;
-			// }
 		}
-		//return json_encode($values);
 	}
 
 	public function evaluate(){
+		$idUser = $this->session->userdata('idUSER');
+		$idTest = $this->session->userdata('TEST_idTEST');
 		
+		//parse answers data
+		$answers = array();
+		$count = $_POST['question_counter'];
+		if (isset($count)) {
+			for ($i=1; $i <= $count; $i++) { 
+				$value = $_POST['answers_'.$i];
+				if (isset($value)) {
+					$pieces = explode("_", $value);
+				}
+				if(isset($pieces) && count($pieces) > 0){
+					$answers[$pieces[0]] = $pieces[1];
+				}
+				
+			}
+		}
+
+		$this->load->model('quiz_model');
+		$this->load->model('option_model');
+
+		//save answers
+		//foreach ($answers as $questionId => $answerId) {
+			//$this->quiz_model->saveUserAnswer($idTest,$idUser,$questionId,$answerId);
+		//}
+
+		//evaluate
+		// $correctAnswers = 0;
+		// foreach ($answers as $questionId => $answerId) {
+		// 	$answer = $this->option_model->getCorrectAnswer($questionId);
+		// 	if($answerId == $answer[0]){
+		// 		$correctAnswers++;
+		// 	}
+		// }
+
+		//update quiz data
+		// $wrongAnswers = $count - $correctAnswers;
+		// $grade = ($correctAnswers * 100) / $count;
+		// $timestamp = $this->session->userdata('dTestDate');
+		// $answer = $this->quiz_model->evaluateQuiz($idTest,$idUser,$correctAnswers,$wrongAnswers,$grade,$timestamp);
+		// var_dump($timestamp);
+
+		//clean session
+		//$this->cleanSession();
+
 	}
 
 	public function save_answer($value = ''){
@@ -145,5 +190,12 @@ class Quiz extends CI_Controller {
 			$remainingTime = $time;
 		}
 		return $remainingTime;
+	}
+
+	private function cleanSession(){
+		$this->session->set_userdata('TEST_idTEST',null);
+		$this->session->set_userdata('timer',null);
+		$this->session->set_userdata('answers',null);
+		$this->session->set_userdata('dTestDate',null);
 	}
 }
