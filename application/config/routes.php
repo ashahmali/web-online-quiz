@@ -58,7 +58,11 @@ $route['(:any)/login'] = "users/login";
 $route['manage_users'] = "admin/manage_users";
 $route['(:any)/manage_users'] = "admin/manage_users";
 
+$route['question_detail'] = "admin/question_detail";
+$route['(:any)/question_detail'] = "admin/question_detail";
 
+$route['quiz_detail'] = "admin/quiz_detail";
+$route['(:any)/quiz_detail'] = "admin/quiz_detail";
 
 
 $route['(:any)/home'] = "users/home";
