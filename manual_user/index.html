@@ -58,9 +58,29 @@
 
 				$( ".manual_accordion" ).accordion({
 					heightStyle: "content",
+					active: false,
 					collapsible: true,
 					icons: 'icons'
 				});
+
+				$( ".manual_accordion_taker" ).accordion({
+					heightStyle: "content",
+					active: false,
+					collapsible: true,
+					icons: 'icons'
+				});
+
+				$( ".manual_accordion_gral" ).accordion({
+					heightStyle: "content",
+					active: false,
+					collapsible: true,
+					icons: 'icons'
+				});
+
+				$( ".manual_accordion h3" ).click(function(){
+					$( ".manual_accordion_taker" ).accordion( "option", "collapsible", true );
+				});
+				
 
 				//init lightbox
 				$('.thumb_link').magnificPopup({ 
@@ -81,12 +101,114 @@
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-sm-12">
 					<a href="" class="page-name">Testing System</a>
-					<span class="shifter-handle"><i class="fa fa-bars"></i></span>
+					<span class="shifter-handle" style="display:none;"><i class="fa fa-bars"></i></span>
 				</div>
 			</div>
 		</header>
 		<div class="shifter-page">
 			<div class="conatiner">
+
+				<article class="row page">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<header class="header">
+							<h1>General Activities</h1>
+							<!-- <p>A technical demonstration of the jQuery plugin.</p> -->
+							<!-- <br>
+							<a href="http://formstone.it/shifter/" class="button">View Documentation</a -->
+						</header>
+						
+						<div class="row">  
+							<div class="col-sm-10 col-sm-offset-1 col-xs-12">
+							    <div class="manual_accordion_gral">
+
+							    		<!-- TAB -->
+					            		<h3>Login</h3>
+					            		<div class="steps_container">
+
+					            			<!-- STEP -->
+					            			<div class="row step">
+					            				<div class="col-sm-5 col-xs-12">
+					            					<div class="step_container row">
+						            					<div class="step_number col-sm-2 col-xs-12">
+						            						1
+						            					</div>
+						            					<div class="step_desc col-sm-10 col-xs-12">
+						            						<p>Open the menu and click on the "Create Subject" option or if you are at home page click in this option.</p>
+						            					</div>
+					            					</div>
+					            				</div>
+					            				<div class="col-sm-5 col-xs-12 ">
+					            					<div class="image_container text-center">
+					            						<a class="thumb_link" href="img/login.jpg">
+					            							<img class="img-responsive" src="img/login_thumb.jpg" alt="Login" title="Login" />
+					            							<div class="expand"></div>
+					            						</a>
+					            						<p>DESKTOP</p>
+					            					</div>
+					            				</div>
+					            				<div class="col-sm-2 col-xs-12 ">
+					            					<div class="image_container text-center">
+					            						<a class="thumb_link" href="img/login_mobile.jpg">
+					            							<img class="img-responsive" src="img/login_mobile_thumb.jpg" alt="Login Mobile" title="Login Mobile" />
+					            							<div class="expand"></div>
+					            						</a>
+					            						<P>MOBILE</p>
+					            					</div>
+					            				</div>
+					            			</div>
+					            			<!-- END STEP -->
+
+					            		</div>
+					            		<!-- END TAB -->
+
+
+					            		<!-- TAB -->
+					            		<h3>Register</h3>
+					            		<div class="steps_container">
+					            			
+
+					            			<!-- STEP -->
+					            			<div class="row step">
+					            				<div class="col-sm-5 col-xs-12">
+					            					<div class="step_container row">
+						            					<div class="step_number col-sm-2 col-xs-12">
+						            						1
+						            					</div>
+						            					<div class="step_desc col-sm-10 col-xs-12">
+						            						<p>Open the menu and click on the "Create Quiz" option or if you are at home page click on the option with the same name.</p>
+						            					</div>
+					            					</div>
+					            				</div>
+					            				<div class="col-sm-5 col-xs-12 ">
+					            					<div class="image_container text-center">
+					            						<a class="thumb_link" href="img/register.jpg">
+					            							<img class="img-responsive" src="img/register_thumb.jpg" alt="Register" title="Register" />
+					            							<div class="expand"></div>
+					            						</a>
+					            						<p>DESKTOP</p>
+					            					</div>
+					            				</div>
+					            				<div class="col-sm-2 col-xs-12 ">
+					            					<div class="image_container text-center">
+					            						<a class="thumb_link" href="img/register_mobile.jpg">
+					            							<img class="img-responsive" src="img/register_mobile_thumb.jpg" alt="Register Mobile" title="Register Mobile" />
+					            							<div class="expand"></div>
+					            						</a>
+					            						<P>MOBILE</p>
+					            					</div>
+					            				</div>
+					            			</div>
+					            			<!-- END STEP -->
+
+					            		</div>	
+					            		<!-- END TAB -->
+					        	</div> 
+					        </div> 
+						</div> 
+					</div>
+				</article>
+
+
 				<article class="row page">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<header class="header">
@@ -561,12 +683,314 @@
 					            		<!-- TAB -->	
 					            		<h3>Managing Users</h3>
 					            		<div class="steps_container">
-					            			<div class="row">
-					            				<div class="col-sm-6 col-xs-12">
+
+					            				<!-- STEP -->
+						            			<div class="row step">
+						            				<div class="col-sm-5 col-xs-12">
+						            					<div class="step_container row">
+							            					<div class="step_number col-sm-2 col-xs-12">
+							            						1
+							            					</div>
+							            					<div class="step_desc col-sm-10 col-xs-12">
+							            						<p>Open the menu and click on the "Manage Users" option or if you are at home page click on the option with the same name. </p>
+							            					</div>
+						            					</div>
+						            				</div>
+						            				<div class="col-sm-5 col-xs-12 ">
+						            					<div class="image_container text-center">
+						            						<a class="thumb_link" href="img/admin_menu1.jpg">
+						            							<img class="img-responsive" src="img/admin_menu1_thumb.jpg" alt="Create Subject" title="Create Subject" />
+						            							<div class="expand"></div>
+						            						</a>
+						            						<p>DESKTOP</p>
+						            					</div>
+						            				</div>
+						            				<div class="col-sm-2 col-xs-12 ">
+						            					<div class="image_container text-center">
+						            						<a class="thumb_link" href="img/admin_menu_mobile.jpg">
+						            							<img class="img-responsive" src="img/admin_menu_mobile_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
+						            							<div class="expand"></div>
+						            						</a>
+						            						<P>MOBILE</p>
+						            					</div>
+						            				</div>
+						            			</div>
+						            			<!-- END STEP -->
+
+						            			<!-- STEP -->
+						            			<div class="row step">
+						            				<div class="col-sm-5 col-xs-12">
+						            					<div class="step_container row">
+							            					<div class="step_number col-sm-2 col-xs-12">
+							            						2
+							            					</div>
+							            					<div class="step_desc col-sm-10 col-xs-12">
+							            						<p>Once this window is open, a list of all registered users will appear.</p>
+							            					</div>
+						            					</div>
+						            				</div>
+						            				<div class="col-sm-5 col-xs-12 ">
+						            					<div class="image_container text-center">
+						            						<a class="thumb_link" href="img/users/admin_users.jpg">
+						            							<img class="img-responsive" src="img/users/admin_users_thumb.jpg" alt="Create Subject" title="Create Subject" />
+						            							<div class="expand"></div>
+						            						</a>
+						            						<p>DESKTOP</p>
+						            					</div>
+						            				</div>
+						            				<div class="col-sm-2 col-xs-12 ">
+						            					<div class="image_container text-center">
+						            						<a class="thumb_link" href="img/users/admin_users_mobile.jpg">
+						            							<img class="img-responsive" src="img/users/admin_users_mobile_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
+						            							<div class="expand"></div>
+						            						</a>
+						            						<P>MOBILE</p>
+						            					</div>
+						            				</div>
+						            			</div>
+						            			<!-- END STEP -->
+
+						            			<!-- STEP -->
+						            			<div class="row step">
+						            				<div class="col-sm-12 col-xs-12">
+						            					<div class="step_container row">
+							            					<div class="step_number col-sm-2 col-xs-12">
+							            						3
+							            					</div>
+							            					<div class="step_desc col-sm-10 col-xs-12">
+							            						<p>As and administrator you are able to deny or grant access to the system's users. Click in the icon on the last column that corresponds to the user, which permissions you want to modify.  After this the users' status will be updated.</p>
+							            					</div>
+						            					</div>
+						            				</div>
+						            				
+						            			</div>
+						            			<!-- END STEP -->
+					            		</div>	
+					            		<!-- END TAB -->
+
+					        	</div> 
+					        </div> 
+						</div> 
+					</div>
+				</article>
+
+				<article class="row page">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<header class="header">
+							<h1>Test Taker Activities</h1>
+							<!-- <p>A technical demonstration of the jQuery plugin.</p> -->
+							<!-- <br>
+							<a href="http://formstone.it/shifter/" class="button">View Documentation</a -->
+						</header>
+						
+						<div class="row">  
+							<div class="col-sm-10 col-sm-offset-1 col-xs-12">
+							    <div class="manual_accordion_taker">
+
+					            		<!-- TAB -->
+					            		<h3>View Profile</h3>
+					            		<div class="steps_container">
+					            			<!-- STEP -->
+					            			<div class="row step">
+					            				<div class="col-sm-5 col-xs-12">
+					            					<div class="step_container row">
+						            					<div class="step_number col-sm-2 col-xs-12">
+						            						1
+						            					</div>
+						            					<div class="step_desc col-sm-10 col-xs-12">
+						            						<p>As a test taker it is possible to see the quizzes that have taken and those ones who are available to take or retake depending of the test's taker subject.</p>
+						            					</div>
+					            					</div>
 					            				</div>
-					            				<div class="col-sm-6 col-xs-12">
+					            				<div class="col-sm-5 col-xs-12 ">
+					            					<div class="image_container text-center">
+					            						<a class="thumb_link" href="img/takers/user_profile.jpg">
+					            							<img class="img-responsive" src="img/takers/user_profile_thumb.jpg" alt="Create Subject" title="Create Subject" />
+					            							<div class="expand"></div>
+					            						</a>
+					            						<p>DESKTOP</p>
+					            					</div>
+					            				</div>
+					            				<div class="col-sm-2 col-xs-12 ">
+					            					<div class="image_container text-center">
+					            						<a class="thumb_link" href="img/takers/user_profile_mobile.jpg">
+					            							<img class="img-responsive" src="img/takers/user_profile_mobile_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
+					            							<div class="expand"></div>
+					            						</a>
+					            						<P>MOBILE</p>
+					            					</div>
 					            				</div>
 					            			</div>
+					            			<!-- END STEP -->
+
+					            		</div>
+					            		<!-- END TAB -->
+
+
+					            		<!-- TAB -->	
+					            		<h3>Take Test</h3>
+					            		<div class="steps_container">
+
+					            				<!-- STEP -->
+						            			<div class="row step">
+						            				<div class="col-sm-5 col-xs-12">
+						            					<div class="step_container row">
+							            					<div class="step_number col-sm-2 col-xs-12">
+							            						1
+							            					</div>
+							            					<div class="step_desc col-sm-10 col-xs-12">
+							            						<p>Once a quiz has been selected from the available quizzes' list, a new window will be opened containing the number of questions that the quiz's creator has defined. </p>
+							            					</div>
+						            					</div>
+						            				</div>
+						            				<div class="col-sm-5 col-xs-12 ">
+						            					<div class="image_container text-center">
+						            						<a class="thumb_link" href="img/takers/user_profile.jpg">
+						            							<img class="img-responsive" src="img/takers/user_profile_thumb.jpg" alt="Create Subject" title="Create Subject" />
+						            							<div class="expand"></div>
+						            						</a>
+						            						<p>DESKTOP</p>
+						            					</div>
+						            				</div>
+						            				<div class="col-sm-2 col-xs-12 ">
+						            					<div class="image_container text-center">
+						            						<a class="thumb_link" href="img/takers/user_profile_mobile.jpg">
+						            							<img class="img-responsive" src="img/takers/user_profile_mobile_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
+						            							<div class="expand"></div>
+						            						</a>
+						            						<P>MOBILE</p>
+						            					</div>
+						            				</div>
+						            			</div>
+						            			<!-- END STEP -->
+
+						            			<!-- STEP -->
+						            			<div class="row step">
+						            				<div class="col-sm-5 col-xs-12">
+						            					<div class="step_container row">
+							            					<div class="step_number col-sm-2 col-xs-12">
+							            						2
+							            					</div>
+							            					<div class="step_desc col-sm-10 col-xs-12">
+							            						<p>At the left top corner of this window a timer indicating the remaining time for the test will be visible.</p>
+							            					</div>
+						            					</div>
+						            				</div>
+						            				<div class="col-sm-5 col-xs-12 ">
+						            					<div class="image_container text-center">
+						            						<a class="thumb_link" href="img/takers/user_quiz1.jpg">
+						            							<img class="img-responsive" src="img/takers/user_quiz1_thumb.jpg" alt="Create Subject" title="Create Subject" />
+						            							<div class="expand"></div>
+						            						</a>
+						            						<p>DESKTOP</p>
+						            					</div>
+						            				</div>
+						            				<div class="col-sm-2 col-xs-12 ">
+						            					<div class="image_container text-center">
+						            						<a class="thumb_link" href="img/takers/user_quiz1_mobile.jpg">
+						            							<img class="img-responsive" src="img/takers/user_quiz1_mobile_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
+						            							<div class="expand"></div>
+						            						</a>
+						            						<P>MOBILE</p>
+						            					</div>
+						            				</div>
+						            			</div>
+						            			<!-- END STEP -->
+
+						            			<!-- STEP -->
+						            			<div class="row step">
+						            				<div class="col-sm-6 col-xs-12">
+						            					<div class="step_container row">
+							            					<div class="step_number col-sm-2 col-xs-12">
+							            						3
+							            					</div>
+							            					<div class="step_desc col-sm-10 col-xs-12">
+							            						<p>Next to the timer a navigation bar for the questions will allow test taker's browse the questions in a quick way. This feature may be helpful for long quizzes and for test takers using the mobile version. In addition this navigation bar contains two buttons to browse all questions horizontally or swipe through in touch devices.</p>
+							            					</div>
+						            					</div>
+						            				</div>
+					            					<div class="col-sm-6 col-xs-12 ">
+						            					<div class="image_container text-center">
+						            						<a class="thumb_link" href="img/takers/user_quiz_nav.jpg">
+						            							<img class="img-responsive" src="img/takers/user_quiz_nav_thumb.jpg" alt="Quiz Navigation" title="Quiz Navigation" />
+						            							<div class="expand"></div>
+						            						</a>
+						            					</div>
+						            				</div>
+						            			</div>
+						            			<!-- END STEP -->
+
+						            			<!-- STEP -->
+						            			<div class="row step">
+						            				<div class="col-sm-6 col-xs-12">
+						            					<div class="step_container row">
+							            					<div class="step_number col-sm-2 col-xs-12">
+							            						4
+							            					</div>
+							            					<div class="step_desc col-sm-10 col-xs-12">
+							            						<p>A small indicator has been added next to the questions' numbers inside the navigation bar. This small star/asterisk indicates that the question with this number has not been solved. After a question is solved, the indicator next to the number's question will disappear.</p>
+							            					</div>
+						            					</div>
+						            				</div>
+						            				<div class="col-sm-6 col-xs-12 ">
+						            					<div class="image_container text-center">
+						            						<a class="thumb_link" href="img/takers/user_quiz_nav1.jpg">
+						            							<img class="img-responsive" src="img/takers/user_quiz_nav1_thumb.jpg" alt="Quiz Navigation" title="Quiz Navigation" />
+						            							<div class="expand"></div>
+						            						</a>
+						            					</div>
+						            				</div>
+						            			</div>
+						            			<!-- END STEP -->
+
+												<!-- STEP -->
+						            			<div class="row step">
+						            				<div class="col-sm-5 col-xs-12">
+						            					<div class="step_container row">
+							            					<div class="step_number col-sm-2 col-xs-12">
+							            						5
+							            					</div>
+							            					<div class="step_desc col-sm-10 col-xs-12">
+							            						<p>Test taker answers and countdown time will be saved even if the page is refreshed or closed. But the user will be no allowed to keep solving the quiz once the test timer has runned out.</p>
+							            					</div>						            			
+						            					</div>
+						            				</div>
+						            				<div class="col-sm-5 col-xs-12 ">
+						            					<div class="image_container text-center">
+						            						<a class="thumb_link" href="img/takers/user_quiz_error.jpg">
+						            							<img class="img-responsive" src="img/takers/user_quiz_error_thumb.jpg" alt="Create Subject" title="Create Subject" />
+						            							<div class="expand"></div>
+						            						</a>
+						            						<p>DESKTOP</p>
+						            					</div>
+						            				</div>
+						            				<div class="col-sm-2 col-xs-12 ">
+						            					<div class="image_container text-center">
+						            						<a class="thumb_link" href="img/takers/user_quiz_error_mobile.jpg">
+						            							<img class="img-responsive" src="img/takers/user_quiz_error_mobile_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
+						            							<div class="expand"></div>
+						            						</a>
+						            						<P>MOBILE</p>
+						            					</div>
+						            				</div>
+						            			</div>
+						            			<!-- END STEP -->
+
+						            			<!-- STEP -->
+						            			<div class="row step">
+						            				<div class="col-sm-12 col-xs-12">
+						            					<div class="step_container row">
+							            					<div class="step_number col-sm-2 col-xs-12">
+							            						6
+							            					</div>
+							            					<div class="step_desc col-sm-10 col-xs-12">
+							            						<p>The test will be summited automatically just after the timer finishes the countdown.</p>
+							            					</div>
+						            					</div>
+						            				</div>
+						            			</div>
+						            			<!-- END STEP -->
+
 					            		</div>	
 					            		<!-- END TAB -->
 
