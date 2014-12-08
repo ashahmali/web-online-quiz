@@ -339,22 +339,24 @@ $(document).ready(function(){
 	var duration = moment.duration(parseInt($('#test_form').attr('data-start')),'milliseconds');
 	var interval = 1000;
 
-	setInterval(function(){
-	  	duration = moment.duration(duration - interval, 'milliseconds');
-	    $('#test_form').attr('data-current',duration._milliseconds);
-	    $.ajax({
-			url: "timer", 
-                async: false,
-                type: "POST", 
-                dataType: "html",
-                data: {
-                	duration:duration._milliseconds
-            	},
-            success: function(data) {
-               $('.timer_container .timer').text(duration.hours() + ":" + duration.minutes() + ":" + duration.seconds());
-            }
-		});
-	}, interval); 
+	if(duration && duration  > 0){
+		setInterval(function(){
+		  	duration = moment.duration(duration - interval, 'milliseconds');
+		    $('#test_form').attr('data-current',duration._milliseconds);
+		    $.ajax({
+				url: "timer", 
+	                async: false,
+	                type: "POST", 
+	                dataType: "html",
+	                data: {
+	                	duration:duration._milliseconds
+	            	},
+	            success: function(data) {
+	               $('.timer_container .timer').text(duration.hours() + ":" + duration.minutes() + ":" + duration.seconds());
+	            }
+			});
+		}, interval); 
+	}
 	
 	
 });
