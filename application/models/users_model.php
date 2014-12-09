@@ -15,11 +15,12 @@ class Users_model extends CI_Model {
 	
 	public function fetch_subject(){
 		$subjects = array();
+		$this->db->cache_on();
 		$query = $this->db->get('SUBJECT');
 		foreach ($query->result_array() as $k => $v) {
 			$subjects[$k] = $v;
 		}
-		
+		$this->db->cache_off();
 		return $subjects;
 		
 	}
