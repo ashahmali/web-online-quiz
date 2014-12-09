@@ -41,7 +41,7 @@
 		</div>
 		<div class="row table_row">
 			<div class="col-sm-5 col-xs-3">
-				<p>This is a really big name</p>
+				<p>IA 1</p>
 			</div>
 			<div class="col-sm-3 col-xs-3">
 				<p>95 (10/12)</p>
@@ -55,7 +55,7 @@
 		</div>
 		<div class="row table_row">
 			<div class=" col-sm-5 col-xs-3">
-				<p class="name">Name</p>
+				<p class="name">IA 2</p>
 			</div>
 			<div class=" col-sm-3 col-xs-3">
 				<p class="name">-</p>
@@ -70,7 +70,7 @@
 		</div>
 		<div class="row table_row">
 			<div class=" col-sm-5 col-xs-3">
-				<p class="name">Name</p>
+				<p class="name">IA 3</p>
 			</div>
 			<div class=" col-sm-3 col-xs-3">
 				<p class="name">100</p>
@@ -87,7 +87,7 @@
 	<!-- list finishes-->
 
 	<!-- pagination -->
-	<div class="row pagination">
+	<!-- <div class="row pagination">
 		<a class="col-xs-2 text-center">
 			<i class="fa fa-chevron-left"></i>
 		</a>
@@ -97,6 +97,6 @@
 		<a class="col-xs-2 text-center">
 			<i class="fa fa-chevron-right"></i>
 		</a>
-	</div>
+	</div> -->
 	<!-- end pagination -->
 </div>
