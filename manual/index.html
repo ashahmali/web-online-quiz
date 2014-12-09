@@ -762,7 +762,7 @@ public function timer(){
 							            						2
 							            					</div>
 							            					<div class="step_desc col-sm-10 col-xs-12">
-							            						<p>Some plugins based on jquery where used as well. For instance owl.carrousel() which is a responsive slider was user for the quiz quick navigation. </p>
+							            						<p>Some plugins based on jquery where used as well. For instance owl.carrousel(Wojciechowski, B. 2014) which is a responsive slider was user for the quiz quick navigation. </p>
 							            					</div>
 						            					</div>
 						            				</div>
@@ -804,7 +804,7 @@ $(&#39;.quick_nav_inner .handler.next&#39;).click(function(){
 							            						3
 							            					</div>
 							            					<div class="step_desc col-sm-10 col-xs-12">
-							            						<p>The countdown runs supported by moment.js() which is a library to parse and display date and time with javascript.</p>
+							            						<p>The countdown runs supported by moment.js (MIT 2014) which is a library to parse and display date and time with javascript.</p>
 							            					</div>
 						            					</div>
 						            				</div>
@@ -856,118 +856,77 @@ if(duration &amp;&amp; duration  &gt; 0){
 							            						1
 							            					</div>
 							            					<div class="step_desc col-sm-10 col-xs-12">
-							            						<p>Open the menu and click on the "Manage Users" option or if you are at home page click on the option with the same name. </p>
+							            						<p>Codeigniter make use of database objects instead of object relational mapping (ORM) used in other php frameworks like cakephp and laravel.</p>
+
+							            						<p>The database class automatically takes care of SQL injections and XSS vulnerability while retaining the capacity for developers to run complex queries.</p>
 							            					</div>
 						            					</div>
 						            				</div>
-						            				<div class="col-sm-5 col-xs-12 ">
-						            					<div class="image_container text-center">
-						            						<a class="thumb_link" href="img/admin_menu1.jpg">
-						            							<img class="img-responsive" src="img/admin_menu1_thumb.jpg" alt="Create Subject" title="Create Subject" />
-						            							<div class="expand"></div>
-						            						</a>
-						            						<p>DESKTOP</p>
-						            					</div>
-						            				</div>
-						            				<div class="col-sm-2 col-xs-12 ">
-						            					<div class="image_container text-center">
-						            						<a class="thumb_link" href="img/admin_menu_mobile.jpg">
-						            							<img class="img-responsive" src="img/admin_menu_mobile_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
-						            							<div class="expand"></div>
-						            						</a>
-						            						<P>MOBILE</p>
-						            					</div>
+						            				<div class="col-sm-7 col-xs-12 ">
+						            					<p class="file_name"><b>application/models/question_model.php line 57</b></p>
+						            					
+														<pre>
+						            						<code class="language-javscript" data-start="19">
+public function fetch_tests($sub=&#39;&#39;, $limit, $offset)
+{
+	$data = array();
+	$this-&gt;db-&gt;select(&#39;TEST.*&#39;);
+	$this-&gt;db-&gt;select(&#39;SUBJECT.*&#39;);
+	$this-&gt;db-&gt;from(&#39;TEST&#39;);
+	$this-&gt;db-&gt;join(&#39;TEST_has_SUBJECT&#39;, &#39;TEST.idTEST = TEST_has_SUBJECT.TEST_idTEST&#39;, &#39;inner&#39;);
+	$this-&gt;db-&gt;join(&#39;SUBJECT&#39;, &#39;TEST_has_SUBJECT.TEST_idTEST = SUBJECT.idSUBJECT&#39;, &#39;inner&#39;);
+	$this-&gt;db-&gt;like(&#39;SUBJECT.idSUBJECT&#39;, $sub);
+	$this-&gt;db-&gt;limit($limit, $offset);
+	$query = $this-&gt;db-&gt;get();
+	
+	if ($query-&gt;num_rows() &gt; 0) {
+        foreach ($query-&gt;result_array() as $row) {
+            $data[] = $row;
+        }
+        return $data;
+    }
+    return false;
+}
+			
+															</code>			
+														</pre>
 						            				</div>
 						            			</div>
 						            			<!-- END STEP -->
 
 						            			<!-- STEP -->
 						            			<div class="row step">
-						            				<div class="col-sm-5 col-xs-12">
-						            					<div class="step_container row">
-							            					<div class="step_number col-sm-2 col-xs-12">
-							            						2
-							            					</div>
-							            					<div class="step_desc col-sm-10 col-xs-12">
-							            						<p>Once this window is open, a list of all registered users will appear.</p>
-							            					</div>
-						            					</div>
-						            				</div>
-						            				<div class="col-sm-5 col-xs-12 ">
-						            					<div class="image_container text-center">
-						            						<a class="thumb_link" href="img/users/admin_users.jpg">
-						            							<img class="img-responsive" src="img/users/admin_users_thumb.jpg" alt="Create Subject" title="Create Subject" />
-						            							<div class="expand"></div>
-						            						</a>
-						            						<p>DESKTOP</p>
-						            					</div>
-						            				</div>
-						            				<div class="col-sm-2 col-xs-12 ">
-						            					<div class="image_container text-center">
-						            						<a class="thumb_link" href="img/users/admin_users_mobile.jpg">
-						            							<img class="img-responsive" src="img/users/admin_users_mobile_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
-						            							<div class="expand"></div>
-						            						</a>
-						            						<P>MOBILE</p>
-						            					</div>
+						            				<div class="col-sm-12 col-xs-12 ">
+						            					<p class="file_name"><b>application/models/question_model.php line 57</b></p>
+						            					
+														<pre>
+						            						<code class="language-javscript" data-start="19">
+public function questionDetail($questionID){
+	$data = array();
+	$this-&gt;db-&gt;select(&#39;*&#39;);
+	$this-&gt;db-&gt;from(&#39;QUESTION&#39;);
+	$whereClause = array(&quot;idQUESTION&quot; =&gt; $questionID);
+	$this-&gt;db-&gt;where($whereClause);
+	$query = $this-&gt;db-&gt;get();
+	
+	if ($query-&gt;num_rows() &gt; 0) {
+		$this-&gt;load-&gt;model(&#39;option_model&#39;);
+        foreach ($query-&gt;result_array() as $row) {
+            $data[&#39;question&#39;] = $row;
+            $data[&#39;options&#39;] = $this-&gt;option_model-&gt;getbyQuestion($questionID);
+        }
+    }
+
+    return $data;  
+}
+			
+															</code>			
+														</pre>
 						            				</div>
 						            			</div>
 						            			<!-- END STEP -->
 
-						            			<!-- STEP -->
-						            			<div class="row step">
-						            				<div class="col-sm-12 col-xs-12">
-						            					<div class="step_container row">
-							            					<div class="step_number col-sm-2 col-xs-12">
-							            						3
-							            					</div>
-							            					<div class="step_desc col-sm-10 col-xs-12">
-							            						<p>As and administrator you are able to deny or grant access to the system's users. Click in the icon on the last column that corresponds to the user, which permissions you want to modify.  After this the users' status will be updated.</p>
-							            					</div>
-						            					</div>
-						            				</div>
-						            				
-						            			</div>
-						            			<!-- END STEP -->
-					            		</div>	
-					            		<!-- END TAB -->
-
-					            		<!-- TAB -->	
-					            		<h3>Web patterns and frameworks such as model-view-controller</h3>
-					            		<div class="steps_container">
-					            			<!-- STEP -->
-					            			<div class="row step">
-					            				<div class="col-sm-5 col-xs-12">
-					            					<div class="step_container row">
-						            					<div class="step_number col-sm-2 col-xs-12">
-						            						1
-						            					</div>
-						            					<div class="step_desc col-sm-10 col-xs-12">
-						            						<p>Open the menu and click on the "Manage Users" option or if you are at home page click on the option with the same name. </p>
-						            					</div>
-					            					</div>
-					            				</div>
-					            				<div class="col-sm-5 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/admin_menu1.jpg">
-					            							<img class="img-responsive" src="img/admin_menu1_thumb.jpg" alt="Create Subject" title="Create Subject" />
-					            							<div class="expand"></div>
-					            						</a>
-					            						<p>DESKTOP</p>
-					            					</div>
-					            				</div>
-					            				<div class="col-sm-2 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/admin_menu_mobile.jpg">
-					            							<img class="img-responsive" src="img/admin_menu_mobile_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
-					            							<div class="expand"></div>
-					            						</a>
-					            						<P>MOBILE</p>
-					            					</div>
-					            				</div>
-					            			</div>
-					            			<!-- END STEP -->
-
+						            			
 					            		</div>	
 					            		<!-- END TAB -->
 
@@ -1013,39 +972,112 @@ if(duration &amp;&amp; duration  &gt; 0){
 					            		<!-- TAB -->	
 					            		<h3>Performance management and scalability</h3>
 					            		<div class="steps_container">
-					            			<h4>Architecture</h4>
 					            			<!-- STEP -->
 					            			<div class="row step">
-					            				<div class="col-sm-5 col-xs-12">
+					            				<div class="col-sm-12 col-xs-12">
 					            					<div class="step_container row">
 						            					<div class="step_number col-sm-2 col-xs-12">
 						            						1
 						            					</div>
 						            					<div class="step_desc col-sm-10 col-xs-12">
-						            						<p>Open the menu and click on the "Manage Users" option or if you are at home page click on the option with the same name. </p>
+						            						<p>Saunders(Souders, 2007) claims that the Web "Performance Golden Rule" is reduce the amount of http requests needed to load the webpage.  It may be said that reducing the amount of components that the web page requires, as consequence we can reduce the number of http requests.  </p>
+
+						            						<p>Using this approach we merge the css and js files into one main css and js file, in addition we choose to use Fontawesome (Gandy, 2014) which is an   iconic web font that allow  us         to avoid the usage of images. We started requiring 23 request to load the administrator menu. After these optimization activities we reduce the amount to 8 improving DOM loading as well. Further evidence of this fact is provided in the following screenshot taken from chrome developer tools. </p>
+
+															<p>To merge css files Sass CSS Importer Plugin(Eppstein, 2014)  was used. Javacript files merge were done manually.</p>
+  
 						            					</div>
-					            					</div>
-					            				</div>
-					            				<div class="col-sm-5 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/admin_menu1.jpg">
-					            							<img class="img-responsive" src="img/admin_menu1_thumb.jpg" alt="Create Subject" title="Create Subject" />
-					            							<div class="expand"></div>
-					            						</a>
-					            						<p>DESKTOP</p>
-					            					</div>
-					            				</div>
-					            				<div class="col-sm-2 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/admin_menu_mobile.jpg">
-					            							<img class="img-responsive" src="img/admin_menu_mobile_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
-					            							<div class="expand"></div>
-					            						</a>
-					            						<P>MOBILE</p>
 					            					</div>
 					            				</div>
 					            			</div>
 					            			<!-- END STEP -->
+
+					            			<!-- STEP -->
+					            			<div class="row step">
+					            				<div class="col-sm-6 col-xs-12">
+					            					<div class="step_container row">
+						            					<div class="step_number col-sm-2 col-xs-12">
+						            						2
+						            					</div>
+						            					<div class="step_desc col-sm-10 col-xs-12">
+						            						<h4>Minification</h4>
+						            						<p>According to Saunders this is the 10th rule for high performance web sites.  To minify css files we used Sass(Sass-lang.com, 2014) preprocessor meanwhile for JavaScript files Closure Compiler(Google,2014) was used. </p>
+
+						            						<p>As a result of the oftimization (minification & merging) we reduce the amount of requests and the time that DOM spend loading. But the size of the page and the overall loading test did not improved at all. We believe that these tests should be performed used a proper web server in order to obtain better results.</p>
+						            					</div>
+					            					</div>
+					            				</div>
+
+					            				<div class="col-sm-6 col-xs-12 ">
+					            					<div class="image_container text-center">
+					            						<a class="thumb_link" href="img/minification.png">
+					            							<img class="img-responsive" src="img/minification_thumb.png" alt="minification" title="minification" />
+					            							<div class="expand"></div>
+					            						</a>
+					            						<i>Lighbox Effect (Semenov, D. ,2014)</i>
+					            					</div>
+					            				</div>
+					            			</div>
+					            			<!-- END STEP -->
+
+					            			<!-- STEP -->
+					            			<div class="row step">
+					            				<div class="col-sm-5 col-xs-12">
+					            					<div class="step_container row">
+						            					<div class="step_number col-sm-2 col-xs-12">
+						            						2
+						            					</div>
+						            					<div class="step_desc col-sm-10 col-xs-12">
+
+						            						<h4>Query Cache</h4>
+						            						<p>CodeIgniter allows caching queries results controlling how often does this cache is updated. This implies that the query results are stored in the server as a files so when a user request data from the cached table the results stored inside this file are retrieved to the user avoiding. </p>
+  															
+  															<p>According to the Codeigniter profiler the query was executed in 0.0249 seconds. After the cache was enabled we request rhe page again. There was a better rsponse with a time of 0.0147 seconds.</p>
+
+  															<p>The code where the cache is enabled and updated is attached in this section.</p>
+						            					</div>
+					            					</div>
+					            				</div>
+
+					            				<div class="col-sm-7 col-xs-12 ">
+					            						<i>Using Cache</i>
+						            					<p class="file_name"><b>application/models/users_model.php line 16</b></p>
+						            					
+														<pre>
+						            						<code class="language-javscript" data-start="19">
+public function fetch_subject(){
+	$subjects = array();
+	$this-&gt;db-&gt;cache_on();
+	$query = $this-&gt;db-&gt;get(&#39;SUBJECT&#39;);
+	foreach ($query-&gt;result_array() as $k =&gt; $v) {
+		$subjects[$k] = $v;
+	}
+	$this-&gt;db-&gt;cache_off();
+	return $subjects;
+	
+}
+			
+															</code>			
+														</pre>
+														
+														<i>Deleting Cache</i>
+														<p class="file_name"><b>application/models/question_model.php line 88</b></p>
+						            					
+														<pre>
+						            						<code class="language-javscript" data-start="19">
+public function add_subject($sub){
+	$this-&gt;db-&gt;cache_delete(&#39;users&#39;, &#39;register&#39;);
+	$this-&gt;db-&gt;cache_delete(&#39;admin&#39;, &#39;quizzes&#39;);
+	return $this-&gt;db-&gt;insert(&#39;SUBJECT&#39;, $sub);
+}
+			
+															</code>			
+														</pre>
+														
+						            				</div>
+					            			</div>
+					            			<!-- END STEP -->
+
 
 					            		</div>	
 					            		<!-- END TAB -->	
@@ -1293,17 +1325,25 @@ if(duration &amp;&amp; duration  &gt; 0){
 
 																	<li>Griffiths, A. (2010). CodeIgniter 1.7 professional development. Birmingham, U.K.: Packt Open Source, p.179.</li>
 
+																	<li>Google, (2014). Closure Compiler Service. [online] Closure-compiler.appspot.com. Available at: http://closure-compiler.appspot.com/home [Accessed 1 Dec. 2014].</li>
+
 																	<li>HAMPDEN, (2014). Shifter Demo. [online] Formstone.it. Available at: http://formstone.it/components/Shifter/demo/index.html [Accessed 3 Nov. 2014].</li>
 
 																	<li>jquery.org, j. (2014). jQuery. [online] Jquery.com. Available at: http://jquery.com [Accessed 5 Nov. 2014].</li>
 
 																	<li>Mark Otto, a. (2014). Bootstrap · The world's most popular mobile-first and responsive front-end framework.. [online] Getbootstrap.com. Available at: http://getbootstrap.com [Accessed 3 Nov. 2014].</li>
 
-																	<li>Mark Otto, a. (2014). Bootstrap · The world's most popular mobile-first and responsive front-end framework.. [online] Getbootstrap.com. Available at: http://getbootstrap.com/ [Accessed 9 Dec. 2014].</li>
+																	<li>MIT, (2014). Moment.js | Home. [online] Momentjs.com. Available at: http://momentjs.com [Accessed 4 Dec. 2014].</li>
 
 																	<li>Pitt, C. (2012). Pro PHP MVC. Berkeley, CA: Apress, pp.2,3.</li>
 
 																	<li>Sass-lang.com, (2014). Sass: Syntactically Awesome Style Sheets. [online] Available at: http://sass-lang.com [Accessed 3 Nov. 2014].</li>
+
+																	 <li>Semenov, D. (2014). Magnific Popup: Responsive jQuery Lightbox Plugin. [online] Dimsemenov.com. Available at: http://dimsemenov.com/plugins/magnific-popup/ [Accessed 9 Dec. 2014].</li>
+
+																	<li>Souders, S. (2007). High performance web sites. Farnham: O'Reilly, p.10.</li>
+
+																	<li>Verou, L. (2014). Prism. [online] Prismjs.com. Available at: http://prismjs.com/ [Accessed 2 Dec. 2014].</li>
 
 																	<li>Wojciechowski, B. (2014). Responsive Demo | Owl Carousel | 2.0.0-beta.2.4. [online] Owlcarousel.owlgraphic.com. Available at: http://www.owlcarousel.owlgraphic.com/demos/responsive.html [Accessed 11 Nov. 2014].</li>
 							            						</ul>

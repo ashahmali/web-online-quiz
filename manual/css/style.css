@@ -85,6 +85,8 @@ button:hover {
   padding-top: 10px;
   display: inline-block; }
 
+.steps_container .file_name {
+  word-break: break-all; }
 .steps_container code {
   top: -18px;
   position: relative; }
