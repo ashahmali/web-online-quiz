@@ -23,9 +23,11 @@
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/style_dropdown.css">
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/prism.min.css" />
 		<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
 		<script src="js/jquery.fs.shifter.js"></script>
 		<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+		<script src="js/prism.min.js" type="text/javascript"></script>
 		<script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
 		
 		<style>
@@ -136,27 +138,7 @@
 					            			</div>
 					            			<!-- END STEP -->
 
-					            			<!-- STEP -->
-					            			<div class="row step">
-					            				<div class="col-sm-4 col-xs-12 ">
-					            					<p>
-					            						MVC pattern is a design pattern that tries to prevent that small changes inside the application spread around and affect other critic application areas (Pitt, 2012). This is done isolating the application in three different components model, view and controller. 
-					            					</p>
-					            				</div>
-					            				<div class="col-sm-4 col-xs-12 ">
-					            					
-					            						
-				            						<P>Using this approach may help to make the development process more efficient. (Gilmore, 2008).</p>
-					            					
-					            				</div>
-					            				<div class="col-sm-4 col-xs-12 ">
-					            					
-					            						
-				            						<P>As a very important point, for a successful MVC-based application, the development team needs to define coding rules to keep code tidy and in the correct locations (Pitt, 2012).</p>
-					            					
-					            				</div>
-					            			</div>
-					            			<!-- END STEP -->
+					            			
 
 					            			
 
@@ -178,7 +160,7 @@
 							            					2
 						            					</div>
 						            					<div class="step_desc col-sm-10 col-xs-12">
-						            						<p>Inside de views folders has been created 2 folders one of them content the segments of the web interface that are used across the whole application like the footer, header and navigation. </p>
+						            						<p>Inside de views folders has been created Two folders one of them content the segments of the web interface that are used across the whole application like the footer, header and navigation. </p>
 						            					</div>
 					            					</div>
 					            				</div>
@@ -258,6 +240,28 @@
 						            						<p>Some data is passed to the views as parameters. </p>
 						            					</div>
 					            					</div>
+					            				</div>
+					            			</div>
+					            			<!-- END STEP -->
+
+					            			<!-- STEP -->
+					            			<div class="row step">
+					            				<div class="col-sm-4 col-xs-12 ">
+					            					<p>
+					            						MVC pattern is a design pattern that tries to prevent that small changes inside the application spread around and affect other critic application areas (Pitt, 2012). This is done isolating the application in three different components model, view and controller. 
+					            					</p>
+					            				</div>
+					            				<div class="col-sm-4 col-xs-12 ">
+					            					
+					            						
+				            						<P>Using this approach may help to make the development process more efficient. (Gilmore, 2008).</p>
+					            					
+					            				</div>
+					            				<div class="col-sm-4 col-xs-12 ">
+					            					
+					            						
+				            						<P>As a very important point, for a successful MVC-based application, the development team needs to define coding rules to keep code tidy and in the correct locations (Pitt, 2012).</p>
+					            					
 					            				</div>
 					            			</div>
 					            			<!-- END STEP -->
@@ -356,20 +360,29 @@
 						            						1
 						            					</div>
 						            					<div class="step_desc col-sm-10 col-xs-12">
-						            						<p>Bootstrap css main selectors are container and row and it is possible to mix them with our own css selectors.</p>
+						            						<p>As we mentioned before we used bootstrap to build a responsive user interface.</p>
+						            						<p>Bootstrap css main selectors are <i>container</i> and <i>row</i> and it is possible to mix them with our own css selectors.</p>
+						            						<p>This framework use <b>media queries</b> and <b>relative positioning techniques</b> to build the web page layout.</p>
+						            						
 						            					</div>
 					            					</div>
 					            				</div>
 					            				<div class="col-sm-8 col-xs-12 ">
+					            					<p class="file_name"><b>application/views/templates/header.php line 104</b></p>
 					            					<pre>
-					            						<code class="language-html" data-lang="html">
-					            							<div> echo </div>	
-
-					            							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>
-														  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Left<span class="nt">&lt;/button&gt;</span>
-														  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Middle<span class="nt">&lt;/button&gt;</span>
-														  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Right<span class="nt">&lt;/button&gt;</span>
-															<span class="nt">&lt;/div&gt;</span>
+					            						<code class="language-markup" data-start="104">
+&lt;div class=&quot;container fixed-quiz-elements&quot;&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;col-sm-3 col-xs-4 text-right timer_container&quot;&gt;
+			&lt;p&gt;&lt;span class=&quot; hidden-xs&quot;&gt;TIMER&lt;/span&gt; &lt;span class=&quot;timer&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-9 col-xs-8 text-right quick_nav&quot;&gt;
+			&lt;nav class =&#39;quick_nav_inner&#39;&gt;
+				...
+			&lt;/nav&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
 														</code>			
 													</pre>
 					            				</div>
@@ -379,83 +392,29 @@
 
 					            			<!-- STEP -->
 					            			<div class="row step">
-					            				<div class="col-sm-5 col-xs-12">
+					            				<div class="col-sm-6 col-xs-12">
 					            					<div class="step_container row">
 						            					<div class="step_number col-sm-2 col-xs-12">
 						            						2
 						            					</div>
 						            					<div class="step_desc col-sm-10 col-xs-12">
-						            						<p>Once this window is open, a list of the previous created subjects will appear.</p>
+						            						<p>These selectors has been used across the whole views' files in combination with some others like <i>col-lg-* col-md-* col-sm-* col-xs-*</i> which allow us to set the position of an element in an easy and quick way, and taking into account the device where this element will be displayed.  </p>
+						            						<p>Bootstrap </p>
 						            					</div>
 					            					</div>
 					            				</div>
-					            				<div class="col-sm-5 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/subject/admin_subject.jpg">
-					            							<img class="img-responsive" src="img/subject/admin_subject_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
-					            							<div class="expand"></div>
-					            						</a>
-					            						<p>DESKTOP</p>
-					            					</div>
-					            				</div>
-					            				<div class="col-sm-2 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/subject/admin_subject_mobile.jpg">
-					            							<img class="img-responsive" src="img/subject/admin_subject_mobile_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
-					            							<div class="expand"></div>
-					            						</a>
-					            					</div>
-					            					<p>MOBILE</p>
-					            				</div>
-					            			</div>
-					            			<!-- END STEP -->
-
-					            			<!-- STEP -->
-					            			<div class="row step">
-					            				<div class="col-sm-5 col-xs-12">
+					            				<div class="col-sm-6 col-xs-12">
 					            					<div class="step_container row">
 						            					<div class="step_number col-sm-2 col-xs-12">
 						            						3
 						            					</div>
 						            					<div class="step_desc col-sm-10 col-xs-12">
-						            						<p>At the bottom of it a text box will be available to type the new subject's name.</p>
-						            						<p>Provide the name of the new subject and save your changes clicking on the bottom below this section.</p>
+						            						<p>Bootstrap uses a column layout and a set of prefixes (lg, md, sm or xs) to determine the style (number of columns) of a control depending of the viewport of the device where the webpage is displayed. Selectors with lg are applied in desktop devices (>= 1200px), md to medium devices(>= 992px), sm to Tablets and small devices(>=768) and xs for phones or extra small devices (<768px). </p>
 						            					</div>
 					            					</div>
 					            				</div>
-					            				<div class="col-sm-5 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/subject/admin_subject.jpg">
-					            							<img class="img-responsive" src="img/subject/admin_subject_add_thumb.jpg" alt="Add Subject" title="Add Subject" />
-					            							<div class="expand"></div>
-					            						</a>
-					            						<p>DESKTOP</p>
-					            					</div>
-					            				</div>
-					            				<div class="col-sm-2 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/subject/admin_subject_mobile.jpg">
-					            							<img class="img-responsive" src="img/subject/admin_subject_add_mobile_thumb.jpg" alt="Add Subject Mobile" title="Add Subject Mobile" />
-					            							<div class="expand"></div>
-					            						</a>
-					            					</div>
-					            					<p>MOBILE</p>
-					            				</div>
-					            			</div>
-					            			<!-- END STEP -->
 
-					            			<!-- STEP -->
-					            			<div class="row step">
-					            				<div class="col-sm-12 col-xs-12">
-					            					<div class="step_container row">
-						            					<div class="step_number col-sm-2 col-xs-12">
-						            						4
-						            					</div>
-						            					<div class="step_desc col-sm-10 col-xs-12">
-						            						<p>If everything went ok, the new subject should be displayed as part of the subject's list, otherwise the system will let you know what happened.</p>
-						            					</div>
-					            					</div>
-					            				</div>
+
 					            				
 					            			</div>
 					            			<!-- END STEP -->
@@ -479,27 +438,19 @@
 						            						1
 						            					</div>
 						            					<div class="step_desc col-sm-10 col-xs-12">
-						            						<p>Open the menu and click on the "Create Quiz" option or if you are at home page click on the option with the same name.</p>
+						            						<p>CodeIgniter provides a library to validate  users' input. To be able to use it is neccesary to load it. </p>
 						            					</div>
 					            					</div>
 					            				</div>
-					            				<div class="col-sm-5 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/admin_menu1.jpg">
-					            							<img class="img-responsive" src="img/admin_menu1_thumb.jpg" alt="Create Subject" title="Create Subject" />
-					            							<div class="expand"></div>
-					            						</a>
-					            						<p>DESKTOP</p>
-					            					</div>
-					            				</div>
-					            				<div class="col-sm-2 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/admin_menu_mobile.jpg">
-					            							<img class="img-responsive" src="img/admin_menu_mobile_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
-					            							<div class="expand"></div>
-					            						</a>
-					            						<P>MOBILE</p>
-					            					</div>
+					            				<div class="col-sm-7 col-xs-12 ">
+					            					<p class="file_name"><b>application/controllers/users.php line 7 </b></p>
+					            					<pre>
+					            						<code class="language-php" data-start="7">
+//load validation library
+$this-&gt;load-&gt;library(&#39;form_validation&#39;);
+														</code>			
+													</pre>
+
 					            				</div>
 					            			</div>
 					            			<!-- END STEP -->
@@ -512,27 +463,28 @@
 						            						2
 						            					</div>
 						            					<div class="step_desc col-sm-10 col-xs-12">
-						            						<p>Once this window is open, a list of the previous created test will appear. Quizzes details can be requested clicking on the "details" link. </p>
+						            						<p>Once the library has been loaded the validation details need to be provided as a parameters . The following code block shows an example of this feature. This code belongs to the controllet that handle the registration request. </p>
 						            					</div>
 					            					</div>
 					            				</div>
-					            				<div class="col-sm-5 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/quiz/admin_quizzes3.jpg">
-					            							<img class="img-responsive" src="img/quiz/admin_quizzes3_thumb.jpg" alt="Quiz List" title="Quiz List" />
-					            							<div class="expand"></div>
-					            						</a>
-					            						<p>DESKTOP</p>
-					            					</div>
-					            				</div>
-					            				<div class="col-sm-2 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/quiz/admin_quizzes2_mobile.jpg">
-					            							<img class="img-responsive" src="img/quiz/admin_quizzes2_mobile_thumb.jpg" alt="Quiz List Mobile" title="Quiz List Mobile" />
-					            							<div class="expand"></div>
-					            						</a>
-					            						<P>MOBILE</p>
-					            					</div>
+					            				<div class="col-sm-7 col-xs-12 ">
+					            					<p class="file_name"><b>application/controllers/users.php line19</b></p>
+					            					
+													<pre>
+					            						<code class="language-php" data-start="19">
+ /**
+ * Validating user input
+ */
+ if($_POST){
+	$this-&gt;form_validation-&gt;set_rules(&#39;first_name&#39;, &#39;First Name&#39;, &#39;trim|required|max_length[50]|xss_clean&#39;);
+	$this-&gt;form_validation-&gt;set_rules(&#39;family_name&#39;, &#39;Family Name&#39;, &#39;trim|required|max_length[50]|xss_clean&#39;);
+	$this-&gt;form_validation-&gt;set_rules(&#39;email&#39;, &#39;Email&#39;, &#39;trim|required&#39;);
+	$this-&gt;form_validation-&gt;set_rules(&#39;password&#39;, &#39;Password&#39;, &#39;trim|required|min_length[8]&#39;);
+	$this-&gt;form_validation-&gt;set_rules(&#39;password_confirm&#39;, &#39;Password&#39;, &#39;trim&#39;);
+	$this-&gt;form_validation-&gt;set_rules(&#39;dd_register&#39;, &#39;Subject&#39;, &#39;trim|required&#39;);
+			
+														</code>			
+													</pre>
 					            				</div>
 					            			</div>
 					            			<!-- END STEP -->
@@ -545,48 +497,27 @@
 						            						3
 						            					</div>
 						            					<div class="step_desc col-sm-10 col-xs-12">
-						            						<p>At the bottom of it an "Add Quiz" button will be available. Click on it.</p>
-						            						<p>A new section within the page will be opened. Provide the details of the new subject and save your changes clicking on the bottom below this section.</p>
+						            						<p>Another validation which checks whether the user already exists in the database is performed before store user's data .</p>
 						            					</div>
 					            					</div>
 					            				</div>
-					            				<div class="col-sm-5 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/quiz/admin_quizzes2.jpg">
-					            							<img class="img-responsive" src="img/quiz/admin_quizzes2_thumb.jpg" alt="Adding Quiz" title="Adding Quiz" />
-					            							<div class="expand"></div>
-					            						</a>
-					            						<p>DESKTOP</p>
-					            					</div>
-					            				</div>
-					            				<div class="col-sm-2 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/quiz/admin_quizzes3_mobile.jpg">
-					            							<img class="img-responsive" src="img/quiz/admin_quizzes3_mobile_thumb.jpg" alt="Adding Quiz Mobile" title="Adding Quiz Mobile" />
-					            							<div class="expand"></div>
-					            						</a>
-					            						<P>MOBILE</p>
-					            					</div>
+					            				<div class="col-sm-7 col-xs-12 ">
+					            					<p class="file_name"><b>application/controllers/users.php line 50</b></p>
+					            					
+													<pre>
+					            						<code class="language-php" data-start="19">
+/**
+ * check the database to see if the user already exists
+ */
+ if($this-&gt;users_model-&gt;check_duplicate_email($user_detail[&#39;sEmail&#39;])){
+ 	$reg_errors[] = &quot;This user appear to already exist in our database&quot;;
+ }
+			
+														</code>			
+													</pre>
 					            				</div>
 					            			</div>
 					            			<!-- END STEP -->
-
-					            			<!-- STEP -->
-					            			<div class="row step">
-					            				<div class="col-sm-12 col-xs-12">
-					            					<div class="step_container row">
-						            					<div class="step_number col-sm-2 col-xs-12">
-						            						4
-						            					</div>
-						            					<div class="step_desc col-sm-10 col-xs-12">
-						            						<p>If everything went ok, the new quiz should be displayed as part of the quizzes' list, otherwise the system will let you know what happened. </p>
-						            					</div>
-					            					</div>
-					            				</div>
-					            				
-					            			</div>
-					            			<!-- END STEP -->
-
 
 					            		</div>	
 					            		<!-- END TAB -->
@@ -597,33 +528,97 @@
 					            		<div class="steps_container">
 					            			<!-- STEP -->
 					            			<div class="row step">
+					            				<div class="col-sm-12 col-xs-12">
+					            					<div class="step_container row">
+						            					<div class="step_desc col-sm-12 col-xs-12">
+						            						<p>For this coursework we execute Asynchronous  requests to the server to update data and  retrieve information. AJAX was implemented using javascript library jQuery(). </p>
+						            					</div>
+					            					</div>
+					            				</div>
+					            			</div>
+					            			<!-- END STEP -->
+
+					            			<!-- STEP -->
+					            			<div class="row step">
 					            				<div class="col-sm-5 col-xs-12">
 					            					<div class="step_container row">
 						            					<div class="step_number col-sm-2 col-xs-12">
 						            						1
 						            					</div>
 						            					<div class="step_desc col-sm-10 col-xs-12">
-						            						<p>Open the menu and click on the "Adding Questions" option or if you are at home page click on the option with the same name.</p>
+						            						<p>A clear example of this is when an administrator requests a quiz or question's details. The information should be displayed inside a modal but this data is fetched from the server without refreshing the whole page. The following code shows how we do this.</p>
+
+						            						<p>This method handles the click event of the Details link. Gets the id of the question and this data is sent to the server. The response is handled and inserted inside the modal which is diaplayed afterwards.</p>
+
+						            						<p>Note that these sintaxis is different from the common one  becouse some of this elements are inserted dinamically into the page. This method handles the click the event of every element that matches the selector even if it is added after the page has been loaded.</p>
+
 						            					</div>
 					            					</div>
 					            				</div>
-					            				<div class="col-sm-5 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/admin_menu1.jpg">
-					            							<img class="img-responsive" src="img/admin_menu1_thumb.jpg" alt="Create Subject" title="Create Subject" />
-					            							<div class="expand"></div>
-					            						</a>
-					            						<p>DESKTOP</p>
+					            				<div class="col-sm-7 col-xs-12 ">
+					            					<p class="file_name"><b>assets/js/controls.js line 159</b></p>
+					            					
+													<pre>
+					            						<code class="language-javascript" data-start="19">
+$(document).on(&quot;click&quot;,&quot;.question_detail&quot;,function(){
+	var questionid = $(this).data(&#39;questionid&#39;);
+	var modaltitle = $(this).data(&#39;modaltitle&#39;);
+	$.ajax({
+		url: &quot;question_detail&quot;, 
+            async: false,
+            type: &quot;POST&quot;, 
+            dataType: &quot;html&quot;,
+            data: {
+            	id:questionid
+        	},
+        success: function(data) {
+            //data is the html of the page where the request is made.
+            $(&#39;#modal_global .modal-body&#39;).html(data);
+            $(&#39;#modal_global .modal-title&#39;).text(modaltitle);
+            $(&#39;#modal_global&#39;).modal(&#39;show&#39;); 
+        }
+	});
+	
+});
+			
+														</code>			
+													</pre>
+					            				</div>
+					            			</div>
+					            			<div class="row step">
+					            				<div class="col-sm-5 col-xs-12">
+					            					<div class="step_container row">
+					            						<div class="step_number col-sm-2 col-xs-12">
+						            						1.1
+						            					</div>
+						            					<div class="step_desc col-sm-10 col-xs-12">
+						            						<p>The controller's method that handles this ajax request.</p>
+						            						<p>This function fetches the question details from the database and pass this data to a view which handles this data. This view is the data that is retuned to the ajax request.</p>
+
+						            					</div>
 					            					</div>
 					            				</div>
-					            				<div class="col-sm-2 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/admin_menu_mobile.jpg">
-					            							<img class="img-responsive" src="img/admin_menu_mobile_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
-					            							<div class="expand"></div>
-					            						</a>
-					            						<P>MOBILE</p>
-					            					</div>
+					            				<div class="col-sm-7 col-xs-12 ">
+					            					<p class="file_name"><b>application/controllers/admin.php line 204</b></p>
+					            					
+													<pre>
+					            						<code class="language-php" data-start="19">
+public function question_detail() {
+	if (isset($_POST) &amp;&amp; isset($_POST[&#39;id&#39;])) {
+		$this-&gt;checkSession();
+		$question_id = $_POST[&#39;id&#39;];
+
+		//We need to get question details here
+		$this-&gt;load-&gt;model(&#39;question_model&#39;);
+		$questionData = $this -&gt; question_model -&gt; questionDetail($question_id);
+
+		$data[&#39;questionData&#39;] = $questionData;
+		$this -&gt; load -&gt; view(&#39;pages/admin_question_detail&#39;, $data);
+	}
+}
+			
+														</code>			
+													</pre>
 					            				</div>
 					            			</div>
 					            			<!-- END STEP -->
@@ -636,29 +631,34 @@
 						            						2
 						            					</div>
 						            					<div class="step_desc col-sm-10 col-xs-12">
-						            						<p>Once this window is open, a list of the previous created questions will appear and at the top of it a select control will let you filter the questions per subject.</p>
-
-						            						<p>Question's anwers can be browsed clicking in the "Details" link.</p>
+						            						<p>Another feature that uses AJAX is the section where a user answer a quiz. The countdown is stored as a part of the user's session; this data is updated using Ajax. In addition when a user selects an answer this data is sent to the server and stored within the users session as well. We did this to keep record of the users data even if the page is refreshed. If the page is refreshed the last status can be recovered (countdown and answers).</p>
 						            					</div>
 					            					</div>
 					            				</div>
-					            				<div class="col-sm-5 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/questions/admin_question4.png">
-					            							<img class="img-responsive" src="img/questions/admin_question4_thumb.png" alt="Create Subject" title="Create Subject" />
-					            							<div class="expand"></div>
-					            						</a>
-					            						<p>DESKTOP</p>
-					            					</div>
-					            				</div>
-					            				<div class="col-sm-2 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/questions/admin_question1_mobile.jpg">
-					            							<img class="img-responsive" src="img/questions/admin_question1_mobile_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
-					            							<div class="expand"></div>
-					            						</a>
-					            						<P>MOBILE</p>
-					            					</div>
+					            				<div class="col-sm-7 col-xs-12 ">
+					            					<p class="file_name"><b>assets/js/controls.js line 343</b></p>
+					            					
+													<pre>
+					            						<code class="language-javscript" data-start="19">
+setInterval(function(){
+  	duration = moment.duration(duration - interval, &#39;milliseconds&#39;);
+    $(&#39;#test_form&#39;).attr(&#39;data-current&#39;,duration._milliseconds);
+    $.ajax({
+		url: &quot;timer&quot;, 
+            async: false,
+            type: &quot;POST&quot;, 
+            dataType: &quot;html&quot;,
+            data: {
+            	duration:duration._milliseconds
+        	},
+        success: function(data) {
+           $(&#39;.timer_container .timer&#39;).text(duration.hours()   &quot;:&quot;   duration.minutes()   &quot;:&quot;   duration.seconds());
+        }
+	});
+}, interval); 
+			
+														</code>			
+													</pre>
 					            				</div>
 					            			</div>
 					            			<!-- END STEP -->
@@ -668,132 +668,30 @@
 					            				<div class="col-sm-5 col-xs-12">
 					            					<div class="step_container row">
 						            					<div class="step_number col-sm-2 col-xs-12">
-						            						3
+						            						2.1
 						            					</div>
 						            					<div class="step_desc col-sm-10 col-xs-12">
-						            						<p>At the bottom of this list an "Add Quiz" button will be available. Click on it, and a new section within the page will be opened. It is possible to cancel this action clicking on the red bottom ad the top of the section.</p>
+						            						<p>The controller's method that handles this ajax request.</p>
 						            					</div>
 					            					</div>
 					            				</div>
-					            				<div class="col-sm-5 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/questions/admin_question1.png">
-					            							<img class="img-responsive" src="img/questions/admin_question1_thumb.png" alt="Create Subject" title="Create Subject" />
-					            							<div class="expand"></div>
-					            						</a>
-					            						<p>DESKTOP</p>
-					            					</div>
-					            				</div>
-					            				<div class="col-sm-2 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/questions/admin_question2_mobile.jpg">
-					            							<img class="img-responsive" src="img/questions/admin_question2_mobile_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
-					            							<div class="expand"></div>
-					            						</a>
-					            						<P>MOBILE</p>
-					            					</div>
+					            				<div class="col-sm-7 col-xs-12 ">
+					            					<p class="file_name"><b>application/controllers/quiz.php line 101</b></p>
+					            					
+													<pre>
+					            						<code class="language-php" data-start="19">
+//updates session timer
+public function timer(){
+	if(isset($_POST[&#39;duration&#39;])){
+		$this-&gt;session-&gt;set_userdata(&#39;timer&#39;,$_POST[&#39;duration&#39;]);
+	}
+}
+			
+														</code>			
+													</pre>
 					            				</div>
 					            			</div>
 					            			<!-- END STEP -->
-
-					            			<!-- STEP -->
-					            			<div class="row step">
-					            				<div class="col-sm-5 col-xs-12">
-					            					<div class="step_container row">
-						            					<div class="step_number col-sm-2 col-xs-12">
-						            						4
-						            					</div>
-						            					<div class="step_desc col-sm-10 col-xs-12">
-						            						<p>Provide new question's details including the answers.You can add as many answers per question as you want but is mandatory to define the one which is correct. Answers deletion before saving is allowed.</p>
-						            					</div>
-					            					</div>
-					            				</div>
-					            				<div class="col-sm-5 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/questions/admin_question2.png">
-					            							<img class="img-responsive" src="img/questions/admin_question2_thumb.png" alt="Create Subject" title="Create Subject" />
-					            							<div class="expand"></div>
-					            						</a>
-					            						<p>DESKTOP</p>
-					            					</div>
-					            				</div>
-					            				<div class="col-sm-2 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/questions/admin_question3_mobile.jpg">
-					            							<img class="img-responsive" src="img/questions/admin_question3_mobile_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
-					            							<div class="expand"></div>
-					            						</a>
-					            						<P>MOBILE</p>
-					            					</div>
-					            				</div>
-					            			</div>
-					            			<!-- END STEP -->
-
-					            			<!-- STEP -->
-					            			<div class="row step">
-					            				<div class="col-sm-5 col-xs-12">
-					            					<div class="step_container row">
-						            					<div class="step_number col-sm-2 col-xs-12">
-						            						5
-						            					</div>
-						            					<div class="step_desc col-sm-10 col-xs-12">
-						            						<p>To add a new possible answer click on the "Add Answer" button, a text area will appear. Type the answer's content and click on the "OK" button to add it. </p><p>To select the correct answer click on one of the possible answers and the control located at the left side of the text will get filled indicating that this question has been selected as the correct one.</p>
-						            					</div>
-					            					</div>
-					            				</div>
-					            				<div class="col-sm-5 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/questions/admin_question3.png">
-					            							<img class="img-responsive" src="img/questions/admin_question3_thumb.png" alt="Create Subject" title="Create Subject" />
-					            							<div class="expand"></div>
-					            						</a>
-					            						<p>DESKTOP</p>
-					            					</div>
-					            				</div>
-					            				<div class="col-sm-2 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/questions/admin_question4_mobile.jpg">
-					            							<img class="img-responsive" src="img/questions/admin_question4_mobile_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
-					            							<div class="expand"></div>
-					            						</a>
-					            						<P>MOBILE</p>
-					            					</div>
-					            				</div>
-					            			</div>
-					            			<!-- END STEP -->
-
-					            			<!-- STEP -->
-					            			<div class="row step">
-					            				<div class="col-sm-12 col-xs-12">
-					            					<div class="step_container row">
-						            					<div class="step_number col-sm-2 col-xs-12">
-						            						6
-						            					</div>
-						            					<div class="step_desc col-sm-10 col-xs-12">
-						            						<p>Once the information for the new question has been captured save your changes clicking on the botton located below this section.</p>
-						            					</div>
-					            					</div>
-					            				</div>
-					            			</div>
-					            			<!-- END STEP -->
-
-					            			<!-- STEP -->
-					            			<div class="row step">
-					            				<div class="col-sm-12 col-xs-12">
-					            					<div class="step_container row">
-						            					<div class="step_number col-sm-2 col-xs-12">
-						            						7
-						            					</div>
-						            					<div class="step_desc col-sm-10 col-xs-12">
-						            						<p>If everything went ok, the new subject should be displayed as part of the subject's list, otherwise the system will let you know what happened.</p>
-						            					</div>
-					            					</div>
-					            				</div>
-					            				
-					            			</div>
-					            			<!-- END STEP -->
-
-
 					            		</div>
 					            		<!-- END TAB -->
 
@@ -804,33 +702,54 @@
 
 					            				<!-- STEP -->
 						            			<div class="row step">
+						            				<div class="col-sm-12 col-xs-12">
+						            					<div class="step_container row">
+							            					
+							            					<div class="step_desc col-sm-12 col-xs-12">
+							            						<p>jQuery is the main JavaScript framework used for this task. It was used to implement Ajax and manipulate DOM to enhance UI interactivity. All javascript code that we created is contained inside the file <b>assets/js/controls.js</b>.  </p>
+							            					</div>
+						            					</div>
+						            				</div>
+						            			</div>
+						            			<!-- END STEP -->
+
+						            			<!-- STEP -->
+						            			<div class="row step">
 						            				<div class="col-sm-5 col-xs-12">
 						            					<div class="step_container row">
 							            					<div class="step_number col-sm-2 col-xs-12">
 							            						1
 							            					</div>
 							            					<div class="step_desc col-sm-10 col-xs-12">
-							            						<p>Open the menu and click on the "Manage Users" option or if you are at home page click on the option with the same name. </p>
+							            						<p>This is an example where we show or hide some controls in a smoothly way. In addition DOM manipulation is performed as well.</p>
+
 							            					</div>
 						            					</div>
 						            				</div>
-						            				<div class="col-sm-5 col-xs-12 ">
-						            					<div class="image_container text-center">
-						            						<a class="thumb_link" href="img/admin_menu1.jpg">
-						            							<img class="img-responsive" src="img/admin_menu1_thumb.jpg" alt="Create Subject" title="Create Subject" />
-						            							<div class="expand"></div>
-						            						</a>
-						            						<p>DESKTOP</p>
-						            					</div>
-						            				</div>
-						            				<div class="col-sm-2 col-xs-12 ">
-						            					<div class="image_container text-center">
-						            						<a class="thumb_link" href="img/admin_menu_mobile.jpg">
-						            							<img class="img-responsive" src="img/admin_menu_mobile_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
-						            							<div class="expand"></div>
-						            						</a>
-						            						<P>MOBILE</p>
-						            					</div>
+						            				<div class="col-sm-7 col-xs-12 ">
+						            					<p class="file_name"><b>assets/js/controls.js line 57</b></p>
+						            					
+														<pre>
+						            						<code class="language-javscript" data-start="19">
+	//add question button
+	$(&quot;#add_question&quot;).click(function(){
+		var alterText = $(this).data(&quot;alter&quot;);
+		var newalter = $(this).text();
+		if($(&#39;.new_question_container&#39;).is(&#39;:visible&#39;)){
+			//show interface
+			$(&#39;.new_question_container&#39;).slideUp(&#39;fast&#39;);
+			$(this).removeClass(&#39;cancel&#39;);
+		}else{
+			$(&#39;.new_question_container&#39;).slideDown(&#39;fast&#39;);	
+			$(this).addClass(&#39;cancel&#39;);
+			$(&quot;html, body&quot;).animate({ scrollTop: $(&#39;#add_question_title&#39;).offset().top - 80 }, 1000);
+		}
+		$(this).text(alterText);
+		$(this).data(&#39;alter&#39;,newalter);
+	});
+				
+															</code>			
+														</pre>
 						            				</div>
 						            			</div>
 						            			<!-- END STEP -->
@@ -843,42 +762,81 @@
 							            						2
 							            					</div>
 							            					<div class="step_desc col-sm-10 col-xs-12">
-							            						<p>Once this window is open, a list of all registered users will appear.</p>
+							            						<p>Some plugins based on jquery where used as well. For instance owl.carrousel() which is a responsive slider was user for the quiz quick navigation. </p>
 							            					</div>
 						            					</div>
 						            				</div>
-						            				<div class="col-sm-5 col-xs-12 ">
-						            					<div class="image_container text-center">
-						            						<a class="thumb_link" href="img/users/admin_users.jpg">
-						            							<img class="img-responsive" src="img/users/admin_users_thumb.jpg" alt="Create Subject" title="Create Subject" />
-						            							<div class="expand"></div>
-						            						</a>
-						            						<p>DESKTOP</p>
-						            					</div>
+						            				<div class="col-sm-7 col-xs-12 ">
+						            					<p class="file_name"><b>assets/js/controls.js line 226</b></p>
+						            					
+														<pre>
+						            						<code class="language-javscript" data-start="19">
+var owl = $(&#39;.owl-carousel&#39;).owlCarousel({
+    loop:false,
+    margin:10,
+    dots:false,
+    autoWidth:true,
+	onTranslate: callback
+});
+
+function callback(event) {
+
+}
+$(&#39;.quick_nav_inner .handler.prev&#39;).click(function(){
+	owl.trigger(&#39;prev.owl.carousel&#39;, [300]);
+});
+$(&#39;.quick_nav_inner .handler.next&#39;).click(function(){
+	owl.trigger(&#39;next.owl.carousel&#39;);
+});
+				
+															</code>			
+														</pre>
 						            				</div>
-						            				<div class="col-sm-2 col-xs-12 ">
-						            					<div class="image_container text-center">
-						            						<a class="thumb_link" href="img/users/admin_users_mobile.jpg">
-						            							<img class="img-responsive" src="img/users/admin_users_mobile_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
-						            							<div class="expand"></div>
-						            						</a>
-						            						<P>MOBILE</p>
-						            					</div>
-						            				</div>
+						            				
 						            			</div>
 						            			<!-- END STEP -->
 
 						            			<!-- STEP -->
 						            			<div class="row step">
-						            				<div class="col-sm-12 col-xs-12">
+						            				<div class="col-sm-5 col-xs-12">
 						            					<div class="step_container row">
 							            					<div class="step_number col-sm-2 col-xs-12">
 							            						3
 							            					</div>
 							            					<div class="step_desc col-sm-10 col-xs-12">
-							            						<p>As and administrator you are able to deny or grant access to the system's users. Click in the icon on the last column that corresponds to the user, which permissions you want to modify.  After this the users' status will be updated.</p>
+							            						<p>The countdown runs supported by moment.js() which is a library to parse and display date and time with javascript.</p>
 							            					</div>
 						            					</div>
+						            				</div>
+						            				<div class="col-sm-7 col-xs-12 ">
+						            					<p class="file_name"><b>assets/js/controls.js line 339</b></p>
+						            					
+														<pre>
+						            						<code class="language-javscript" data-start="19">
+var duration = moment.duration(parseInt($(&#39;#test_form&#39;).attr(&#39;data-start&#39;)),&#39;milliseconds&#39;);
+var interval = 1000;
+
+if(duration &amp;&amp; duration  &gt; 0){
+	setInterval(function(){
+	  	duration = moment.duration(duration - interval, &#39;milliseconds&#39;);
+	    $(&#39;#test_form&#39;).attr(&#39;data-current&#39;,duration._milliseconds);
+	    $.ajax({
+			url: &quot;timer&quot;, 
+                async: false,
+                type: &quot;POST&quot;, 
+                dataType: &quot;html&quot;,
+                data: {
+                	duration:duration._milliseconds
+            	},
+            success: function(data) {
+               $(&#39;.timer_container .timer&#39;).text(duration.hours()   &quot;:&quot;   duration.minutes()   &quot;:&quot;   duration.seconds());
+            }
+		});
+	}, interval); 
+}
+				
+															</code>			
+														</pre>
 						            				</div>
 						            				
 						            			</div>

@@ -85,6 +85,9 @@ button:hover {
   padding-top: 10px;
   display: inline-block; }
 
+.steps_container code {
+  top: -18px;
+  position: relative; }
 .steps_container > .step:last-child {
   border-bottom: 0; }
 .steps_container .step {
