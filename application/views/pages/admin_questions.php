@@ -55,7 +55,7 @@
 		<!-- list finishes-->
 
 		<!-- pagination -->
-		<div class="row pagination">
+		<div class="row pagination" style="display:none;">
 			<?php echo $links; ?>
 		</div>
 		<!-- end pagination -->
