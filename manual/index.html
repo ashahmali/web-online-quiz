@@ -935,32 +935,25 @@ public function questionDetail($questionID){
 					            		<div class="steps_container">
 					            			<!-- STEP -->
 					            			<div class="row step">
-					            				<div class="col-sm-5 col-xs-12">
+					            				<div class="col-sm-12 col-xs-12">
 					            					<div class="step_container row">
-						            					<div class="step_number col-sm-2 col-xs-12">
-						            						1
-						            					</div>
-						            					<div class="step_desc col-sm-10 col-xs-12">
+						            					<div class="step_desc col-sm-12 col-xs-12">
+						            						<h4>Plugins</h4>
 						            						<p>Open the menu and click on the "Manage Users" option or if you are at home page click on the option with the same name. </p>
 						            					</div>
 					            					</div>
 					            				</div>
-					            				<div class="col-sm-5 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/admin_menu1.jpg">
-					            							<img class="img-responsive" src="img/admin_menu1_thumb.jpg" alt="Create Subject" title="Create Subject" />
-					            							<div class="expand"></div>
-					            						</a>
-					            						<p>DESKTOP</p>
-					            					</div>
-					            				</div>
-					            				<div class="col-sm-2 col-xs-12 ">
-					            					<div class="image_container text-center">
-					            						<a class="thumb_link" href="img/admin_menu_mobile.jpg">
-					            							<img class="img-responsive" src="img/admin_menu_mobile_thumb.jpg" alt="Admin Menu" title="Admin Menu" />
-					            							<div class="expand"></div>
-					            						</a>
-					            						<P>MOBILE</p>
+					            			</div>
+					            			<!-- END STEP -->
+
+					            			<!-- STEP -->
+					            			<div class="row step">
+					            				<div class="col-sm-12 col-xs-12">
+					            					<div class="step_container row">
+						            					<div class="step_desc col-sm-12 col-xs-12">
+						            						<h4>Web pages</h4>
+						            						<p>Open the menu and click on the "Manage Users" option or if you are at home page click on the option with the same name. </p>
+						            					</div>
 					            					</div>
 					            				</div>
 					            			</div>
@@ -972,43 +965,25 @@ public function questionDetail($questionID){
 					            		<!-- TAB -->	
 					            		<h3>Performance management and scalability</h3>
 					            		<div class="steps_container">
+					            			
+
 					            			<!-- STEP -->
 					            			<div class="row step">
-					            				<div class="col-sm-12 col-xs-12">
+					            				<div class="col-sm-5 col-xs-12">
 					            					<div class="step_container row">
 						            					<div class="step_number col-sm-2 col-xs-12">
 						            						1
 						            					</div>
-						            					<div class="step_desc col-sm-10 col-xs-12">
-						            						<p>Saunders(Souders, 2007) claims that the Web "Performance Golden Rule" is reduce the amount of http requests needed to load the webpage.  It may be said that reducing the amount of components that the web page requires, as consequence we can reduce the number of http requests.  </p>
-
-						            						<p>Using this approach we merge the css and js files into one main css and js file, in addition we choose to use Fontawesome (Gandy, 2014) which is an   iconic web font that allow  us         to avoid the usage of images. We started requiring 23 request to load the administrator menu. After these optimization activities we reduce the amount to 8 improving DOM loading as well. Further evidence of this fact is provided in the following screenshot taken from chrome developer tools. </p>
-
-															<p>To merge css files Sass CSS Importer Plugin(Eppstein, 2014)  was used. Javacript files merge were done manually.</p>
-  
-						            					</div>
-					            					</div>
-					            				</div>
-					            			</div>
-					            			<!-- END STEP -->
-
-					            			<!-- STEP -->
-					            			<div class="row step">
-					            				<div class="col-sm-6 col-xs-12">
-					            					<div class="step_container row">
-						            					<div class="step_number col-sm-2 col-xs-12">
-						            						2
-						            					</div>
-						            					<div class="step_desc col-sm-10 col-xs-12">
+						            					<div class="step_desc col-sm-10	 col-xs-12">
 						            						<h4>Minification</h4>
-						            						<p>According to Saunders this is the 10th rule for high performance web sites.  To minify css files we used Sass(Sass-lang.com, 2014) preprocessor meanwhile for JavaScript files Closure Compiler(Google,2014) was used. </p>
-
-						            						<p>As a result of the oftimization (minification & merging) we reduce the amount of requests and the time that DOM spend loading. But the size of the page and the overall loading test did not improved at all. We believe that these tests should be performed used a proper web server in order to obtain better results.</p>
+						            						<p>We merge the css and js files into one main css and js file, in addition we choose to use Fontawesome (Gandy, 2014) which is an   iconic web font that allow  us         to avoid the usage of images. We started requiring 23 request to load the administrator menu. After these optimization activities we reduce the amount to 8 improving DOM loading as well. Further evidence of this fact is provided in the following screenshot taken from chrome developer tools. </p>
+						            						<p></p>
+															<p>To merge css files Sass CSS Importer Plugin(Eppstein, 2014)  was used. Javacript files merge were done manually.</p>
 						            					</div>
 					            					</div>
 					            				</div>
 
-					            				<div class="col-sm-6 col-xs-12 ">
+					            				<div class="col-sm-7 col-xs-12 ">
 					            					<div class="image_container text-center">
 					            						<a class="thumb_link" href="img/minification.png">
 					            							<img class="img-responsive" src="img/minification_thumb.png" alt="minification" title="minification" />
@@ -1016,6 +991,10 @@ public function questionDetail($questionID){
 					            						</a>
 					            						<i>Lighbox Effect (Semenov, D. ,2014)</i>
 					            					</div>
+					            				</div>
+
+					            				<div class="col-sm-12 col-xs-12 ">
+					            					<p>As a result of the optimization (minification & merging) we reduce the amount of requests and the time that DOM spend loading. But the size of the page and the overall loading test did not improved at all. We believe that these tests should be performed used a proper web server in order to obtain better results.</p>
 					            				</div>
 					            			</div>
 					            			<!-- END STEP -->
