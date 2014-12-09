@@ -147,18 +147,27 @@ class Admin extends CI_Controller {
 	public function quizzes() {
 		$this->checkSession();
 		if ($_POST) {
-			
+			/**
+			 * set validation rules for the question form.
+			 */
 			$this -> form_validation -> set_rules('qq_name', 'Quiz Name', 'required|xss_clean');
 			$this -> form_validation -> set_rules('dd_subject_questions', 'Subject', 'required|integer');
 			$this -> form_validation -> set_rules('qq_time', 'Time', 'required|integer');
 			$this -> form_validation -> set_rules('qq_no_ques', 'No. of Question', 'required|xss_clean|integer');
 			$this -> form_validation -> set_rules('qq_passmark', 'Passmark', 'required|integer');
 			$this -> form_validation -> set_rules('qq_retake', 'No. of Retake', 'required|integer');
-
+			
+			/**
+			 * checks if any of the vlidation rule has be violated.
+			 * passes the field values to an array, if validation test is passed.
+			 */
 			if ($this -> form_validation -> run() == TRUE) {
 				$test = array('sTestName' => $this -> input -> post('qq_name'), 'iTime' => $this -> input -> post('qq_time'), 'iQuestions' => $this -> input -> post('qq_no_ques'), 'iPassmark' => $this -> input -> post('qq_passmark'), 'iRetake' => $this -> input -> post('qq_passmark'), );
+				
+				// fetches the id of the just added test..
 				$test_id = ($id = $this -> question_model -> add_test($test)) ? $id : '';
-
+				
+				//adds the relationship between between subject and test.
 				if ($test_id) {
 					$test_sub_rel = array('TEST_idTEST' => $test_id, 'SUBJECT_idSUBJECT' => $this -> input -> post('dd_subject_questions'), );
 					if ($this -> question_model -> add_test_sub_rship($test_sub_rel)) {

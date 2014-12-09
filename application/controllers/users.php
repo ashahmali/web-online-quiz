@@ -177,4 +177,13 @@ class Users extends CI_Controller {
 		}
 	}
 	
+	/**
+	 * logout function
+	 */
+	public function logout()
+	{
+		$user_data = array();
+		$this->session->set_userdata($user_data);
+		redirect('users/login');
+	}
 }
