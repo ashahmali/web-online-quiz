@@ -11,8 +11,8 @@
 <html class="no-js" lang="en">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<!-- Modernizer -->
-		<script src="<?php echo base_url('assets');?>/js/modernizr.js"></script>
+		<!-- Modernizer 
+		<script src="<?php echo base_url('assets');?>/js/modernizr.js"></script>-->
 
 		<!--[if IE 8]>
         	<script>var IE8 = true;</script>
@@ -24,15 +24,25 @@
         	<script src="http://formstone.it/js/site.ie9.js"></script>
 		<![endif]-->
 
-		<link href="<?php echo base_url();?>assets/css/jquery.fs.shifter.css" rel="stylesheet" type="text/css" media="all">
+		<!--<link href="<?php echo base_url();?>assets/css/jquery.fs.shifter.css" rel="stylesheet" type="text/css" media="all">
 		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/font-awesome.min.css">
 		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/style_dropdown.css">
-		<script src="<?php echo base_url();?>assets/js/jquery-2.1.1.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/style.css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/owl.carousel.css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/owl.theme.css" />
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/owl.transitions.css" />-->
+
+		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/common_style.css" />
+
+		<!--<script src="<?php echo base_url();?>assets/js/jquery-2.1.1.min.js" type="text/javascript"></script>
 		<script src="<?php echo base_url();?>assets/js/jquery.fs.shifter.js"></script>
 		<script src="<?php echo base_url();?>assets/js/controls.js"></script>
 		<script src="<?php echo base_url();?>assets/js/bootstrap.min.js" type="text/javascript"></script>
 		<script src="<?php echo base_url();?>assets/js/owl.carousel.min.js" type="text/javascript"></script>
-		<script src="<?php echo base_url();?>assets/js/moment.min.js" type="text/javascript"></script>
+		<script src="<?php echo base_url();?>assets/js/moment.min.js" type="text/javascript"></script>-->
+
+		<script src="<?php echo base_url();?>assets/js/merged.min.js" type="text/javascript"></script>
 
 
 		
@@ -43,11 +53,7 @@
 			.shifter .shifter-navigation a { color: #666; display: block; font-size: 18px; margin: 0 0 15px; }
 		</style>
 
-		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/style.css" />
-		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/owl.carousel.css" />
-		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/owl.theme.css" />
-		<link rel="stylesheet" href="<?php echo base_url();?>assets/css/owl.transitions.css" />
+		
 
 		<script>
 			$(document).ready(function() {
