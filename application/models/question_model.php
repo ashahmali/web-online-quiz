@@ -86,6 +86,8 @@ class Question_model extends CI_Model {
 	}
 	
 	public function add_subject($sub){
+		$this->db->cache_delete('users', 'register');
+		$this->db->cache_delete('admin', 'quizzes');
 		return $this->db->insert('SUBJECT', $sub);
 	}
 
