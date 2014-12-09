@@ -158,10 +158,10 @@ class Users extends CI_Controller {
 	public function detail(){
 
 		//validate if user is a test taker
-
+		$data['heading'] = 'Hello '. 'Eduardo';
+		
 		//load user details template
 		$this->load->view('templates/header', $data);
-		$data['heading'] = 'Hello '. 'Eduardo';
 		$this->load->view('pages/testtaker_start', $data);
 		$this->load->view('pages/testtaker_detail', $data);
 		$this->load->view('pages/testtaker_finish', $data);
