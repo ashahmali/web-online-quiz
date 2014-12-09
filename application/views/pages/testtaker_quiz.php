@@ -11,7 +11,7 @@
 
 <div class="testtaker_quiz row">
 
-	<div class="col-1 col-sm-6 col-xs-12 text-right subject_container">
+	<!-- <div class="col-1 col-sm-6 col-xs-12 text-right subject_container">
 		<p>Subject:</p>
 	</div>
 	<div class="col-2 col-sm-6 col-xs-12 text-left subject_container detail">
@@ -22,7 +22,7 @@
 	</div>
 	<div class="col-2 col-sm-6 col-xs-12 text-left subject_container detail">
 		<p class="name">Web Performance and Optimization</p>
-	</div>
+	</div> -->
 
 	<form id="test_form" data-start="<?php echo $timer;?>" data-current="" action="evaluate" method="post">
 		<div class="col-xs-12 text-center">
