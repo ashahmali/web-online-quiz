@@ -1,0 +1,21 @@
+/**
+*  merged and compressed styles
+*
+*
+*  To build this file Sass CSS Importer Plugin is required
+* 
+*     https://github.com/chriseppstein/sass-css-importer
+*     sass -r sass-css-importer common_styles.scss common_styles.css (merged)
+*     sass -r sass-css-importer -t compressed common_styles.scss common_styles.css (merged && minified )
+* 
+*/
+@import "CSS:jquery.fs.shifter";
+@import "CSS:font-awesome.min";
+@import "CSS:style_dropdown";
+@import "CSS:bootstrap.min";
+@import "CSS:style";
+@import "CSS:owl.carousel";
+@import "CSS:owl.theme";
+@import "CSS:owl.transitions";
+
+
